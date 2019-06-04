@@ -98,26 +98,26 @@ for a = a_min:a_step:a_max
     end
     i = i + 1;
 end
+%
+% aa=a_min:a_step:a_max;
+% LL=L_min:L_step:L_max;
+% [X,Y]=meshgrid(aa,LL);
+% X = X';
+% Y = Y';
+% figure;
+% surf(X,Y,sum)
+% savefig([pic_name '_l.fig']);
 
- aa=a_min:a_step:a_max;
- LL=L_min:L_step:L_max;
-[X,Y]=meshgrid(aa,LL);
-X = X';
-Y = Y';
-figure;
-surf(X,Y,sum)
-savefig([pic_name '_l.fig']);
-
-% x=a_min:a_step:a_max;
-% y=L_min:L_step:L_max;
-% z=sum;
-% SamplePerDim=500;
-% X=linspace(min(x),max(x),SamplePerDim);
-% Y=linspace(min(y),max(y),SamplePerDim);
-% [X,Y]=ndgrid(X,Y);
-% F=scatteredInterpolant(x,y,z,'linear','none');
-% Z=F(X,Y);
-% figure(1),clf(1)
-% surf(X,Y,Z,'EdgeColor','none')
-% view(-160,80)
+x=aa(:,1);
+y=LL(:,2);
+z=data(:,3);
+SamplePerDim=500;
+X=linspace(min(x),max(x),SamplePerDim);
+Y=linspace(min(y),max(y),SamplePerDim);
+[X,Y]=ndgrid(X,Y);
+F=scatteredInterpolant(x,y,z,'linear','none');
+Z=F(X,Y);
+figure(1),clf(1)
+surf(X,Y,Z,'EdgeColor','none')
+view(-160,80)
 
