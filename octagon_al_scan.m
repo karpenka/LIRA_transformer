@@ -10,18 +10,19 @@ m = 6;
 ncount = 1e5;
 w = 0.03;
 h = 0.15;
-b=0.05;
+
+lambda = 5;
 pic_name = 'a/L scan';
 %path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
 path = '/home/konik/Downloads/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
-parameters.L0 = 20;
+
 parameters.L1 = L1;
-parameters.guide_m = 6;
+parameters.guide_m = m;
 parameters.w = w;
 parameters.h = h;
-parameters.lambda = 5;
+parameters.lambda = lambda;
 
 i=1;
 for a = a_min:a_step:a_max
@@ -29,6 +30,7 @@ for a = a_min:a_step:a_max
     for L0 = L_min:L_step:L_max
         
         try
+        b = a/sqrt(2);
         x1=[-w/2 -h/2 0;...
         -w/2 h/2 0;...
         w/2 h/2 0;...
@@ -85,7 +87,7 @@ for a = a_min:a_step:a_max
         mesh_transf_comsol(path);
         stl_to_off_oct_fp('oct_comsol.stl',path);
         
-        
+        parameters.L0 = L0;
         results = iData(model,parameters);
         sum(i,j) = results.UserData.monitors(1).Data.values(1);
         j = j + 1;
