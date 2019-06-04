@@ -1,20 +1,20 @@
 clear all;
 L1 = 1;
 a_min = 0.01;
-a_step = 0.1;
+a_step = 0.01;
 a_max = 0.21;
 L_min = 1;
 L_step = 5;
-L_max = 21;
+L_max = 41;
 m = 6;
 ncount = 1e5;
 w = 0.03;
 h = 0.15;
 
-lambda = 5;
+lambda = 2;
 pic_name = ['a_L_scan_' num2str(lambda)];
-path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
-%path = '/home/konik/Downloads/LIRA_transformer/';
+%path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
+path = '/home/konik/Downloads/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 
@@ -107,7 +107,7 @@ X = X';
 Y = Y';
 figure;
 surf(X,Y,sum)
-savefig([pic_name '_l.fig']);
+savefig([pic_name '.fig']);
 
 % x=a_min:a_step:a_max;
 % y=L_min:L_step:L_max;
