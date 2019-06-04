@@ -13,8 +13,8 @@ h = 0.15;
 
 lambda = 5;
 pic_name = ['a_L_scan_' num2str(lambda)];
-%path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
-path = '/home/konik/Downloads/LIRA_transformer/';
+path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
+%path = '/home/konik/Downloads/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 
@@ -90,6 +90,7 @@ for a = a_min:a_step:a_max
         parameters.L0 = L0;
         results = iData(model,parameters);
         sum(i,j) = results.UserData.monitors(1).Data.values(1);
+        
         j = j + 1;
         catch
             sum(i,j) = -1;
