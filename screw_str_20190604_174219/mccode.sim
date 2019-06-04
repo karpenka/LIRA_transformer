@@ -1,0 +1,89 @@
+McStas simulation description file for H3.
+Date:    Tue Jun  4 17:42:19 2019
+Program: McStas 2.5 - Dec. 12, 2018
+
+begin instrument: H3
+  File: /home/konik/Downloads/LIRA_transformer/screw_str_20190604_174219/mccode
+  Source: screw_str.instr
+  Parameters:  L(double) guide_m(double) w(double) h(double) lambda(double)
+  Trace_enabled: yes
+  Default_main: yes
+  Embedded_runtime: yes
+end instrument
+
+begin simulation: /home/konik/Downloads/LIRA_transformer/screw_str_20190604_174219
+  Format: McCode with text headers
+  URL: http://www.mccode.org
+  Creator: McStas 2.5 - Dec. 12, 2018
+  Instrument: screw_str.instr
+  Ncount: 1000000
+  Trace: no
+  Gravitation: no
+  Seed: 1559675776
+  Directory: /home/konik/Downloads/LIRA_transformer/screw_str_20190604_174219
+  Param: L=43
+  Param: guide_m=6
+  Param: w=0.03
+  Param: h=0.15
+  Param: lambda=5
+end simulation
+
+begin data
+  Date: Tue Jun  4 17:42:24 2019 (1559659344)
+  type: array_1d(100)
+  Source: H3 (screw_str.instr)
+  component: Octo_large
+  position: 0 0 69.86
+  title: Hor. Divergence [deg] monitor
+  Ncount: 1000000
+  filename: Octo_large_1559659339.hd
+  statistics: X0=-0.000258203; dX=0.281509;
+  signal: Min=0; Max=4.71537e+08; Mean=1.06905e+08;
+  values: 1.06905e+10 3.43045e+07 383240
+  xvar: hd
+  yvar: (I,I_err)
+  xlabel: Hor. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -2 2
+  variables: hd I I_err N
+end data
+
+begin data
+  Date: Tue Jun  4 17:42:24 2019 (1559659344)
+  type: array_1d(100)
+  Source: H3 (screw_str.instr)
+  component: Octo_medium
+  position: 0 0 69.8601
+  title: Hor. Divergence [deg] monitor
+  Ncount: 1000000
+  filename: Octo_medium_1559659339.hd
+  statistics: X0=-0.000245491; dX=0.280451;
+  signal: Min=5.53484e+07; Max=1.23518e+08; Mean=1.06646e+08;
+  values: 1.06646e+10 3.42685e+07 162850
+  xvar: hd
+  yvar: (I,I_err)
+  xlabel: Hor. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -0.5 0.5
+  variables: hd I I_err N
+end data
+
+begin data
+  Date: Tue Jun  4 17:42:24 2019 (1559659344)
+  type: array_1d(100)
+  Source: H3 (screw_str.instr)
+  component: Octo_small
+  position: 0 0 69.8602
+  title: Hor. Divergence [deg] monitor
+  Ncount: 1000000
+  filename: Octo_small_1559659339.hd
+  statistics: X0=0.000802966; dX=0.0572343;
+  signal: Min=1.82971e+07; Max=2.72093e+07; Mean=2.29107e+07;
+  values: 2.29107e+09 1.63829e+07 32535
+  xvar: hd
+  yvar: (I,I_err)
+  xlabel: Hor. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -0.1 0.1
+  variables: hd I I_err N
+end data

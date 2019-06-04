@@ -1,14 +1,16 @@
 clear all;
 L1 = 1;
+L0 = 36;
 m = 6;
-ncount = 1e5;
+ncount = 1e6;
 w = 0.03;
 h = 0.15;
+a = 0.08;
 
 lambda = 5;
 pic_name = ['profile' num2str(lambda)];
-path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
-%path = '/home/konik/Downloads/LIRA_transformer/';
+%path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
+path = '/home/konik/Downloads/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 
@@ -18,9 +20,7 @@ parameters.guide_m = m;
 parameters.w = w;
 parameters.h = h;
 parameters.lambda = lambda;
-param = [];
  
-a = 0.05;
 b = a/sqrt(2);
 
 x1=[-w/2 -h/2 0;...
@@ -79,6 +79,7 @@ stlwrite('oct.stl',faces,vert)
 mesh_transf_comsol(path);
 stl_to_off_oct_fp('oct_comsol.stl',path);
 
+model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 results = iData(model,parameters);
 sum = results.UserData.monitors(1).Data.values(1);
 
