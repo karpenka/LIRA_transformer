@@ -5,20 +5,22 @@ a_step = 0.01;
 a_max = 0.2;
 L_min = 1;
 L_step = 5;
-L_max = 20;
+L_max = 21;
 m = 6;
 ncount = 1e5;
 w = 0.03;
 h = 0.15;
+b=0.05;
 pic_name = 'a/L scan';
-path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
+%path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
+path = '/home/konik/Downloads/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 parameters.L0 = 20;
-parameters.L1 = 1;
+parameters.L1 = L1;
 parameters.guide_m = 6;
-parameters.w = 0.03;
-parameters.h = 0.15;
+parameters.w = w;
+parameters.h = h;
 parameters.lambda = 5;
 
 i=1;
