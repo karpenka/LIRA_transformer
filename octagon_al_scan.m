@@ -1,101 +1,97 @@
-fnamep = 'Octagon_aL_scan_lambda_5A';
-lambda = 5;
+clear all;
+L1 = 1;
+a_min = 0.01;
+a_step = 0.01;
+a_max = 0.2;
+L_min = 1;
+L_step = 5;
+L_max = 20;
+m = 6;
+ncount = 1e5;
 w = 0.03;
 h = 0.15;
-m = 6;
-a_min = 0.02;
-a_step = 0.01;
-a_max = 0.21;
-L_min=5;
-L_max=40;
-L_step=5;
-L1 = 1;
+pic_name = 'a/L scan';
+path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
 
-lr=1;
-for L = L_min:L_step:L_max
-    rect(w,h,2*L+L1);
-    [p0,m0]=mcstas('screw_str.instr',struct('lambda',lambda,'L',2*L+L1,'guide_m',m,'w',w,'h',h),struct('ncount',1e5));
-    p0l=p0(1,:,:).Signal;
-    p0m=p0(2,:,:).Signal;
-    p0s=p0(3,:,:).Signal;
-    I0l(lr) = p0l;
-    I0m(lr) = p0m;
-    I0s(lr) = p0s;
-    lr=lr+1;
-end
+model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
+parameters.L0 = 20;
+parameters.L1 = 1;
+parameters.guide_m = 6;
+parameters.w = 0.03;
+parameters.h = 0.15;
+parameters.lambda = 5;
 
-ppath = 'D:\JOB\github\Octagon-guide\octagon\off\';
-files = dir(fullfile(ppath, '*.off'));
-filenames = {files.name};
-size_filenames = size(filenames);
-
-Il = zeros(length(a_min:a_step:a_max),length(L_min:L_step:L_max));
-Im = zeros(length(a_min:a_step:a_max),length(L_min:L_step:L_max));
-Is = zeros(length(a_min:a_step:a_max),length(L_min:L_step:L_max));
-
-Il_abs = zeros(length(a_min:a_step:a_max),length(L_min:L_step:L_max));
-Im_abs = zeros(length(a_min:a_step:a_max),length(L_min:L_step:L_max));
-Is_abs = zeros(length(a_min:a_step:a_max),length(L_min:L_step:L_max));
-
-for j = 1:size_filenames(2)
-    octagon_n(['/off/'  filenames{j}])
-    %geks_ps(a,b,w,h,L,0.05);
-    
-    fname = filenames{j};
-    ss = size(fname);
-    if all(ismember(fname(4), '0123456789+-.eEdD')) == 1
-		length_of_oct = str2num(fname(3:4));
-	else
-		length_of_oct = str2num(fname(3));
-    end
-    
-    for i = 1:ss(2)
-        if (strcmp(fname(i),'a') == 1) && (all(ismember(fname(i+3), '0123456789+-.eEdD')) == 0)
-            a = str2num(fname(i+2));
-            break
-        elseif (strcmp(fname(i),'a') == 1) && (all(ismember(fname(i+3), '0123456789+-.eEdD')) == 1)
-            a = str2num(fname(i+2:i+3));
-            break
+i=1;
+for a = a_min:a_step:a_max
+    j=1;
+    for L0 = L_min:L_step:L_max
+        
+        try
+        x1=[-w/2 -h/2 0;...
+        -w/2 h/2 0;...
+        w/2 h/2 0;...
+        w/2 -h/2 0;...
+        -a/2 -a/2-b L0;...
+        -a/2-b -a/2 L0;...
+        -a/2-b a/2 L0;...
+        -a/2 a/2+b L0;...
+        a/2 a/2+b L0;...
+        a/2+b a/2 L0;...
+        a/2+b -a/2 L0;...
+        a/2 -a/2-b L0;...
+        -a/2 -a/2-b L0+L1;...
+        -a/2-b -a/2 L0+L1;...
+        -a/2-b a/2 L0+L1;...
+        -a/2 a/2+b L0+L1;...
+        a/2 a/2+b L0+L1;...
+        a/2+b a/2 L0+L1;...
+        a/2+b -a/2 L0+L1;...
+        a/2 -a/2-b L0+L1;...
+        -h/2 -w/2 2*L0+L1;...
+        -h/2 w/2 2*L0+L1;...
+        h/2 w/2 2*L0+L1;...
+        h/2 -w/2 2*L0+L1];
+        x2=[4 1 2 8 7;...
+        4 2 9 10 3;...
+        4 0 3 11 4;...
+        4 0 1 6 5;...
+        4 4 5 13 12;...
+        4 5 6 14 13;...
+        4 6 7 15 14;...
+        4 7 8 16 15;...
+        4 8 9 17 16;...
+        4 9 10 18 17;...
+        4 10 11 19 18;...
+        4 11 4 12 19;...
+        4 20 21 14 13;...
+        4 21 22 16 15;...
+        4 22 23 18 17;...
+        4 20 23 19 12];
+        x3=[3 2 8 9;...
+        3 3 10 11;...
+        3 0 4 5;...
+        3 1 6 7;...
+        3 20 12 13;...
+        3 21 14 15;...
+        3 22 16 17;...
+        3 23 18 19];
+        
+        vert = x1;
+        faces = [triangulateFaces(x2(:,2:5));x3(:,2:4)]+1;
+        
+        stlwrite('oct.stl',faces,vert)
+        mesh_transf_comsol(path);
+        stl_to_off_oct_fp('oct_comsol.stl',path);
+        
+        
+        results = iData(model,parameters);
+        sum(i,j) = results.UserData.monitors(1).Data.values(1);
+        j = j + 1;
+        catch
+            sum(i,j) = -1;
+            j = j+1;
         end
     end
-    
-    
-    [p1,m1]=mcstas('LIRA_oct_n.instr',struct('L0',L,'L1',L1,'guide_m',m,'w',w,'h',h),struct('ncount',1e5));
-    p1l=p1(1,:,:).Signal;
-    p1m=p1(2,:,:).Signal;
-    p1s=p1(3,:,:).Signal;
-    Il_abs(a,length_of_oct/5) = p1l;
-    Im_abs(a,length_of_oct/5) = p1m;
-    Is_abs(a,length_of_oct/5) = p1s;
-    Il(a,length_of_oct/5)=p1l/I0l(j);
-    Im(a,length_of_oct/5)=p1m/I0m(j);
-    Is(a,length_of_oct/5)=p1s/I0s(j);
+    i = i + 1;
 end
-% 
-% dlmwrite([fname '_l.dat'],Il,' ');
-% dlmwrite([fname '_m.dat'],Im,' ');
-% dlmwrite([fname '_s.dat'],Is,' ');
-aa=a_min:a_step:a_max;
-LL=L_min:L_step:L_max;
-[X,Y]=meshgrid(aa,LL);
-X = X';
-Y = Y';
-figure;
-surf(X,Y,Il)
-savefig([fnamep '_l.fig']);
-figure;
-surf(X,Y,Im)
-savefig([fnamep '_m.fig']);
-figure;
-surf(X,Y,Is)
-savefig([fnamep '_s.fig']);
 
-figure;
-surf(X,Y,Il_abs)
-savefig([fnamep '_l_abs.fig']);
-figure;
-surf(X,Y,Im_abs)
-savefig([fnamep '_m_abs.fig']);
-figure;
-surf(X,Y,Is_abs)
-savefig([fnamep '_s_abs.fig']);
