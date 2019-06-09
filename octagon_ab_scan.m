@@ -1,5 +1,5 @@
 clear all;
-L0 = 40;
+L0 = 10;
 L1 = 1;
 a_min = 0.01;
 a_step = 0.01;
