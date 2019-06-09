@@ -106,4 +106,7 @@ Y = Y';
 figure;
 surf(X,Y,sum)
 savefig([pic_name '.fig']);
+xlabel('a, m')
+ylabel('b, m')
+zlabel('signal')
 
