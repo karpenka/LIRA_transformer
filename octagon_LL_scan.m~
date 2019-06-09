@@ -1,18 +1,18 @@
 clear all;
 L1_min = 1;
-L1_step = 2.5;
+L1_step = 5;
 L1_max = 51;
 L0_min = 1;
-L0_step = 2.5;
+L0_step = 5;
 L0_max = 46;
 m = 6;
-ncount = 1e5;
+ncount = 1e6;
 w = 0.03;
 h = 0.15;
-a = 0.15;
+a = 0.05;
 b = a/sqrt(2);
 
-lambda = 5;
+lambda = 2;
 pic_name = ['L_L_scan_' num2str(a)];
 %path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
 path = '/home/konik/Downloads/LIRA_transformer/';
@@ -26,11 +26,12 @@ parameters.h = h;
 parameters.lambda = lambda;
 
 i=1;
-for L0 = L0_min:L0_step:L0_max
+for  = L0_min:L0_step:L0_max
     j=1;
     for L1 = L1_min:L1_step:L1_max
         
         try
+        b = a/sqrt(2);
         x1=[-w/2 -h/2 0;...
         -w/2 h/2 0;...
         w/2 h/2 0;...

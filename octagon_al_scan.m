@@ -2,12 +2,12 @@ clear all;
 L1 = 1;
 a_min = 0.01;
 a_step = 0.01;
-a_max = 0.21;
+a_max = 0.26;
 L_min = 1;
 L_step = 5;
-L_max = 41;
+L_max = 101;
 m = 6;
-ncount = 1e6;
+ncount = 1e5;
 w = 0.03;
 h = 0.15;
 

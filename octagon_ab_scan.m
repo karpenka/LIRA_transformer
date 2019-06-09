@@ -1,5 +1,5 @@
 clear all;
-L0 = 20;
+L0 = 40;
 L1 = 1;
 a_min = 0.01;
 a_step = 0.01;
@@ -8,11 +8,11 @@ b_min = 0.01;
 b_step = 0.01;
 b_max = 0.2;
 m = 6;
-ncount = 1e5;
+ncount = 1e6;
 w = 0.03;
 h = 0.15;
-lambda = 5;
-pic_name = 'a/b scan';
+lambda = 2;
+pic_name = ['ab_scan_2AA' num2str(L0)];
 %path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
 path = '/home/konik/Downloads/LIRA_transformer/';
 
@@ -97,4 +97,13 @@ for a = a_min:a_step:a_max
     end
     i = i + 1;
 end
+
+aa=a_min:a_step:a_max;
+bb=b_min:b_step:b_max;
+[X,Y]=meshgrid(aa,bb);
+X = X';
+Y = Y';
+figure;
+surf(X,Y,sum)
+savefig([pic_name '.fig']);
 
