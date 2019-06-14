@@ -15,7 +15,7 @@ b = a/sqrt(2);
 lambda = 5;
 pic_name = ['L_L_scan_' num2str(a)];
 %path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
-path = '/home/konik/Downloads/LIRA_transformer/';
+path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 

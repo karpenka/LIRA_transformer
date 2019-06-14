@@ -8,13 +8,13 @@ b_min = 0.01;
 b_step = 0.01;
 b_max = 0.2;
 m = 6;
-ncount = 1e6;
+ncount = 1e5;
 w = 0.03;
 h = 0.15;
 lambda = 2;
 pic_name = ['ab_scan_2AA' num2str(L0)];
-path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer/';
-%path = '/home/konik/Downloads/LIRA_transformer/';
+%path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
+path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 parameters.L0 = L0;
