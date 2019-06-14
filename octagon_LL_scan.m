@@ -110,3 +110,6 @@ figure;
 surf(X,Y,sum)
 savefig([pic_name '.fig']);
 
+xlabel('L0')
+ylabel('L1')
+

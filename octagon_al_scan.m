@@ -13,8 +13,8 @@ h = 0.15;
 
 lambda = 2;
 pic_name = ['a_L_scan_' num2str(lambda)];
-%path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
-path = '/home/konik/Downloads/LIRA_transformer/';
+path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
+%path = '/home/konik/Downloads/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 
