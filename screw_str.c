@@ -2,7 +2,7 @@
  * Format:     ANSI C source code
  * Creator:    McStas <http://www.mcstas.org>
  * Instrument: screw_str.instr (H3)
- * Date:       Tue Jun  4 17:42:08 2019
+ * Date:       Sun Jun  9 15:17:22 2019
  * File:       ./screw_str.c
  * Compile:    cc -o H3.out ./screw_str.c 
  * CFLAGS=

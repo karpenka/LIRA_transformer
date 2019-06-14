@@ -2,7 +2,7 @@
  * Format:     ANSI C source code
  * Creator:    McStas <http://www.mcstas.org>
  * Instrument: LIRA_oct.instr (H3)
- * Date:       Tue Jun  4 17:37:02 2019
+ * Date:       Sun Jun  9 15:15:37 2019
  * File:       ./LIRA_oct.c
  * Compile:    cc -o H3.out ./LIRA_oct.c 
  * CFLAGS=
