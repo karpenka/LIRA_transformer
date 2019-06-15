@@ -4,18 +4,18 @@ L1_step = 2.5;
 L1_max = 51;
 L0_min = 1;
 L0_step = 2.5;
-L0_max = 46;
+L0_max = 51;
 m = 6;
-ncount = 1e5;
+ncount = 1e6;
 w = 0.03;
 h = 0.15;
-a = 0.15;
-b = a/sqrt(2);
+a = 0.03;
+b = 0.09;
 
-lambda = 5;
-pic_name = ['L_L_scan_' num2str(a)];
-%path = '/home/nerde/JOB/Projects/PIK/LIRA/Octagon';
-path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer/';
+lambda = 2;
+pic_name = ['L_L_scan_' num2str(a) '_' num2str(b)];
+path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
+%path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer/';
 
 model = mccode('LIRA_oct.instr',['ncount=' num2str(ncount)]);
 
@@ -108,8 +108,14 @@ X = X';
 Y = Y';
 figure;
 surf(X,Y,sum)
-savefig([pic_name '.fig']);
 
-xlabel('L0')
-ylabel('L1')
+
+xlabel('L0, m')
+ylabel('L1, m')
+zlabel('I')
+view(2)
+colorbar
+savefig([pic_name '.fig']);
+saveas(gcf,[pic_name '.png'])
+
 
