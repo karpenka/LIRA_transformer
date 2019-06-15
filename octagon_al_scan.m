@@ -107,6 +107,8 @@ X = X';
 Y = Y';
 figure;
 surf(X,Y,sum)
+xlabel('a')
+ylabel('L0')
 savefig([pic_name '.fig']);
 
 % x=a_min:a_step:a_max;
