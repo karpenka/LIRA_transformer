@@ -30,7 +30,7 @@ for a = a_min:a_step:a_max
     for L0 = L_min:L_step:L_max
         
         try
-        b = -1/2*a + 0.075;
+        b = -1/2*a + 7.5;
         x1=[-w/2 -h/2 0;...
         -w/2 h/2 0;...
         w/2 h/2 0;...
@@ -107,8 +107,12 @@ X = X';
 Y = Y';
 figure;
 surf(X,Y,sum)
-xlabel('a, m')
-ylabel('L0, m')
+xlabel('a')
+ylabel('L0')
+savefig([pic_name '.fig']);
+
+xlabel('L0, m')
+ylabel('L1, m')
 zlabel('I')
 view(2)
 colorbar

@@ -1,11 +1,12 @@
+clear all
 path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer/';
 ncount = 1e6;
 m = 6;
 w = 0.03; h = 0.15;
 
-aa = [0.05 0.1 0.15]; bb = a/sqrt(2);%bb = 0.04;%
-LL0 = 20; LL1 = [1 5 10 20 40 80]; 
-llambda = 5;
+aa = [0.03]; bb = 0.08;% bb = a/sqrt(2);%
+LL0 = [1 5 7 12 15 20 30 50]; LL1 = [20]; 
+llambda = 2;
 
 for i = 1:length(aa)
     for j = 1:length(bb)
