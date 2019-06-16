@@ -1,4 +1,4 @@
-﻿COMPONENT Octo_large = Monitor_nD(
+COMPONENT Octo_large = Monitor_nD(
 xwidth = 1, yheight = 1, bins = 150, options = "dy limits = [-4 4]")
 AT (0, 0, 41) RELATIVE arm_geks
 COMPONENT Octo_small = Monitor_nD(

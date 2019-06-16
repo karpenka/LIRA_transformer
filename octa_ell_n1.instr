@@ -1,4 +1,4 @@
-DEFINE INSTRUMENT H3(L0 = 15, L1 = 10, lambda = 5, guide_m=6, w=0.03, h=0.15, LL = 0.5)
+DEFINE INSTRUMENT H3(L0 = 15, L1 = 10, lambda = 5, guide_m=6, w=0.03, h=0.15, LL = 0)
 
 DECLARE
 %{
