@@ -10,7 +10,7 @@ for i=1:length(tmp{1,1})
         dlmwrite('octa_ell_n.instr',char(tmp{1,1}(i)),'-append','delimiter','')
     end
 end
-for j = 1:n
+for j = 2:n
     dlmwrite('octa_ell_n.instr',' ','-append','delimiter','\n')
     fid = fopen('octa_ell_n21.instr','rt');
     tmp = textscan(fid,'%s','Delimiter','\n');

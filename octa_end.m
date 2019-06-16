@@ -1,19 +1,19 @@
-%path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer'
-path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
+path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer'
+%path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
 
 n = 79;
 octagon_elliptic_n(n)
 
-
-for j = 1:n
-%fixed parameters
 w1=0.015;
 w2=0.075;
 h1=w2;
 h2=w1;
 L=40;
 lin = 0.01;
-l = L/n;
+
+%fixed parameters
+
+l=0;
 
 %parameters to scan
 x0=30;
@@ -26,6 +26,9 @@ b_sqr = w1^2*a_sqr/(a_sqr - x0^2);
 a_sqr_h = (h2^2*(L-x0)^2 - x0^2*h1^2)/(h2^2-h1^2);
 b_sqr_h = h1^2*a_sqr_h/(a_sqr_h - (L-x0)^2);
 
+for j = 1:n
+lin=l;
+l = l +L/n
 omega = (w2-w1)/(L^2-2*l0*L)*l^2 + 2*(w1-w2)/(L^2-2*l0*L)*l0*l + w1;
 eta = (h2-h1)/(L^2-2*(L-l0)*L)*l^2 + 2*(h1-h2)/(L^2-2*(L-l0)*L)*(L-l0)*l + h1;
 
