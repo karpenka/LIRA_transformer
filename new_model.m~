@@ -67,8 +67,7 @@ mesh_transf_comsol(path);
 stl_to_off_oct_fp('oct_comsol.stl',path);
 
 
-ap = ((x1+L)^2-x1^2*w2^2/w1^2)/(1-w2^2/w1^2);
-bp = w1^2/(1-x1^2/ap^2);
+ap = ((x1+L)
 
 for i=1:1:41
     ll(i)=i-1;
