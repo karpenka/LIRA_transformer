@@ -1,0 +1,19 @@
+
+  COMPONENT Octo_large = Monitor_nD(
+    xwidth = h, yheight = w, bins = 150, options = "dy limits = [-4 4]")
+  AT (0, 0, LL+0.001) RELATIVE PREVIOUS
+
+  COMPONENT Octo_small = Monitor_nD(
+    xwidth = h, yheight = w, bins = 100, options = "dy limits = [-0.15 0.15]")
+  AT (0, 0, 0.0001) RELATIVE PREVIOUS
+
+  COMPONENT Octo_small222 = Monitor_nD(
+    xwidth =0.3, yheight = 0.3, bins = 100, options = "x y")
+  AT (0, 0, 0.0001) RELATIVE PREVIOUS
+  
+
+FINALLY
+%{
+%}
+
+END

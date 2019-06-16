@@ -28,3 +28,4 @@ for i=1:length(tmp{1,1})
         dlmwrite('LIRA_oct_n.instr',char(tmp{1,1}(i)),'-append','delimiter','')
     end
 end
+end

@@ -69,10 +69,6 @@ stlwrite('oct.stl',faces,vert)
 mesh_transf_comsol(path);
 stl_to_off_oct_fp('oct_comsol.stl',path);
 
-a_sqr = (w2^2*x0^2 - (L-x0)^2*w1^2)/(w2^2-w1^2);
-b_sqr = w1^2*a_sqr/(a_sqr - x0^2);
-a_sqr_h = (h2^2*(L-x0)^2 - x0^2*h1^2)/(h2^2-h1^2);
-b_sqr_h = h1^2*a_sqr_h/(a_sqr_h - (L-x0)^2);
 
 for i=1:1:41
     ll(i)=i-1;
