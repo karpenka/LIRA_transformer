@@ -16,8 +16,8 @@ lin = 0.01;
 l=0;
 
 %parameters to scan
-x0=30;
-l0=12;
+x0=-40;
+l0=13;
 
 %scan step l
 
