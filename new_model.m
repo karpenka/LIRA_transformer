@@ -1,10 +1,10 @@
-
+path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer'
 
 
 
 %fixed parameters
-w1=0.03;
-w2=0.15;
+w1=0.015;
+w2=0.075;
 h1=w2;
 h2=w1;
 L=40;
@@ -12,8 +12,8 @@ lin = 0.1;
 l = 1;
 
 %parameters to scan
-x0=0.1;
-l0=1;
+x0=5;
+l0=12;
 
 %scan step l
 
@@ -65,3 +65,16 @@ faces = [triangulateFaces(x2(:,2:5))]+1;
 stlwrite('oct.stl',faces,vert)
 mesh_transf_comsol(path);
 stl_to_off_oct_fp('oct_comsol.stl',path);
+
+for i=1:1:41
+    ll(i)=i-1;
+    omega(i) = (w2-w1)/(L^2-2*l0*L)*ll(i)^2 + 2*(w1-w2)/(L^2-2*l0*L)*l0*ll(i) + w1;
+    eta(i) = (h2-h1)/(L^2-2*(L-l0)*L)*ll(i)^2 + 2*(h1-h2)/(L^2-2*(L-l0)*L)*(L-l0)*ll(i) + h1;
+    w(i) = sqrt((x0^2*w2^2 - (L-x0)^2*w1^2)/(x0^2 - (L-x0)^2)*(1 - (ll(i)-x0)^2*(w2^2-w1^2)/(x0^2*w1^2-(L-x0)^2*w1^2)));
+    w_new(i) = sqrt((w2^2*x0^2 - (L-x0)^2*w1^2)*(w2^2-w1^2)/(x0^2-(L-x0)^2)/(x0^2*w2^2 - (L-x0)^2*w1^2)*((x0^2*w2^2 - (L-x0)^2*w1^2)/(w2^2-w1^2) - (ll(i)-x0)^2));
+
+end
+
+plot(ll,omega, ll, eta);
+figure;
+plot(ll,w_new,ll,w)
