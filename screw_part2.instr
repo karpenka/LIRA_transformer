@@ -1,0 +1,26 @@
+    center = 0, R0 = 0.99, Qc = 0.0219, alpha = 2.3, m = guide_m,
+    W = 0.003)
+  AT (-w/2, -h/2, 0) RELATIVE PREVIOUS
+ ROTATED (-90,0,0) RELATIVE PREVIOUS
+
+/**************** monitors ***************/
+
+  COMPONENT Octo_large = Monitor_nD(
+    xwidth = h, yheight = w, bins = 100, options = "dy limits = [-2 2] ")
+  AT (0, 0, L+0.1) RELATIVE arm_geks
+
+  COMPONENT Octo_med = Monitor_nD(
+    xwidth = h, yheight = w, bins = 100, options = "dy limits = [-0.5 0.5] ")
+  AT (0, 0, L+0.101) RELATIVE arm_geks
+
+  COMPONENT Octo_small = Monitor_nD(
+    xwidth = h, yheight = w, bins = 100, options = "dy limits = [-0.1 0.1] ")
+  AT (0, 0, L+0.102) RELATIVE arm_geks
+
+/**********/
+
+FINALLY
+%{
+%}
+
+END

@@ -1,0 +1,6 @@
+COMPONENT COPY(geks) = Guide_anyshape(
+    geometry = "oct_comsol.stl.off",
+    center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+    W = 0.003)
+ AT (0, 0, 0.01+ LL) RELATIVE PREVIOUS
+ 
