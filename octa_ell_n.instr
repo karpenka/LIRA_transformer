@@ -573,8 +573,8 @@ AT (0, 0, 41) RELATIVE arm_geks
 COMPONENT Octo_small = Monitor_nD(
 xwidth = 1, yheight = 1, bins = 100, options = "dy limits = [-0.15 0.15]")
 AT (0, 0, 0.01) RELATIVE PREVIOUS
-COMPONENT Octo_small222 = Monitor_nD(
-xwidth =1, yheight = 1, bins = 100, options = "x y")
+COMPONENT Octo_small2 = Monitor_nD(
+xwidth = 1, yheight = 1, bins = 100, options = "dy limits = [0 0.3]")
 AT (0, 0, 0.01) RELATIVE PREVIOUS
 FINALLY
 %{

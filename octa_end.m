@@ -1,7 +1,7 @@
-%path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer';
-clear all;
-path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
 
+clear all;
+%path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
+path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer';
 n = 79;
 octagon_elliptic_n(n)
 
@@ -12,7 +12,7 @@ h2=w1;
 L=40;
 lin = 0.01;
 
-ncount = 1e5;
+ncount = 1e6;
 L0=L;
 m=6;
 ww = w1*2;
@@ -28,8 +28,8 @@ z=0;
 x0=30; %x0 = -L:L
 l0=12; %l0 = 0:L/2
 %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
-for x0 = -L:20:L
-    for l0 = 1:3:11
+for x0 = -L:40:L
+    for l0 = 1:3:4
 
         %scan step l
 
@@ -98,6 +98,7 @@ for x0 = -L:20:L
             catch
                 sum1(jo1,jo2) = -1;
                 sum2(jo1,jo2) = -1;
+                sum3(jo1,jo2) = -1;
                 jo1 = jo1+1;
                 l = 0;
                 z=1;
@@ -109,7 +110,7 @@ for x0 = -L:20:L
             z=0;
             continue
         end
-        model = mccode('octa_ell_n.instr',['ncount=' num2str(ncount)]);
+        model = mccode('octa_ell_n.instr',['ncount=' num2str(ncount),'mpi=' 1]);
         parameters.L0 = L0;
         parameters.guide_m = m;
         parameters.w = ww;
@@ -118,6 +119,7 @@ for x0 = -L:20:L
         results = iData(model,parameters);
         sum1(jo1,jo2) = results.UserData.monitors(1).Data.values(1);
         sum2(jo1,jo2) = results.UserData.monitors(1).Data.values(2);
+        sum3(jo1,jo2) = results.UserData.monitors(1).Data.values(3);
         jo1 = jo1+1;
         l = 0;
         z=0;
@@ -125,3 +127,9 @@ for x0 = -L:20:L
     jo2 = jo2+1;
     jo1=1;
 end
+figure;
+surf(sum1);
+figure;
+surf(sum2);
+figure;
+surf(sum3);
