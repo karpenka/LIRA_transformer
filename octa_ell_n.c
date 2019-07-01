@@ -2,7 +2,7 @@
  * Format:     ANSI C source code
  * Creator:    McStas <http://www.mcstas.org>
  * Instrument: octa_ell_n.instr (H3)
- * Date:       Sun Jun 16 20:05:23 2019
+ * Date:       Sun Jun 30 23:15:25 2019
  * File:       ./octa_ell_n.c
  * Compile:    cc -o H3.out ./octa_ell_n.c 
  * CFLAGS=
@@ -5310,7 +5310,7 @@ int mctraceenabled = 1;
 #else
 int mctraceenabled = 0;
 #endif
-#define MCSTAS "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../"
+#define MCSTAS "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../"
 int mcdefaultmain = 1;
 char mcinstrument_name[] = "H3";
 char mcinstrument_source[] = "octa_ell_n.instr";
@@ -5323,7 +5323,7 @@ void mcfinally(void);
 void mcdisplay(void);
 
 /* Shared user declarations for all components 'Source_gen'. */
-#line 140 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
+#line 140 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
 /*******************************************************************************
 *
 * McStas, neutron ray-tracing package
@@ -6803,7 +6803,7 @@ char *str_dup_numeric(char *orig)
 #line 6803 "./octa_ell_n.c"
 
 /* Shared user declarations for all components 'Guide_gravity'. */
-#line 124 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
+#line 124 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
 /*****************************************************************************
 *
 * McStas, neutron ray-tracing package
@@ -7159,7 +7159,7 @@ void TableReflecFunc(double mc_pol_q, t_Table *mc_pol_par, double *mc_pol_r) {
 #line 7159 "./octa_ell_n.c"
 
 /* Shared user declarations for all components 'Guide_anyshape'. */
-#line 86 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 86 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 
 /*******************************************************************************
 *
@@ -8157,7 +8157,7 @@ void off_display(off_struct data)
 #line 8157 "./octa_ell_n.c"
 
 /* Shared user declarations for all components 'Monitor_nD'. */
-#line 214 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 214 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 /*******************************************************************************
 *
 * McStas, neutron ray-tracing package
@@ -11500,32 +11500,32 @@ char mccOcto_small_username2[16384];
 char mccOcto_small_username3[16384];
 int mccOcto_small_nowritefile;
 
-/* Definition parameters for component 'Octo_small222' [87]. */
-#define mccOcto_small222_user1 FLT_MAX
-#define mccOcto_small222_user2 FLT_MAX
-#define mccOcto_small222_user3 FLT_MAX
-/* Setting parameters for component 'Octo_small222' [87]. */
-MCNUM mccOcto_small222_xwidth;
-MCNUM mccOcto_small222_yheight;
-MCNUM mccOcto_small222_zdepth;
-MCNUM mccOcto_small222_xmin;
-MCNUM mccOcto_small222_xmax;
-MCNUM mccOcto_small222_ymin;
-MCNUM mccOcto_small222_ymax;
-MCNUM mccOcto_small222_zmin;
-MCNUM mccOcto_small222_zmax;
-MCNUM mccOcto_small222_bins;
-MCNUM mccOcto_small222_min;
-MCNUM mccOcto_small222_max;
-MCNUM mccOcto_small222_restore_neutron;
-MCNUM mccOcto_small222_radius;
-char mccOcto_small222_options[16384];
-char mccOcto_small222_filename[16384];
-char mccOcto_small222_geometry[16384];
-char mccOcto_small222_username1[16384];
-char mccOcto_small222_username2[16384];
-char mccOcto_small222_username3[16384];
-int mccOcto_small222_nowritefile;
+/* Definition parameters for component 'Octo_small2' [87]. */
+#define mccOcto_small2_user1 FLT_MAX
+#define mccOcto_small2_user2 FLT_MAX
+#define mccOcto_small2_user3 FLT_MAX
+/* Setting parameters for component 'Octo_small2' [87]. */
+MCNUM mccOcto_small2_xwidth;
+MCNUM mccOcto_small2_yheight;
+MCNUM mccOcto_small2_zdepth;
+MCNUM mccOcto_small2_xmin;
+MCNUM mccOcto_small2_xmax;
+MCNUM mccOcto_small2_ymin;
+MCNUM mccOcto_small2_ymax;
+MCNUM mccOcto_small2_zmin;
+MCNUM mccOcto_small2_zmax;
+MCNUM mccOcto_small2_bins;
+MCNUM mccOcto_small2_min;
+MCNUM mccOcto_small2_max;
+MCNUM mccOcto_small2_restore_neutron;
+MCNUM mccOcto_small2_radius;
+char mccOcto_small2_options[16384];
+char mccOcto_small2_filename[16384];
+char mccOcto_small2_geometry[16384];
+char mccOcto_small2_username1[16384];
+char mccOcto_small2_username2[16384];
+char mccOcto_small2_username3[16384];
+int mccOcto_small2_nowritefile;
 
 /* User component declarations. */
 
@@ -11541,7 +11541,7 @@ int mccOcto_small222_nowritefile;
 #define percent mccOrigin_percent
 #define flag_save mccOrigin_flag_save
 #define minutes mccOrigin_minutes
-#line 44 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
+#line 44 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
 #ifndef PROGRESS_BAR
 #define PROGRESS_BAR
 #else
@@ -11616,7 +11616,7 @@ time_t CurrentTime;
 #define I3 mccH3_I3
 #define zdepth mccH3_zdepth
 #define target_index mccH3_target_index
-#line 184 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
+#line 184 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
 
   double p_in;
   double lambda1;  /* first Maxwellian source */
@@ -11736,7 +11736,7 @@ time_t CurrentTime;
 #define nu mccGuide_bunker_straight_nu
 #define phase mccGuide_bunker_straight_phase
 #define reflect mccGuide_bunker_straight_reflect
-#line 334 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
+#line 334 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
   Gravity_guide_Vars_type GVars;
   t_Table pTable;
 #line 11742 "./octa_ell_n.c"
@@ -11806,7 +11806,7 @@ time_t CurrentTime;
 #define alpha mccgeks_alpha
 #define m mccgeks_m
 #define W mccgeks_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 11812 "./octa_ell_n.c"
@@ -11846,7 +11846,7 @@ t_Table pTable;
 #define alpha mccgeks_7_alpha
 #define m mccgeks_7_m
 #define W mccgeks_7_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 11852 "./octa_ell_n.c"
@@ -11886,7 +11886,7 @@ t_Table pTable;
 #define alpha mccgeks_8_alpha
 #define m mccgeks_8_m
 #define W mccgeks_8_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 11892 "./octa_ell_n.c"
@@ -11926,7 +11926,7 @@ t_Table pTable;
 #define alpha mccgeks_9_alpha
 #define m mccgeks_9_m
 #define W mccgeks_9_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 11932 "./octa_ell_n.c"
@@ -11966,7 +11966,7 @@ t_Table pTable;
 #define alpha mccgeks_10_alpha
 #define m mccgeks_10_m
 #define W mccgeks_10_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 11972 "./octa_ell_n.c"
@@ -12006,7 +12006,7 @@ t_Table pTable;
 #define alpha mccgeks_11_alpha
 #define m mccgeks_11_m
 #define W mccgeks_11_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12012 "./octa_ell_n.c"
@@ -12046,7 +12046,7 @@ t_Table pTable;
 #define alpha mccgeks_12_alpha
 #define m mccgeks_12_m
 #define W mccgeks_12_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12052 "./octa_ell_n.c"
@@ -12086,7 +12086,7 @@ t_Table pTable;
 #define alpha mccgeks_13_alpha
 #define m mccgeks_13_m
 #define W mccgeks_13_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12092 "./octa_ell_n.c"
@@ -12126,7 +12126,7 @@ t_Table pTable;
 #define alpha mccgeks_14_alpha
 #define m mccgeks_14_m
 #define W mccgeks_14_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12132 "./octa_ell_n.c"
@@ -12166,7 +12166,7 @@ t_Table pTable;
 #define alpha mccgeks_15_alpha
 #define m mccgeks_15_m
 #define W mccgeks_15_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12172 "./octa_ell_n.c"
@@ -12206,7 +12206,7 @@ t_Table pTable;
 #define alpha mccgeks_16_alpha
 #define m mccgeks_16_m
 #define W mccgeks_16_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12212 "./octa_ell_n.c"
@@ -12246,7 +12246,7 @@ t_Table pTable;
 #define alpha mccgeks_17_alpha
 #define m mccgeks_17_m
 #define W mccgeks_17_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12252 "./octa_ell_n.c"
@@ -12286,7 +12286,7 @@ t_Table pTable;
 #define alpha mccgeks_18_alpha
 #define m mccgeks_18_m
 #define W mccgeks_18_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12292 "./octa_ell_n.c"
@@ -12326,7 +12326,7 @@ t_Table pTable;
 #define alpha mccgeks_19_alpha
 #define m mccgeks_19_m
 #define W mccgeks_19_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12332 "./octa_ell_n.c"
@@ -12366,7 +12366,7 @@ t_Table pTable;
 #define alpha mccgeks_20_alpha
 #define m mccgeks_20_m
 #define W mccgeks_20_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12372 "./octa_ell_n.c"
@@ -12406,7 +12406,7 @@ t_Table pTable;
 #define alpha mccgeks_21_alpha
 #define m mccgeks_21_m
 #define W mccgeks_21_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12412 "./octa_ell_n.c"
@@ -12446,7 +12446,7 @@ t_Table pTable;
 #define alpha mccgeks_22_alpha
 #define m mccgeks_22_m
 #define W mccgeks_22_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12452 "./octa_ell_n.c"
@@ -12486,7 +12486,7 @@ t_Table pTable;
 #define alpha mccgeks_23_alpha
 #define m mccgeks_23_m
 #define W mccgeks_23_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12492 "./octa_ell_n.c"
@@ -12526,7 +12526,7 @@ t_Table pTable;
 #define alpha mccgeks_24_alpha
 #define m mccgeks_24_m
 #define W mccgeks_24_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12532 "./octa_ell_n.c"
@@ -12566,7 +12566,7 @@ t_Table pTable;
 #define alpha mccgeks_25_alpha
 #define m mccgeks_25_m
 #define W mccgeks_25_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12572 "./octa_ell_n.c"
@@ -12606,7 +12606,7 @@ t_Table pTable;
 #define alpha mccgeks_26_alpha
 #define m mccgeks_26_m
 #define W mccgeks_26_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12612 "./octa_ell_n.c"
@@ -12646,7 +12646,7 @@ t_Table pTable;
 #define alpha mccgeks_27_alpha
 #define m mccgeks_27_m
 #define W mccgeks_27_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12652 "./octa_ell_n.c"
@@ -12686,7 +12686,7 @@ t_Table pTable;
 #define alpha mccgeks_28_alpha
 #define m mccgeks_28_m
 #define W mccgeks_28_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12692 "./octa_ell_n.c"
@@ -12726,7 +12726,7 @@ t_Table pTable;
 #define alpha mccgeks_29_alpha
 #define m mccgeks_29_m
 #define W mccgeks_29_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12732 "./octa_ell_n.c"
@@ -12766,7 +12766,7 @@ t_Table pTable;
 #define alpha mccgeks_30_alpha
 #define m mccgeks_30_m
 #define W mccgeks_30_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12772 "./octa_ell_n.c"
@@ -12806,7 +12806,7 @@ t_Table pTable;
 #define alpha mccgeks_31_alpha
 #define m mccgeks_31_m
 #define W mccgeks_31_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12812 "./octa_ell_n.c"
@@ -12846,7 +12846,7 @@ t_Table pTable;
 #define alpha mccgeks_32_alpha
 #define m mccgeks_32_m
 #define W mccgeks_32_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12852 "./octa_ell_n.c"
@@ -12886,7 +12886,7 @@ t_Table pTable;
 #define alpha mccgeks_33_alpha
 #define m mccgeks_33_m
 #define W mccgeks_33_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12892 "./octa_ell_n.c"
@@ -12926,7 +12926,7 @@ t_Table pTable;
 #define alpha mccgeks_34_alpha
 #define m mccgeks_34_m
 #define W mccgeks_34_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12932 "./octa_ell_n.c"
@@ -12966,7 +12966,7 @@ t_Table pTable;
 #define alpha mccgeks_35_alpha
 #define m mccgeks_35_m
 #define W mccgeks_35_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 12972 "./octa_ell_n.c"
@@ -13006,7 +13006,7 @@ t_Table pTable;
 #define alpha mccgeks_36_alpha
 #define m mccgeks_36_m
 #define W mccgeks_36_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13012 "./octa_ell_n.c"
@@ -13046,7 +13046,7 @@ t_Table pTable;
 #define alpha mccgeks_37_alpha
 #define m mccgeks_37_m
 #define W mccgeks_37_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13052 "./octa_ell_n.c"
@@ -13086,7 +13086,7 @@ t_Table pTable;
 #define alpha mccgeks_38_alpha
 #define m mccgeks_38_m
 #define W mccgeks_38_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13092 "./octa_ell_n.c"
@@ -13126,7 +13126,7 @@ t_Table pTable;
 #define alpha mccgeks_39_alpha
 #define m mccgeks_39_m
 #define W mccgeks_39_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13132 "./octa_ell_n.c"
@@ -13166,7 +13166,7 @@ t_Table pTable;
 #define alpha mccgeks_40_alpha
 #define m mccgeks_40_m
 #define W mccgeks_40_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13172 "./octa_ell_n.c"
@@ -13206,7 +13206,7 @@ t_Table pTable;
 #define alpha mccgeks_41_alpha
 #define m mccgeks_41_m
 #define W mccgeks_41_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13212 "./octa_ell_n.c"
@@ -13246,7 +13246,7 @@ t_Table pTable;
 #define alpha mccgeks_42_alpha
 #define m mccgeks_42_m
 #define W mccgeks_42_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13252 "./octa_ell_n.c"
@@ -13286,7 +13286,7 @@ t_Table pTable;
 #define alpha mccgeks_43_alpha
 #define m mccgeks_43_m
 #define W mccgeks_43_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13292 "./octa_ell_n.c"
@@ -13326,7 +13326,7 @@ t_Table pTable;
 #define alpha mccgeks_44_alpha
 #define m mccgeks_44_m
 #define W mccgeks_44_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13332 "./octa_ell_n.c"
@@ -13366,7 +13366,7 @@ t_Table pTable;
 #define alpha mccgeks_45_alpha
 #define m mccgeks_45_m
 #define W mccgeks_45_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13372 "./octa_ell_n.c"
@@ -13406,7 +13406,7 @@ t_Table pTable;
 #define alpha mccgeks_46_alpha
 #define m mccgeks_46_m
 #define W mccgeks_46_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13412 "./octa_ell_n.c"
@@ -13446,7 +13446,7 @@ t_Table pTable;
 #define alpha mccgeks_47_alpha
 #define m mccgeks_47_m
 #define W mccgeks_47_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13452 "./octa_ell_n.c"
@@ -13486,7 +13486,7 @@ t_Table pTable;
 #define alpha mccgeks_48_alpha
 #define m mccgeks_48_m
 #define W mccgeks_48_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13492 "./octa_ell_n.c"
@@ -13526,7 +13526,7 @@ t_Table pTable;
 #define alpha mccgeks_49_alpha
 #define m mccgeks_49_m
 #define W mccgeks_49_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13532 "./octa_ell_n.c"
@@ -13566,7 +13566,7 @@ t_Table pTable;
 #define alpha mccgeks_50_alpha
 #define m mccgeks_50_m
 #define W mccgeks_50_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13572 "./octa_ell_n.c"
@@ -13606,7 +13606,7 @@ t_Table pTable;
 #define alpha mccgeks_51_alpha
 #define m mccgeks_51_m
 #define W mccgeks_51_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13612 "./octa_ell_n.c"
@@ -13646,7 +13646,7 @@ t_Table pTable;
 #define alpha mccgeks_52_alpha
 #define m mccgeks_52_m
 #define W mccgeks_52_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13652 "./octa_ell_n.c"
@@ -13686,7 +13686,7 @@ t_Table pTable;
 #define alpha mccgeks_53_alpha
 #define m mccgeks_53_m
 #define W mccgeks_53_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13692 "./octa_ell_n.c"
@@ -13726,7 +13726,7 @@ t_Table pTable;
 #define alpha mccgeks_54_alpha
 #define m mccgeks_54_m
 #define W mccgeks_54_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13732 "./octa_ell_n.c"
@@ -13766,7 +13766,7 @@ t_Table pTable;
 #define alpha mccgeks_55_alpha
 #define m mccgeks_55_m
 #define W mccgeks_55_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13772 "./octa_ell_n.c"
@@ -13806,7 +13806,7 @@ t_Table pTable;
 #define alpha mccgeks_56_alpha
 #define m mccgeks_56_m
 #define W mccgeks_56_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13812 "./octa_ell_n.c"
@@ -13846,7 +13846,7 @@ t_Table pTable;
 #define alpha mccgeks_57_alpha
 #define m mccgeks_57_m
 #define W mccgeks_57_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13852 "./octa_ell_n.c"
@@ -13886,7 +13886,7 @@ t_Table pTable;
 #define alpha mccgeks_58_alpha
 #define m mccgeks_58_m
 #define W mccgeks_58_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13892 "./octa_ell_n.c"
@@ -13926,7 +13926,7 @@ t_Table pTable;
 #define alpha mccgeks_59_alpha
 #define m mccgeks_59_m
 #define W mccgeks_59_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13932 "./octa_ell_n.c"
@@ -13966,7 +13966,7 @@ t_Table pTable;
 #define alpha mccgeks_60_alpha
 #define m mccgeks_60_m
 #define W mccgeks_60_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 13972 "./octa_ell_n.c"
@@ -14006,7 +14006,7 @@ t_Table pTable;
 #define alpha mccgeks_61_alpha
 #define m mccgeks_61_m
 #define W mccgeks_61_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14012 "./octa_ell_n.c"
@@ -14046,7 +14046,7 @@ t_Table pTable;
 #define alpha mccgeks_62_alpha
 #define m mccgeks_62_m
 #define W mccgeks_62_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14052 "./octa_ell_n.c"
@@ -14086,7 +14086,7 @@ t_Table pTable;
 #define alpha mccgeks_63_alpha
 #define m mccgeks_63_m
 #define W mccgeks_63_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14092 "./octa_ell_n.c"
@@ -14126,7 +14126,7 @@ t_Table pTable;
 #define alpha mccgeks_64_alpha
 #define m mccgeks_64_m
 #define W mccgeks_64_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14132 "./octa_ell_n.c"
@@ -14166,7 +14166,7 @@ t_Table pTable;
 #define alpha mccgeks_65_alpha
 #define m mccgeks_65_m
 #define W mccgeks_65_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14172 "./octa_ell_n.c"
@@ -14206,7 +14206,7 @@ t_Table pTable;
 #define alpha mccgeks_66_alpha
 #define m mccgeks_66_m
 #define W mccgeks_66_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14212 "./octa_ell_n.c"
@@ -14246,7 +14246,7 @@ t_Table pTable;
 #define alpha mccgeks_67_alpha
 #define m mccgeks_67_m
 #define W mccgeks_67_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14252 "./octa_ell_n.c"
@@ -14286,7 +14286,7 @@ t_Table pTable;
 #define alpha mccgeks_68_alpha
 #define m mccgeks_68_m
 #define W mccgeks_68_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14292 "./octa_ell_n.c"
@@ -14326,7 +14326,7 @@ t_Table pTable;
 #define alpha mccgeks_69_alpha
 #define m mccgeks_69_m
 #define W mccgeks_69_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14332 "./octa_ell_n.c"
@@ -14366,7 +14366,7 @@ t_Table pTable;
 #define alpha mccgeks_70_alpha
 #define m mccgeks_70_m
 #define W mccgeks_70_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14372 "./octa_ell_n.c"
@@ -14406,7 +14406,7 @@ t_Table pTable;
 #define alpha mccgeks_71_alpha
 #define m mccgeks_71_m
 #define W mccgeks_71_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14412 "./octa_ell_n.c"
@@ -14446,7 +14446,7 @@ t_Table pTable;
 #define alpha mccgeks_72_alpha
 #define m mccgeks_72_m
 #define W mccgeks_72_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14452 "./octa_ell_n.c"
@@ -14486,7 +14486,7 @@ t_Table pTable;
 #define alpha mccgeks_73_alpha
 #define m mccgeks_73_m
 #define W mccgeks_73_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14492 "./octa_ell_n.c"
@@ -14526,7 +14526,7 @@ t_Table pTable;
 #define alpha mccgeks_74_alpha
 #define m mccgeks_74_m
 #define W mccgeks_74_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14532 "./octa_ell_n.c"
@@ -14566,7 +14566,7 @@ t_Table pTable;
 #define alpha mccgeks_75_alpha
 #define m mccgeks_75_m
 #define W mccgeks_75_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14572 "./octa_ell_n.c"
@@ -14606,7 +14606,7 @@ t_Table pTable;
 #define alpha mccgeks_76_alpha
 #define m mccgeks_76_m
 #define W mccgeks_76_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14612 "./octa_ell_n.c"
@@ -14646,7 +14646,7 @@ t_Table pTable;
 #define alpha mccgeks_77_alpha
 #define m mccgeks_77_m
 #define W mccgeks_77_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14652 "./octa_ell_n.c"
@@ -14686,7 +14686,7 @@ t_Table pTable;
 #define alpha mccgeks_78_alpha
 #define m mccgeks_78_m
 #define W mccgeks_78_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14692 "./octa_ell_n.c"
@@ -14726,7 +14726,7 @@ t_Table pTable;
 #define alpha mccgeks_79_alpha
 #define m mccgeks_79_m
 #define W mccgeks_79_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14732 "./octa_ell_n.c"
@@ -14766,7 +14766,7 @@ t_Table pTable;
 #define alpha mccgeks_80_alpha
 #define m mccgeks_80_m
 #define W mccgeks_80_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14772 "./octa_ell_n.c"
@@ -14806,7 +14806,7 @@ t_Table pTable;
 #define alpha mccgeks_81_alpha
 #define m mccgeks_81_m
 #define W mccgeks_81_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14812 "./octa_ell_n.c"
@@ -14846,7 +14846,7 @@ t_Table pTable;
 #define alpha mccgeks_82_alpha
 #define m mccgeks_82_m
 #define W mccgeks_82_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14852 "./octa_ell_n.c"
@@ -14886,7 +14886,7 @@ t_Table pTable;
 #define alpha mccgeks_83_alpha
 #define m mccgeks_83_m
 #define W mccgeks_83_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14892 "./octa_ell_n.c"
@@ -14926,7 +14926,7 @@ t_Table pTable;
 #define alpha mccgeks_84_alpha
 #define m mccgeks_84_m
 #define W mccgeks_84_W
-#line 95 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 95 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 off_struct offdata;
 t_Table pTable;
 #line 14932 "./octa_ell_n.c"
@@ -14980,7 +14980,7 @@ t_Table pTable;
 #define username2 mccOcto_large_username2
 #define username3 mccOcto_large_username3
 #define nowritefile mccOcto_large_nowritefile
-#line 223 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 223 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
   MonitornD_Defines_type DEFS;
   MonitornD_Variables_type Vars;
   MCDETECTOR detector;
@@ -15050,7 +15050,7 @@ t_Table pTable;
 #define username2 mccOcto_small_username2
 #define username3 mccOcto_small_username3
 #define nowritefile mccOcto_small_nowritefile
-#line 223 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 223 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
   MonitornD_Defines_type DEFS;
   MonitornD_Variables_type Vars;
   MCDETECTOR detector;
@@ -15088,39 +15088,39 @@ t_Table pTable;
 #undef mccompcurtype
 #undef mccompcurindex
 
-/* User declarations for component 'Octo_small222' [87]. */
-#define mccompcurname  Octo_small222
+/* User declarations for component 'Octo_small2' [87]. */
+#define mccompcurname  Octo_small2
 #define mccompcurtype  Monitor_nD
 #define mccompcurindex 87
-#define user1 mccOcto_small222_user1
-#define user2 mccOcto_small222_user2
-#define user3 mccOcto_small222_user3
-#define DEFS mccOcto_small222_DEFS
-#define Vars mccOcto_small222_Vars
-#define detector mccOcto_small222_detector
-#define offdata mccOcto_small222_offdata
-#define xwidth mccOcto_small222_xwidth
-#define yheight mccOcto_small222_yheight
-#define zdepth mccOcto_small222_zdepth
-#define xmin mccOcto_small222_xmin
-#define xmax mccOcto_small222_xmax
-#define ymin mccOcto_small222_ymin
-#define ymax mccOcto_small222_ymax
-#define zmin mccOcto_small222_zmin
-#define zmax mccOcto_small222_zmax
-#define bins mccOcto_small222_bins
-#define min mccOcto_small222_min
-#define max mccOcto_small222_max
-#define restore_neutron mccOcto_small222_restore_neutron
-#define radius mccOcto_small222_radius
-#define options mccOcto_small222_options
-#define filename mccOcto_small222_filename
-#define geometry mccOcto_small222_geometry
-#define username1 mccOcto_small222_username1
-#define username2 mccOcto_small222_username2
-#define username3 mccOcto_small222_username3
-#define nowritefile mccOcto_small222_nowritefile
-#line 223 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#define user1 mccOcto_small2_user1
+#define user2 mccOcto_small2_user2
+#define user3 mccOcto_small2_user3
+#define DEFS mccOcto_small2_DEFS
+#define Vars mccOcto_small2_Vars
+#define detector mccOcto_small2_detector
+#define offdata mccOcto_small2_offdata
+#define xwidth mccOcto_small2_xwidth
+#define yheight mccOcto_small2_yheight
+#define zdepth mccOcto_small2_zdepth
+#define xmin mccOcto_small2_xmin
+#define xmax mccOcto_small2_xmax
+#define ymin mccOcto_small2_ymin
+#define ymax mccOcto_small2_ymax
+#define zmin mccOcto_small2_zmin
+#define zmax mccOcto_small2_zmax
+#define bins mccOcto_small2_bins
+#define min mccOcto_small2_min
+#define max mccOcto_small2_max
+#define restore_neutron mccOcto_small2_restore_neutron
+#define radius mccOcto_small2_radius
+#define options mccOcto_small2_options
+#define filename mccOcto_small2_filename
+#define geometry mccOcto_small2_geometry
+#define username1 mccOcto_small2_username1
+#define username2 mccOcto_small2_username2
+#define username3 mccOcto_small2_username3
+#define nowritefile mccOcto_small2_nowritefile
+#line 223 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
   MonitornD_Defines_type DEFS;
   MonitornD_Variables_type Vars;
   MCDETECTOR detector;
@@ -15330,8 +15330,8 @@ Coords mcposaOcto_large, mcposrOcto_large;
 Rotation mcrotaOcto_large, mcrotrOcto_large;
 Coords mcposaOcto_small, mcposrOcto_small;
 Rotation mcrotaOcto_small, mcrotrOcto_small;
-Coords mcposaOcto_small222, mcposrOcto_small222;
-Rotation mcrotaOcto_small222, mcrotrOcto_small222;
+Coords mcposaOcto_small2, mcposrOcto_small2;
+Rotation mcrotaOcto_small2, mcrotrOcto_small2;
 
 MCNUM mcnx, mcny, mcnz, mcnvx, mcnvy, mcnvz, mcnt, mcnsx, mcnsy, mcnsz, mcnp;
 
@@ -19935,62 +19935,62 @@ source_lambda_max = lambda+0.1;
   mccomp_posr[86] = mcposrOcto_small;
   mcNCounter[86]  = mcPCounter[86] = mcP2Counter[86] = 0;
   mcAbsorbProp[86]= 0;
-    /* Component Octo_small222. */
-  /* Setting parameters for component Octo_small222. */
-  SIG_MESSAGE("Octo_small222 (Init:SetPar)");
+    /* Component Octo_small2. */
+  /* Setting parameters for component Octo_small2. */
+  SIG_MESSAGE("Octo_small2 (Init:SetPar)");
 #line 577 "octa_ell_n.instr"
-  mccOcto_small222_xwidth = 1;
+  mccOcto_small2_xwidth = 1;
 #line 577 "octa_ell_n.instr"
-  mccOcto_small222_yheight = 1;
+  mccOcto_small2_yheight = 1;
 #line 201 "octa_ell_n.instr"
-  mccOcto_small222_zdepth = 0;
+  mccOcto_small2_zdepth = 0;
 #line 202 "octa_ell_n.instr"
-  mccOcto_small222_xmin = 0;
+  mccOcto_small2_xmin = 0;
 #line 202 "octa_ell_n.instr"
-  mccOcto_small222_xmax = 0;
+  mccOcto_small2_xmax = 0;
 #line 202 "octa_ell_n.instr"
-  mccOcto_small222_ymin = 0;
+  mccOcto_small2_ymin = 0;
 #line 202 "octa_ell_n.instr"
-  mccOcto_small222_ymax = 0;
+  mccOcto_small2_ymax = 0;
 #line 202 "octa_ell_n.instr"
-  mccOcto_small222_zmin = 0;
+  mccOcto_small2_zmin = 0;
 #line 202 "octa_ell_n.instr"
-  mccOcto_small222_zmax = 0;
+  mccOcto_small2_zmax = 0;
 #line 577 "octa_ell_n.instr"
-  mccOcto_small222_bins = 100;
+  mccOcto_small2_bins = 100;
 #line 203 "octa_ell_n.instr"
-  mccOcto_small222_min = -1e40;
+  mccOcto_small2_min = -1e40;
 #line 203 "octa_ell_n.instr"
-  mccOcto_small222_max = 1e40;
+  mccOcto_small2_max = 1e40;
 #line 203 "octa_ell_n.instr"
-  mccOcto_small222_restore_neutron = 0;
+  mccOcto_small2_restore_neutron = 0;
 #line 203 "octa_ell_n.instr"
-  mccOcto_small222_radius = 0;
+  mccOcto_small2_radius = 0;
 #line 577 "octa_ell_n.instr"
-  if("x y") strncpy(mccOcto_small222_options, "x y" ? "x y" : "", 16384); else mccOcto_small222_options[0]='\0';
+  if("dy limits = [0 0.3]") strncpy(mccOcto_small2_options, "dy limits = [0 0.3]" ? "dy limits = [0 0.3]" : "", 16384); else mccOcto_small2_options[0]='\0';
 #line 204 "octa_ell_n.instr"
-  if("NULL") strncpy(mccOcto_small222_filename, "NULL" ? "NULL" : "", 16384); else mccOcto_small222_filename[0]='\0';
+  if("NULL") strncpy(mccOcto_small2_filename, "NULL" ? "NULL" : "", 16384); else mccOcto_small2_filename[0]='\0';
 #line 204 "octa_ell_n.instr"
-  if("NULL") strncpy(mccOcto_small222_geometry, "NULL" ? "NULL" : "", 16384); else mccOcto_small222_geometry[0]='\0';
+  if("NULL") strncpy(mccOcto_small2_geometry, "NULL" ? "NULL" : "", 16384); else mccOcto_small2_geometry[0]='\0';
 #line 205 "octa_ell_n.instr"
-  if("NULL") strncpy(mccOcto_small222_username1, "NULL" ? "NULL" : "", 16384); else mccOcto_small222_username1[0]='\0';
+  if("NULL") strncpy(mccOcto_small2_username1, "NULL" ? "NULL" : "", 16384); else mccOcto_small2_username1[0]='\0';
 #line 205 "octa_ell_n.instr"
-  if("NULL") strncpy(mccOcto_small222_username2, "NULL" ? "NULL" : "", 16384); else mccOcto_small222_username2[0]='\0';
+  if("NULL") strncpy(mccOcto_small2_username2, "NULL" ? "NULL" : "", 16384); else mccOcto_small2_username2[0]='\0';
 #line 205 "octa_ell_n.instr"
-  if("NULL") strncpy(mccOcto_small222_username3, "NULL" ? "NULL" : "", 16384); else mccOcto_small222_username3[0]='\0';
+  if("NULL") strncpy(mccOcto_small2_username3, "NULL" ? "NULL" : "", 16384); else mccOcto_small2_username3[0]='\0';
 #line 206 "octa_ell_n.instr"
-  mccOcto_small222_nowritefile = 0;
+  mccOcto_small2_nowritefile = 0;
 #line 19983 "./octa_ell_n.c"
 
-  SIG_MESSAGE("Octo_small222 (Init:Place/Rotate)");
+  SIG_MESSAGE("Octo_small2 (Init:Place/Rotate)");
   rot_set_rotation(mctr1,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
 #line 19990 "./octa_ell_n.c"
-  rot_mul(mctr1, mcrotaOcto_small, mcrotaOcto_small222);
+  rot_mul(mctr1, mcrotaOcto_small, mcrotaOcto_small2);
   rot_transpose(mcrotaOcto_small, mctr1);
-  rot_mul(mcrotaOcto_small222, mctr1, mcrotrOcto_small222);
+  rot_mul(mcrotaOcto_small2, mctr1, mcrotrOcto_small2);
   mctc1 = coords_set(
 #line 578 "octa_ell_n.instr"
     0,
@@ -20001,12 +20001,12 @@ source_lambda_max = lambda+0.1;
 #line 20001 "./octa_ell_n.c"
   rot_transpose(mcrotaOcto_small, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
-  mcposaOcto_small222 = coords_add(mcposaOcto_small, mctc2);
-  mctc1 = coords_sub(mcposaOcto_small, mcposaOcto_small222);
-  mcposrOcto_small222 = rot_apply(mcrotaOcto_small222, mctc1);
-  mcDEBUG_COMPONENT("Octo_small222", mcposaOcto_small222, mcrotaOcto_small222)
-  mccomp_posa[87] = mcposaOcto_small222;
-  mccomp_posr[87] = mcposrOcto_small222;
+  mcposaOcto_small2 = coords_add(mcposaOcto_small, mctc2);
+  mctc1 = coords_sub(mcposaOcto_small, mcposaOcto_small2);
+  mcposrOcto_small2 = rot_apply(mcrotaOcto_small2, mctc1);
+  mcDEBUG_COMPONENT("Octo_small2", mcposaOcto_small2, mcrotaOcto_small2)
+  mccomp_posa[87] = mcposaOcto_small2;
+  mccomp_posr[87] = mcposrOcto_small2;
   mcNCounter[87]  = mcPCounter[87] = mcP2Counter[87] = 0;
   mcAbsorbProp[87]= 0;
   /* Component initializations. */
@@ -20023,7 +20023,7 @@ source_lambda_max = lambda+0.1;
 #define percent mccOrigin_percent
 #define flag_save mccOrigin_flag_save
 #define minutes mccOrigin_minutes
-#line 57 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
+#line 57 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
 {
 IntermediateCnts=0;
 StartTime=0;
@@ -20100,7 +20100,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define I3 mccH3_I3
 #define zdepth mccH3_zdepth
 #define target_index mccH3_target_index
-#line 206 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
+#line 206 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
 {
   pTable_xsum=0;
   pTable_ysum=0;
@@ -20468,7 +20468,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define nu mccGuide_bunker_straight_nu
 #define phase mccGuide_bunker_straight_phase
 #define reflect mccGuide_bunker_straight_reflect
-#line 339 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
+#line 339 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
 {
   double Gx=0, Gy=-GRAVITY, Gz=0;
   Coords mcLocG;
@@ -20583,7 +20583,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_alpha
 #define m mccgeks_m
 #define W mccgeks_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20634,7 +20634,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_7_alpha
 #define m mccgeks_7_m
 #define W mccgeks_7_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20685,7 +20685,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_8_alpha
 #define m mccgeks_8_m
 #define W mccgeks_8_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20736,7 +20736,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_9_alpha
 #define m mccgeks_9_m
 #define W mccgeks_9_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20787,7 +20787,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_10_alpha
 #define m mccgeks_10_m
 #define W mccgeks_10_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20838,7 +20838,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_11_alpha
 #define m mccgeks_11_m
 #define W mccgeks_11_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20889,7 +20889,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_12_alpha
 #define m mccgeks_12_m
 #define W mccgeks_12_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20940,7 +20940,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_13_alpha
 #define m mccgeks_13_m
 #define W mccgeks_13_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -20991,7 +20991,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_14_alpha
 #define m mccgeks_14_m
 #define W mccgeks_14_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21042,7 +21042,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_15_alpha
 #define m mccgeks_15_m
 #define W mccgeks_15_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21093,7 +21093,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_16_alpha
 #define m mccgeks_16_m
 #define W mccgeks_16_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21144,7 +21144,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_17_alpha
 #define m mccgeks_17_m
 #define W mccgeks_17_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21195,7 +21195,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_18_alpha
 #define m mccgeks_18_m
 #define W mccgeks_18_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21246,7 +21246,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_19_alpha
 #define m mccgeks_19_m
 #define W mccgeks_19_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21297,7 +21297,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_20_alpha
 #define m mccgeks_20_m
 #define W mccgeks_20_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21348,7 +21348,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_21_alpha
 #define m mccgeks_21_m
 #define W mccgeks_21_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21399,7 +21399,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_22_alpha
 #define m mccgeks_22_m
 #define W mccgeks_22_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21450,7 +21450,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_23_alpha
 #define m mccgeks_23_m
 #define W mccgeks_23_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21501,7 +21501,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_24_alpha
 #define m mccgeks_24_m
 #define W mccgeks_24_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21552,7 +21552,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_25_alpha
 #define m mccgeks_25_m
 #define W mccgeks_25_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21603,7 +21603,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_26_alpha
 #define m mccgeks_26_m
 #define W mccgeks_26_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21654,7 +21654,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_27_alpha
 #define m mccgeks_27_m
 #define W mccgeks_27_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21705,7 +21705,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_28_alpha
 #define m mccgeks_28_m
 #define W mccgeks_28_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21756,7 +21756,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_29_alpha
 #define m mccgeks_29_m
 #define W mccgeks_29_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21807,7 +21807,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_30_alpha
 #define m mccgeks_30_m
 #define W mccgeks_30_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21858,7 +21858,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_31_alpha
 #define m mccgeks_31_m
 #define W mccgeks_31_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21909,7 +21909,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_32_alpha
 #define m mccgeks_32_m
 #define W mccgeks_32_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -21960,7 +21960,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_33_alpha
 #define m mccgeks_33_m
 #define W mccgeks_33_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22011,7 +22011,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_34_alpha
 #define m mccgeks_34_m
 #define W mccgeks_34_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22062,7 +22062,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_35_alpha
 #define m mccgeks_35_m
 #define W mccgeks_35_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22113,7 +22113,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_36_alpha
 #define m mccgeks_36_m
 #define W mccgeks_36_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22164,7 +22164,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_37_alpha
 #define m mccgeks_37_m
 #define W mccgeks_37_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22215,7 +22215,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_38_alpha
 #define m mccgeks_38_m
 #define W mccgeks_38_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22266,7 +22266,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_39_alpha
 #define m mccgeks_39_m
 #define W mccgeks_39_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22317,7 +22317,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_40_alpha
 #define m mccgeks_40_m
 #define W mccgeks_40_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22368,7 +22368,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_41_alpha
 #define m mccgeks_41_m
 #define W mccgeks_41_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22419,7 +22419,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_42_alpha
 #define m mccgeks_42_m
 #define W mccgeks_42_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22470,7 +22470,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_43_alpha
 #define m mccgeks_43_m
 #define W mccgeks_43_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22521,7 +22521,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_44_alpha
 #define m mccgeks_44_m
 #define W mccgeks_44_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22572,7 +22572,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_45_alpha
 #define m mccgeks_45_m
 #define W mccgeks_45_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22623,7 +22623,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_46_alpha
 #define m mccgeks_46_m
 #define W mccgeks_46_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22674,7 +22674,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_47_alpha
 #define m mccgeks_47_m
 #define W mccgeks_47_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22725,7 +22725,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_48_alpha
 #define m mccgeks_48_m
 #define W mccgeks_48_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22776,7 +22776,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_49_alpha
 #define m mccgeks_49_m
 #define W mccgeks_49_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22827,7 +22827,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_50_alpha
 #define m mccgeks_50_m
 #define W mccgeks_50_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22878,7 +22878,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_51_alpha
 #define m mccgeks_51_m
 #define W mccgeks_51_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22929,7 +22929,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_52_alpha
 #define m mccgeks_52_m
 #define W mccgeks_52_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -22980,7 +22980,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_53_alpha
 #define m mccgeks_53_m
 #define W mccgeks_53_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23031,7 +23031,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_54_alpha
 #define m mccgeks_54_m
 #define W mccgeks_54_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23082,7 +23082,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_55_alpha
 #define m mccgeks_55_m
 #define W mccgeks_55_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23133,7 +23133,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_56_alpha
 #define m mccgeks_56_m
 #define W mccgeks_56_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23184,7 +23184,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_57_alpha
 #define m mccgeks_57_m
 #define W mccgeks_57_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23235,7 +23235,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_58_alpha
 #define m mccgeks_58_m
 #define W mccgeks_58_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23286,7 +23286,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_59_alpha
 #define m mccgeks_59_m
 #define W mccgeks_59_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23337,7 +23337,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_60_alpha
 #define m mccgeks_60_m
 #define W mccgeks_60_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23388,7 +23388,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_61_alpha
 #define m mccgeks_61_m
 #define W mccgeks_61_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23439,7 +23439,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_62_alpha
 #define m mccgeks_62_m
 #define W mccgeks_62_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23490,7 +23490,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_63_alpha
 #define m mccgeks_63_m
 #define W mccgeks_63_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23541,7 +23541,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_64_alpha
 #define m mccgeks_64_m
 #define W mccgeks_64_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23592,7 +23592,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_65_alpha
 #define m mccgeks_65_m
 #define W mccgeks_65_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23643,7 +23643,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_66_alpha
 #define m mccgeks_66_m
 #define W mccgeks_66_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23694,7 +23694,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_67_alpha
 #define m mccgeks_67_m
 #define W mccgeks_67_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23745,7 +23745,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_68_alpha
 #define m mccgeks_68_m
 #define W mccgeks_68_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23796,7 +23796,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_69_alpha
 #define m mccgeks_69_m
 #define W mccgeks_69_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23847,7 +23847,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_70_alpha
 #define m mccgeks_70_m
 #define W mccgeks_70_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23898,7 +23898,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_71_alpha
 #define m mccgeks_71_m
 #define W mccgeks_71_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -23949,7 +23949,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_72_alpha
 #define m mccgeks_72_m
 #define W mccgeks_72_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24000,7 +24000,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_73_alpha
 #define m mccgeks_73_m
 #define W mccgeks_73_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24051,7 +24051,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_74_alpha
 #define m mccgeks_74_m
 #define W mccgeks_74_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24102,7 +24102,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_75_alpha
 #define m mccgeks_75_m
 #define W mccgeks_75_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24153,7 +24153,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_76_alpha
 #define m mccgeks_76_m
 #define W mccgeks_76_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24204,7 +24204,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_77_alpha
 #define m mccgeks_77_m
 #define W mccgeks_77_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24255,7 +24255,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_78_alpha
 #define m mccgeks_78_m
 #define W mccgeks_78_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24306,7 +24306,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_79_alpha
 #define m mccgeks_79_m
 #define W mccgeks_79_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24357,7 +24357,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_80_alpha
 #define m mccgeks_80_m
 #define W mccgeks_80_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24408,7 +24408,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_81_alpha
 #define m mccgeks_81_m
 #define W mccgeks_81_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24459,7 +24459,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_82_alpha
 #define m mccgeks_82_m
 #define W mccgeks_82_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24510,7 +24510,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_83_alpha
 #define m mccgeks_83_m
 #define W mccgeks_83_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24561,7 +24561,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define alpha mccgeks_84_alpha
 #define m mccgeks_84_m
 #define W mccgeks_84_W
-#line 100 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 100 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
 /* initialize OFF object from the file(s) */
   if (!off_init( geometry, xwidth, yheight, zdepth, !center, &offdata )) exit(-1);
@@ -24626,7 +24626,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
 #define username2 mccOcto_large_username2
 #define username3 mccOcto_large_username3
 #define nowritefile mccOcto_large_nowritefile
-#line 230 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 230 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   char tmp[CHAR_BUF_LENGTH];
   strcpy(Vars.compcurname, NAME_CURRENT_COMP);
@@ -24771,7 +24771,7 @@ MPI_MASTER(
 #define username2 mccOcto_small_username2
 #define username3 mccOcto_small_username3
 #define nowritefile mccOcto_small_nowritefile
-#line 230 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 230 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   char tmp[CHAR_BUF_LENGTH];
   strcpy(Vars.compcurname, NAME_CURRENT_COMP);
@@ -24883,40 +24883,40 @@ MPI_MASTER(
 #undef mccompcurtype
 #undef mccompcurindex
 
-  /* Initializations for component Octo_small222. */
-  SIG_MESSAGE("Octo_small222 (Init)");
-#define mccompcurname  Octo_small222
+  /* Initializations for component Octo_small2. */
+  SIG_MESSAGE("Octo_small2 (Init)");
+#define mccompcurname  Octo_small2
 #define mccompcurtype  Monitor_nD
 #define mccompcurindex 87
-#define user1 mccOcto_small222_user1
-#define user2 mccOcto_small222_user2
-#define user3 mccOcto_small222_user3
-#define DEFS mccOcto_small222_DEFS
-#define Vars mccOcto_small222_Vars
-#define detector mccOcto_small222_detector
-#define offdata mccOcto_small222_offdata
-#define xwidth mccOcto_small222_xwidth
-#define yheight mccOcto_small222_yheight
-#define zdepth mccOcto_small222_zdepth
-#define xmin mccOcto_small222_xmin
-#define xmax mccOcto_small222_xmax
-#define ymin mccOcto_small222_ymin
-#define ymax mccOcto_small222_ymax
-#define zmin mccOcto_small222_zmin
-#define zmax mccOcto_small222_zmax
-#define bins mccOcto_small222_bins
-#define min mccOcto_small222_min
-#define max mccOcto_small222_max
-#define restore_neutron mccOcto_small222_restore_neutron
-#define radius mccOcto_small222_radius
-#define options mccOcto_small222_options
-#define filename mccOcto_small222_filename
-#define geometry mccOcto_small222_geometry
-#define username1 mccOcto_small222_username1
-#define username2 mccOcto_small222_username2
-#define username3 mccOcto_small222_username3
-#define nowritefile mccOcto_small222_nowritefile
-#line 230 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#define user1 mccOcto_small2_user1
+#define user2 mccOcto_small2_user2
+#define user3 mccOcto_small2_user3
+#define DEFS mccOcto_small2_DEFS
+#define Vars mccOcto_small2_Vars
+#define detector mccOcto_small2_detector
+#define offdata mccOcto_small2_offdata
+#define xwidth mccOcto_small2_xwidth
+#define yheight mccOcto_small2_yheight
+#define zdepth mccOcto_small2_zdepth
+#define xmin mccOcto_small2_xmin
+#define xmax mccOcto_small2_xmax
+#define ymin mccOcto_small2_ymin
+#define ymax mccOcto_small2_ymax
+#define zmin mccOcto_small2_zmin
+#define zmax mccOcto_small2_zmax
+#define bins mccOcto_small2_bins
+#define min mccOcto_small2_min
+#define max mccOcto_small2_max
+#define restore_neutron mccOcto_small2_restore_neutron
+#define radius mccOcto_small2_radius
+#define options mccOcto_small2_options
+#define filename mccOcto_small2_filename
+#define geometry mccOcto_small2_geometry
+#define username1 mccOcto_small2_username1
+#define username2 mccOcto_small2_username2
+#define username3 mccOcto_small2_username3
+#define nowritefile mccOcto_small2_nowritefile
+#line 230 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   char tmp[CHAR_BUF_LENGTH];
   strcpy(Vars.compcurname, NAME_CURRENT_COMP);
@@ -25137,7 +25137,7 @@ char* profile = mccOrigin_profile;
 MCNUM percent = mccOrigin_percent;
 MCNUM flag_save = mccOrigin_flag_save;
 MCNUM minutes = mccOrigin_minutes;
-#line 70 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
+#line 70 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
 {
   double ncount;
   ncount = mcget_run_num();
@@ -25338,7 +25338,7 @@ MCNUM T3 = mccH3_T3;
 MCNUM I3 = mccH3_I3;
 MCNUM zdepth = mccH3_zdepth;
 int target_index = mccH3_target_index;
-#line 479 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
+#line 479 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
 {
   double dx=0,dy=0,xf,yf,rf,pdir,chi,v,r, lambda;
   double Maxwell;
@@ -25691,7 +25691,7 @@ MCNUM nelements = mccGuide_bunker_straight_nelements;
 MCNUM nu = mccGuide_bunker_straight_nu;
 MCNUM phase = mccGuide_bunker_straight_phase;
 char* reflect = mccGuide_bunker_straight_reflect;
-#line 392 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
+#line 392 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
 {
   if (l > 0 && nelements > 0) {
     double B, C, dt;
@@ -26085,7 +26085,7 @@ MCNUM Qc = mccgeks_Qc;
 MCNUM alpha = mccgeks_alpha;
 MCNUM m = mccgeks_m;
 MCNUM W = mccgeks_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -26280,7 +26280,7 @@ MCNUM Qc = mccgeks_7_Qc;
 MCNUM alpha = mccgeks_7_alpha;
 MCNUM m = mccgeks_7_m;
 MCNUM W = mccgeks_7_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -26475,7 +26475,7 @@ MCNUM Qc = mccgeks_8_Qc;
 MCNUM alpha = mccgeks_8_alpha;
 MCNUM m = mccgeks_8_m;
 MCNUM W = mccgeks_8_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -26670,7 +26670,7 @@ MCNUM Qc = mccgeks_9_Qc;
 MCNUM alpha = mccgeks_9_alpha;
 MCNUM m = mccgeks_9_m;
 MCNUM W = mccgeks_9_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -26865,7 +26865,7 @@ MCNUM Qc = mccgeks_10_Qc;
 MCNUM alpha = mccgeks_10_alpha;
 MCNUM m = mccgeks_10_m;
 MCNUM W = mccgeks_10_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -27060,7 +27060,7 @@ MCNUM Qc = mccgeks_11_Qc;
 MCNUM alpha = mccgeks_11_alpha;
 MCNUM m = mccgeks_11_m;
 MCNUM W = mccgeks_11_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -27255,7 +27255,7 @@ MCNUM Qc = mccgeks_12_Qc;
 MCNUM alpha = mccgeks_12_alpha;
 MCNUM m = mccgeks_12_m;
 MCNUM W = mccgeks_12_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -27450,7 +27450,7 @@ MCNUM Qc = mccgeks_13_Qc;
 MCNUM alpha = mccgeks_13_alpha;
 MCNUM m = mccgeks_13_m;
 MCNUM W = mccgeks_13_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -27645,7 +27645,7 @@ MCNUM Qc = mccgeks_14_Qc;
 MCNUM alpha = mccgeks_14_alpha;
 MCNUM m = mccgeks_14_m;
 MCNUM W = mccgeks_14_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -27840,7 +27840,7 @@ MCNUM Qc = mccgeks_15_Qc;
 MCNUM alpha = mccgeks_15_alpha;
 MCNUM m = mccgeks_15_m;
 MCNUM W = mccgeks_15_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -28035,7 +28035,7 @@ MCNUM Qc = mccgeks_16_Qc;
 MCNUM alpha = mccgeks_16_alpha;
 MCNUM m = mccgeks_16_m;
 MCNUM W = mccgeks_16_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -28230,7 +28230,7 @@ MCNUM Qc = mccgeks_17_Qc;
 MCNUM alpha = mccgeks_17_alpha;
 MCNUM m = mccgeks_17_m;
 MCNUM W = mccgeks_17_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -28425,7 +28425,7 @@ MCNUM Qc = mccgeks_18_Qc;
 MCNUM alpha = mccgeks_18_alpha;
 MCNUM m = mccgeks_18_m;
 MCNUM W = mccgeks_18_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -28620,7 +28620,7 @@ MCNUM Qc = mccgeks_19_Qc;
 MCNUM alpha = mccgeks_19_alpha;
 MCNUM m = mccgeks_19_m;
 MCNUM W = mccgeks_19_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -28815,7 +28815,7 @@ MCNUM Qc = mccgeks_20_Qc;
 MCNUM alpha = mccgeks_20_alpha;
 MCNUM m = mccgeks_20_m;
 MCNUM W = mccgeks_20_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -29010,7 +29010,7 @@ MCNUM Qc = mccgeks_21_Qc;
 MCNUM alpha = mccgeks_21_alpha;
 MCNUM m = mccgeks_21_m;
 MCNUM W = mccgeks_21_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -29205,7 +29205,7 @@ MCNUM Qc = mccgeks_22_Qc;
 MCNUM alpha = mccgeks_22_alpha;
 MCNUM m = mccgeks_22_m;
 MCNUM W = mccgeks_22_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -29400,7 +29400,7 @@ MCNUM Qc = mccgeks_23_Qc;
 MCNUM alpha = mccgeks_23_alpha;
 MCNUM m = mccgeks_23_m;
 MCNUM W = mccgeks_23_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -29595,7 +29595,7 @@ MCNUM Qc = mccgeks_24_Qc;
 MCNUM alpha = mccgeks_24_alpha;
 MCNUM m = mccgeks_24_m;
 MCNUM W = mccgeks_24_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -29790,7 +29790,7 @@ MCNUM Qc = mccgeks_25_Qc;
 MCNUM alpha = mccgeks_25_alpha;
 MCNUM m = mccgeks_25_m;
 MCNUM W = mccgeks_25_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -29985,7 +29985,7 @@ MCNUM Qc = mccgeks_26_Qc;
 MCNUM alpha = mccgeks_26_alpha;
 MCNUM m = mccgeks_26_m;
 MCNUM W = mccgeks_26_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -30180,7 +30180,7 @@ MCNUM Qc = mccgeks_27_Qc;
 MCNUM alpha = mccgeks_27_alpha;
 MCNUM m = mccgeks_27_m;
 MCNUM W = mccgeks_27_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -30375,7 +30375,7 @@ MCNUM Qc = mccgeks_28_Qc;
 MCNUM alpha = mccgeks_28_alpha;
 MCNUM m = mccgeks_28_m;
 MCNUM W = mccgeks_28_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -30570,7 +30570,7 @@ MCNUM Qc = mccgeks_29_Qc;
 MCNUM alpha = mccgeks_29_alpha;
 MCNUM m = mccgeks_29_m;
 MCNUM W = mccgeks_29_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -30765,7 +30765,7 @@ MCNUM Qc = mccgeks_30_Qc;
 MCNUM alpha = mccgeks_30_alpha;
 MCNUM m = mccgeks_30_m;
 MCNUM W = mccgeks_30_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -30960,7 +30960,7 @@ MCNUM Qc = mccgeks_31_Qc;
 MCNUM alpha = mccgeks_31_alpha;
 MCNUM m = mccgeks_31_m;
 MCNUM W = mccgeks_31_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -31155,7 +31155,7 @@ MCNUM Qc = mccgeks_32_Qc;
 MCNUM alpha = mccgeks_32_alpha;
 MCNUM m = mccgeks_32_m;
 MCNUM W = mccgeks_32_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -31350,7 +31350,7 @@ MCNUM Qc = mccgeks_33_Qc;
 MCNUM alpha = mccgeks_33_alpha;
 MCNUM m = mccgeks_33_m;
 MCNUM W = mccgeks_33_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -31545,7 +31545,7 @@ MCNUM Qc = mccgeks_34_Qc;
 MCNUM alpha = mccgeks_34_alpha;
 MCNUM m = mccgeks_34_m;
 MCNUM W = mccgeks_34_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -31740,7 +31740,7 @@ MCNUM Qc = mccgeks_35_Qc;
 MCNUM alpha = mccgeks_35_alpha;
 MCNUM m = mccgeks_35_m;
 MCNUM W = mccgeks_35_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -31935,7 +31935,7 @@ MCNUM Qc = mccgeks_36_Qc;
 MCNUM alpha = mccgeks_36_alpha;
 MCNUM m = mccgeks_36_m;
 MCNUM W = mccgeks_36_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -32130,7 +32130,7 @@ MCNUM Qc = mccgeks_37_Qc;
 MCNUM alpha = mccgeks_37_alpha;
 MCNUM m = mccgeks_37_m;
 MCNUM W = mccgeks_37_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -32325,7 +32325,7 @@ MCNUM Qc = mccgeks_38_Qc;
 MCNUM alpha = mccgeks_38_alpha;
 MCNUM m = mccgeks_38_m;
 MCNUM W = mccgeks_38_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -32520,7 +32520,7 @@ MCNUM Qc = mccgeks_39_Qc;
 MCNUM alpha = mccgeks_39_alpha;
 MCNUM m = mccgeks_39_m;
 MCNUM W = mccgeks_39_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -32715,7 +32715,7 @@ MCNUM Qc = mccgeks_40_Qc;
 MCNUM alpha = mccgeks_40_alpha;
 MCNUM m = mccgeks_40_m;
 MCNUM W = mccgeks_40_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -32910,7 +32910,7 @@ MCNUM Qc = mccgeks_41_Qc;
 MCNUM alpha = mccgeks_41_alpha;
 MCNUM m = mccgeks_41_m;
 MCNUM W = mccgeks_41_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -33105,7 +33105,7 @@ MCNUM Qc = mccgeks_42_Qc;
 MCNUM alpha = mccgeks_42_alpha;
 MCNUM m = mccgeks_42_m;
 MCNUM W = mccgeks_42_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -33300,7 +33300,7 @@ MCNUM Qc = mccgeks_43_Qc;
 MCNUM alpha = mccgeks_43_alpha;
 MCNUM m = mccgeks_43_m;
 MCNUM W = mccgeks_43_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -33495,7 +33495,7 @@ MCNUM Qc = mccgeks_44_Qc;
 MCNUM alpha = mccgeks_44_alpha;
 MCNUM m = mccgeks_44_m;
 MCNUM W = mccgeks_44_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -33690,7 +33690,7 @@ MCNUM Qc = mccgeks_45_Qc;
 MCNUM alpha = mccgeks_45_alpha;
 MCNUM m = mccgeks_45_m;
 MCNUM W = mccgeks_45_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -33885,7 +33885,7 @@ MCNUM Qc = mccgeks_46_Qc;
 MCNUM alpha = mccgeks_46_alpha;
 MCNUM m = mccgeks_46_m;
 MCNUM W = mccgeks_46_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -34080,7 +34080,7 @@ MCNUM Qc = mccgeks_47_Qc;
 MCNUM alpha = mccgeks_47_alpha;
 MCNUM m = mccgeks_47_m;
 MCNUM W = mccgeks_47_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -34275,7 +34275,7 @@ MCNUM Qc = mccgeks_48_Qc;
 MCNUM alpha = mccgeks_48_alpha;
 MCNUM m = mccgeks_48_m;
 MCNUM W = mccgeks_48_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -34470,7 +34470,7 @@ MCNUM Qc = mccgeks_49_Qc;
 MCNUM alpha = mccgeks_49_alpha;
 MCNUM m = mccgeks_49_m;
 MCNUM W = mccgeks_49_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -34665,7 +34665,7 @@ MCNUM Qc = mccgeks_50_Qc;
 MCNUM alpha = mccgeks_50_alpha;
 MCNUM m = mccgeks_50_m;
 MCNUM W = mccgeks_50_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -34860,7 +34860,7 @@ MCNUM Qc = mccgeks_51_Qc;
 MCNUM alpha = mccgeks_51_alpha;
 MCNUM m = mccgeks_51_m;
 MCNUM W = mccgeks_51_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -35055,7 +35055,7 @@ MCNUM Qc = mccgeks_52_Qc;
 MCNUM alpha = mccgeks_52_alpha;
 MCNUM m = mccgeks_52_m;
 MCNUM W = mccgeks_52_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -35250,7 +35250,7 @@ MCNUM Qc = mccgeks_53_Qc;
 MCNUM alpha = mccgeks_53_alpha;
 MCNUM m = mccgeks_53_m;
 MCNUM W = mccgeks_53_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -35445,7 +35445,7 @@ MCNUM Qc = mccgeks_54_Qc;
 MCNUM alpha = mccgeks_54_alpha;
 MCNUM m = mccgeks_54_m;
 MCNUM W = mccgeks_54_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -35640,7 +35640,7 @@ MCNUM Qc = mccgeks_55_Qc;
 MCNUM alpha = mccgeks_55_alpha;
 MCNUM m = mccgeks_55_m;
 MCNUM W = mccgeks_55_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -35835,7 +35835,7 @@ MCNUM Qc = mccgeks_56_Qc;
 MCNUM alpha = mccgeks_56_alpha;
 MCNUM m = mccgeks_56_m;
 MCNUM W = mccgeks_56_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -36030,7 +36030,7 @@ MCNUM Qc = mccgeks_57_Qc;
 MCNUM alpha = mccgeks_57_alpha;
 MCNUM m = mccgeks_57_m;
 MCNUM W = mccgeks_57_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -36225,7 +36225,7 @@ MCNUM Qc = mccgeks_58_Qc;
 MCNUM alpha = mccgeks_58_alpha;
 MCNUM m = mccgeks_58_m;
 MCNUM W = mccgeks_58_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -36420,7 +36420,7 @@ MCNUM Qc = mccgeks_59_Qc;
 MCNUM alpha = mccgeks_59_alpha;
 MCNUM m = mccgeks_59_m;
 MCNUM W = mccgeks_59_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -36615,7 +36615,7 @@ MCNUM Qc = mccgeks_60_Qc;
 MCNUM alpha = mccgeks_60_alpha;
 MCNUM m = mccgeks_60_m;
 MCNUM W = mccgeks_60_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -36810,7 +36810,7 @@ MCNUM Qc = mccgeks_61_Qc;
 MCNUM alpha = mccgeks_61_alpha;
 MCNUM m = mccgeks_61_m;
 MCNUM W = mccgeks_61_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -37005,7 +37005,7 @@ MCNUM Qc = mccgeks_62_Qc;
 MCNUM alpha = mccgeks_62_alpha;
 MCNUM m = mccgeks_62_m;
 MCNUM W = mccgeks_62_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -37200,7 +37200,7 @@ MCNUM Qc = mccgeks_63_Qc;
 MCNUM alpha = mccgeks_63_alpha;
 MCNUM m = mccgeks_63_m;
 MCNUM W = mccgeks_63_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -37395,7 +37395,7 @@ MCNUM Qc = mccgeks_64_Qc;
 MCNUM alpha = mccgeks_64_alpha;
 MCNUM m = mccgeks_64_m;
 MCNUM W = mccgeks_64_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -37590,7 +37590,7 @@ MCNUM Qc = mccgeks_65_Qc;
 MCNUM alpha = mccgeks_65_alpha;
 MCNUM m = mccgeks_65_m;
 MCNUM W = mccgeks_65_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -37785,7 +37785,7 @@ MCNUM Qc = mccgeks_66_Qc;
 MCNUM alpha = mccgeks_66_alpha;
 MCNUM m = mccgeks_66_m;
 MCNUM W = mccgeks_66_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -37980,7 +37980,7 @@ MCNUM Qc = mccgeks_67_Qc;
 MCNUM alpha = mccgeks_67_alpha;
 MCNUM m = mccgeks_67_m;
 MCNUM W = mccgeks_67_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -38175,7 +38175,7 @@ MCNUM Qc = mccgeks_68_Qc;
 MCNUM alpha = mccgeks_68_alpha;
 MCNUM m = mccgeks_68_m;
 MCNUM W = mccgeks_68_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -38370,7 +38370,7 @@ MCNUM Qc = mccgeks_69_Qc;
 MCNUM alpha = mccgeks_69_alpha;
 MCNUM m = mccgeks_69_m;
 MCNUM W = mccgeks_69_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -38565,7 +38565,7 @@ MCNUM Qc = mccgeks_70_Qc;
 MCNUM alpha = mccgeks_70_alpha;
 MCNUM m = mccgeks_70_m;
 MCNUM W = mccgeks_70_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -38760,7 +38760,7 @@ MCNUM Qc = mccgeks_71_Qc;
 MCNUM alpha = mccgeks_71_alpha;
 MCNUM m = mccgeks_71_m;
 MCNUM W = mccgeks_71_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -38955,7 +38955,7 @@ MCNUM Qc = mccgeks_72_Qc;
 MCNUM alpha = mccgeks_72_alpha;
 MCNUM m = mccgeks_72_m;
 MCNUM W = mccgeks_72_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -39150,7 +39150,7 @@ MCNUM Qc = mccgeks_73_Qc;
 MCNUM alpha = mccgeks_73_alpha;
 MCNUM m = mccgeks_73_m;
 MCNUM W = mccgeks_73_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -39345,7 +39345,7 @@ MCNUM Qc = mccgeks_74_Qc;
 MCNUM alpha = mccgeks_74_alpha;
 MCNUM m = mccgeks_74_m;
 MCNUM W = mccgeks_74_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -39540,7 +39540,7 @@ MCNUM Qc = mccgeks_75_Qc;
 MCNUM alpha = mccgeks_75_alpha;
 MCNUM m = mccgeks_75_m;
 MCNUM W = mccgeks_75_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -39735,7 +39735,7 @@ MCNUM Qc = mccgeks_76_Qc;
 MCNUM alpha = mccgeks_76_alpha;
 MCNUM m = mccgeks_76_m;
 MCNUM W = mccgeks_76_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -39930,7 +39930,7 @@ MCNUM Qc = mccgeks_77_Qc;
 MCNUM alpha = mccgeks_77_alpha;
 MCNUM m = mccgeks_77_m;
 MCNUM W = mccgeks_77_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -40125,7 +40125,7 @@ MCNUM Qc = mccgeks_78_Qc;
 MCNUM alpha = mccgeks_78_alpha;
 MCNUM m = mccgeks_78_m;
 MCNUM W = mccgeks_78_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -40320,7 +40320,7 @@ MCNUM Qc = mccgeks_79_Qc;
 MCNUM alpha = mccgeks_79_alpha;
 MCNUM m = mccgeks_79_m;
 MCNUM W = mccgeks_79_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -40515,7 +40515,7 @@ MCNUM Qc = mccgeks_80_Qc;
 MCNUM alpha = mccgeks_80_alpha;
 MCNUM m = mccgeks_80_m;
 MCNUM W = mccgeks_80_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -40710,7 +40710,7 @@ MCNUM Qc = mccgeks_81_Qc;
 MCNUM alpha = mccgeks_81_alpha;
 MCNUM m = mccgeks_81_m;
 MCNUM W = mccgeks_81_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -40905,7 +40905,7 @@ MCNUM Qc = mccgeks_82_Qc;
 MCNUM alpha = mccgeks_82_alpha;
 MCNUM m = mccgeks_82_m;
 MCNUM W = mccgeks_82_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -41100,7 +41100,7 @@ MCNUM Qc = mccgeks_83_Qc;
 MCNUM alpha = mccgeks_83_alpha;
 MCNUM m = mccgeks_83_m;
 MCNUM W = mccgeks_83_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -41295,7 +41295,7 @@ MCNUM Qc = mccgeks_84_Qc;
 MCNUM alpha = mccgeks_84_alpha;
 MCNUM m = mccgeks_84_m;
 MCNUM W = mccgeks_84_W;
-#line 114 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 114 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   int intersect=0;
   int counter=0;
@@ -41504,7 +41504,7 @@ char* username1 = mccOcto_large_username1;
 char* username2 = mccOcto_large_username2;
 char* username3 = mccOcto_large_username3;
 int nowritefile = mccOcto_large_nowritefile;
-#line 310 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 310 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   double  XY=0;
   double  t0 = 0;
@@ -41814,7 +41814,7 @@ char* username1 = mccOcto_small_username1;
 char* username2 = mccOcto_small_username2;
 char* username3 = mccOcto_small_username3;
 int nowritefile = mccOcto_small_nowritefile;
-#line 310 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 310 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   double  XY=0;
   double  t0 = 0;
@@ -42035,8 +42035,8 @@ mcnlsy,
 mcnlsz,
 mcnlp)
 
-  /* TRACE Component Octo_small222 [87] */
-  mccoordschange(mcposrOcto_small222, mcrotrOcto_small222,
+  /* TRACE Component Octo_small2 [87] */
+  mccoordschange(mcposrOcto_small2, mcrotrOcto_small2,
     &mcnlx,
     &mcnly,
     &mcnlz,
@@ -42046,10 +42046,10 @@ mcnlp)
     &mcnlsx,
     &mcnlsy,
     &mcnlsz);
-  /* define label inside component Octo_small222 (without coords transformations) */
-  mcJumpTrace_Octo_small222:
-  SIG_MESSAGE("Octo_small222 (Trace)");
-  mcDEBUG_COMP("Octo_small222")
+  /* define label inside component Octo_small2 (without coords transformations) */
+  mcJumpTrace_Octo_small2:
+  SIG_MESSAGE("Octo_small2 (Trace)");
+  mcDEBUG_COMP("Octo_small2")
   mcDEBUG_STATE(
     mcnlx,
     mcnly,
@@ -42074,7 +42074,7 @@ mcnlp)
 #define sz mcnlsz
 #define p mcnlp
 
-#define mcabsorbComp mcabsorbCompOcto_small222
+#define mcabsorbComp mcabsorbCompOcto_small2
   STORE_NEUTRON(87,
     mcnlx,
     mcnly,
@@ -42092,39 +42092,39 @@ mcnlp)
   mcNCounter[87]++;
   mcPCounter[87] += p;
   mcP2Counter[87] += p*p;
-#define mccompcurname  Octo_small222
+#define mccompcurname  Octo_small2
 #define mccompcurtype  Monitor_nD
 #define mccompcurindex 87
-#define user1 mccOcto_small222_user1
-#define user2 mccOcto_small222_user2
-#define user3 mccOcto_small222_user3
-#define DEFS mccOcto_small222_DEFS
-#define Vars mccOcto_small222_Vars
-#define detector mccOcto_small222_detector
-#define offdata mccOcto_small222_offdata
-{   /* Declarations of Octo_small222=Monitor_nD() SETTING parameters. */
-MCNUM xwidth = mccOcto_small222_xwidth;
-MCNUM yheight = mccOcto_small222_yheight;
-MCNUM zdepth = mccOcto_small222_zdepth;
-MCNUM xmin = mccOcto_small222_xmin;
-MCNUM xmax = mccOcto_small222_xmax;
-MCNUM ymin = mccOcto_small222_ymin;
-MCNUM ymax = mccOcto_small222_ymax;
-MCNUM zmin = mccOcto_small222_zmin;
-MCNUM zmax = mccOcto_small222_zmax;
-MCNUM bins = mccOcto_small222_bins;
-MCNUM min = mccOcto_small222_min;
-MCNUM max = mccOcto_small222_max;
-MCNUM restore_neutron = mccOcto_small222_restore_neutron;
-MCNUM radius = mccOcto_small222_radius;
-char* options = mccOcto_small222_options;
-char* filename = mccOcto_small222_filename;
-char* geometry = mccOcto_small222_geometry;
-char* username1 = mccOcto_small222_username1;
-char* username2 = mccOcto_small222_username2;
-char* username3 = mccOcto_small222_username3;
-int nowritefile = mccOcto_small222_nowritefile;
-#line 310 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#define user1 mccOcto_small2_user1
+#define user2 mccOcto_small2_user2
+#define user3 mccOcto_small2_user3
+#define DEFS mccOcto_small2_DEFS
+#define Vars mccOcto_small2_Vars
+#define detector mccOcto_small2_detector
+#define offdata mccOcto_small2_offdata
+{   /* Declarations of Octo_small2=Monitor_nD() SETTING parameters. */
+MCNUM xwidth = mccOcto_small2_xwidth;
+MCNUM yheight = mccOcto_small2_yheight;
+MCNUM zdepth = mccOcto_small2_zdepth;
+MCNUM xmin = mccOcto_small2_xmin;
+MCNUM xmax = mccOcto_small2_xmax;
+MCNUM ymin = mccOcto_small2_ymin;
+MCNUM ymax = mccOcto_small2_ymax;
+MCNUM zmin = mccOcto_small2_zmin;
+MCNUM zmax = mccOcto_small2_zmax;
+MCNUM bins = mccOcto_small2_bins;
+MCNUM min = mccOcto_small2_min;
+MCNUM max = mccOcto_small2_max;
+MCNUM restore_neutron = mccOcto_small2_restore_neutron;
+MCNUM radius = mccOcto_small2_radius;
+char* options = mccOcto_small2_options;
+char* filename = mccOcto_small2_filename;
+char* geometry = mccOcto_small2_geometry;
+char* username1 = mccOcto_small2_username1;
+char* username2 = mccOcto_small2_username2;
+char* username3 = mccOcto_small2_username3;
+int nowritefile = mccOcto_small2_nowritefile;
+#line 310 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   double  XY=0;
   double  t0 = 0;
@@ -42294,7 +42294,7 @@ int nowritefile = mccOcto_small222_nowritefile;
   }
 }
 #line 42296 "./octa_ell_n.c"
-}   /* End of Octo_small222=Monitor_nD() SETTING parameter declarations. */
+}   /* End of Octo_small2=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
 #undef Vars
@@ -42306,7 +42306,7 @@ int nowritefile = mccOcto_small222_nowritefile;
 #undef mccompcurtype
 #undef mccompcurindex
   /* Label for restoring  neutron */
-  mcabsorbCompOcto_small222:
+  mcabsorbCompOcto_small2:
   if (RESTORE) /* restore if needed */
   { RESTORE_NEUTRON(87,
       mcnlx,
@@ -42392,7 +42392,7 @@ char* profile = mccOrigin_profile;
 MCNUM percent = mccOrigin_percent;
 MCNUM flag_save = mccOrigin_flag_save;
 MCNUM minutes = mccOrigin_minutes;
-#line 115 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
+#line 115 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
 {
   MPI_MASTER(fprintf(stdout, "\nSave [%s]\n", mcinstrument_name););
   if (profile && strlen(profile) && strcmp(profile,"NULL") && strcmp(profile,"0")) {
@@ -42453,7 +42453,7 @@ char* username1 = mccOcto_large_username1;
 char* username2 = mccOcto_large_username2;
 char* username3 = mccOcto_large_username3;
 int nowritefile = mccOcto_large_nowritefile;
-#line 480 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 480 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   /* save results, but do not free pointers */
   detector = Monitor_nD_Save(&DEFS, &Vars);
@@ -42505,7 +42505,7 @@ char* username1 = mccOcto_small_username1;
 char* username2 = mccOcto_small_username2;
 char* username3 = mccOcto_small_username3;
 int nowritefile = mccOcto_small_nowritefile;
-#line 480 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 480 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   /* save results, but do not free pointers */
   detector = Monitor_nD_Save(&DEFS, &Vars);
@@ -42523,47 +42523,47 @@ int nowritefile = mccOcto_small_nowritefile;
 #undef mccompcurtype
 #undef mccompcurindex
 
-  /* User SAVE code for component 'Octo_small222'. */
-  SIG_MESSAGE("Octo_small222 (Save)");
-#define mccompcurname  Octo_small222
+  /* User SAVE code for component 'Octo_small2'. */
+  SIG_MESSAGE("Octo_small2 (Save)");
+#define mccompcurname  Octo_small2
 #define mccompcurtype  Monitor_nD
 #define mccompcurindex 87
-#define user1 mccOcto_small222_user1
-#define user2 mccOcto_small222_user2
-#define user3 mccOcto_small222_user3
-#define DEFS mccOcto_small222_DEFS
-#define Vars mccOcto_small222_Vars
-#define detector mccOcto_small222_detector
-#define offdata mccOcto_small222_offdata
-{   /* Declarations of Octo_small222=Monitor_nD() SETTING parameters. */
-MCNUM xwidth = mccOcto_small222_xwidth;
-MCNUM yheight = mccOcto_small222_yheight;
-MCNUM zdepth = mccOcto_small222_zdepth;
-MCNUM xmin = mccOcto_small222_xmin;
-MCNUM xmax = mccOcto_small222_xmax;
-MCNUM ymin = mccOcto_small222_ymin;
-MCNUM ymax = mccOcto_small222_ymax;
-MCNUM zmin = mccOcto_small222_zmin;
-MCNUM zmax = mccOcto_small222_zmax;
-MCNUM bins = mccOcto_small222_bins;
-MCNUM min = mccOcto_small222_min;
-MCNUM max = mccOcto_small222_max;
-MCNUM restore_neutron = mccOcto_small222_restore_neutron;
-MCNUM radius = mccOcto_small222_radius;
-char* options = mccOcto_small222_options;
-char* filename = mccOcto_small222_filename;
-char* geometry = mccOcto_small222_geometry;
-char* username1 = mccOcto_small222_username1;
-char* username2 = mccOcto_small222_username2;
-char* username3 = mccOcto_small222_username3;
-int nowritefile = mccOcto_small222_nowritefile;
-#line 480 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#define user1 mccOcto_small2_user1
+#define user2 mccOcto_small2_user2
+#define user3 mccOcto_small2_user3
+#define DEFS mccOcto_small2_DEFS
+#define Vars mccOcto_small2_Vars
+#define detector mccOcto_small2_detector
+#define offdata mccOcto_small2_offdata
+{   /* Declarations of Octo_small2=Monitor_nD() SETTING parameters. */
+MCNUM xwidth = mccOcto_small2_xwidth;
+MCNUM yheight = mccOcto_small2_yheight;
+MCNUM zdepth = mccOcto_small2_zdepth;
+MCNUM xmin = mccOcto_small2_xmin;
+MCNUM xmax = mccOcto_small2_xmax;
+MCNUM ymin = mccOcto_small2_ymin;
+MCNUM ymax = mccOcto_small2_ymax;
+MCNUM zmin = mccOcto_small2_zmin;
+MCNUM zmax = mccOcto_small2_zmax;
+MCNUM bins = mccOcto_small2_bins;
+MCNUM min = mccOcto_small2_min;
+MCNUM max = mccOcto_small2_max;
+MCNUM restore_neutron = mccOcto_small2_restore_neutron;
+MCNUM radius = mccOcto_small2_radius;
+char* options = mccOcto_small2_options;
+char* filename = mccOcto_small2_filename;
+char* geometry = mccOcto_small2_geometry;
+char* username1 = mccOcto_small2_username1;
+char* username2 = mccOcto_small2_username2;
+char* username3 = mccOcto_small2_username3;
+int nowritefile = mccOcto_small2_nowritefile;
+#line 480 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   /* save results, but do not free pointers */
   detector = Monitor_nD_Save(&DEFS, &Vars);
 }
 #line 42565 "./octa_ell_n.c"
-}   /* End of Octo_small222=Monitor_nD() SETTING parameter declarations. */
+}   /* End of Octo_small2=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
 #undef Vars
@@ -42596,7 +42596,7 @@ char* profile = mccOrigin_profile;
 MCNUM percent = mccOrigin_percent;
 MCNUM flag_save = mccOrigin_flag_save;
 MCNUM minutes = mccOrigin_minutes;
-#line 133 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
+#line 133 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
 {
   time_t NowTime;
   time(&NowTime);
@@ -42675,7 +42675,7 @@ MCNUM T3 = mccH3_T3;
 MCNUM I3 = mccH3_I3;
 MCNUM zdepth = mccH3_zdepth;
 int target_index = mccH3_target_index;
-#line 571 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
+#line 571 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
 {
   Table_Free(&pTable);
   Table_Free(&pTable_x);
@@ -42752,7 +42752,7 @@ MCNUM nelements = mccGuide_bunker_straight_nelements;
 MCNUM nu = mccGuide_bunker_straight_nu;
 MCNUM phase = mccGuide_bunker_straight_phase;
 char* reflect = mccGuide_bunker_straight_reflect;
-#line 562 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
+#line 562 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
 {
 if (GVars.warnings > 100) {
   fprintf(stderr,"%s: warning: neutron has entered guide, but can not exit !\n", GVars.compcurname);
@@ -43044,7 +43044,7 @@ char* username1 = mccOcto_large_username1;
 char* username2 = mccOcto_large_username2;
 char* username3 = mccOcto_large_username3;
 int nowritefile = mccOcto_large_nowritefile;
-#line 486 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 486 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   /* free pointers */
   if (!nowritefile) {
@@ -43101,7 +43101,7 @@ char* username1 = mccOcto_small_username1;
 char* username2 = mccOcto_small_username2;
 char* username3 = mccOcto_small_username3;
 int nowritefile = mccOcto_small_nowritefile;
-#line 486 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 486 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   /* free pointers */
   if (!nowritefile) {
@@ -43124,41 +43124,41 @@ int nowritefile = mccOcto_small_nowritefile;
     if (!mcNCounter[86]) fprintf(stderr, "Warning: No neutron could reach Component[86] Octo_small\n");
     if (mcAbsorbProp[86]) fprintf(stderr, "Warning: %g events were removed in Component[86] Octo_small=Monitor_nD()\n"
 "         (negative time, miss next components, rounding errors, Nan, Inf).\n", mcAbsorbProp[86]);
-  /* User FINALLY code for component 'Octo_small222'. */
-  SIG_MESSAGE("Octo_small222 (Finally)");
-#define mccompcurname  Octo_small222
+  /* User FINALLY code for component 'Octo_small2'. */
+  SIG_MESSAGE("Octo_small2 (Finally)");
+#define mccompcurname  Octo_small2
 #define mccompcurtype  Monitor_nD
 #define mccompcurindex 87
-#define user1 mccOcto_small222_user1
-#define user2 mccOcto_small222_user2
-#define user3 mccOcto_small222_user3
-#define DEFS mccOcto_small222_DEFS
-#define Vars mccOcto_small222_Vars
-#define detector mccOcto_small222_detector
-#define offdata mccOcto_small222_offdata
-{   /* Declarations of Octo_small222=Monitor_nD() SETTING parameters. */
-MCNUM xwidth = mccOcto_small222_xwidth;
-MCNUM yheight = mccOcto_small222_yheight;
-MCNUM zdepth = mccOcto_small222_zdepth;
-MCNUM xmin = mccOcto_small222_xmin;
-MCNUM xmax = mccOcto_small222_xmax;
-MCNUM ymin = mccOcto_small222_ymin;
-MCNUM ymax = mccOcto_small222_ymax;
-MCNUM zmin = mccOcto_small222_zmin;
-MCNUM zmax = mccOcto_small222_zmax;
-MCNUM bins = mccOcto_small222_bins;
-MCNUM min = mccOcto_small222_min;
-MCNUM max = mccOcto_small222_max;
-MCNUM restore_neutron = mccOcto_small222_restore_neutron;
-MCNUM radius = mccOcto_small222_radius;
-char* options = mccOcto_small222_options;
-char* filename = mccOcto_small222_filename;
-char* geometry = mccOcto_small222_geometry;
-char* username1 = mccOcto_small222_username1;
-char* username2 = mccOcto_small222_username2;
-char* username3 = mccOcto_small222_username3;
-int nowritefile = mccOcto_small222_nowritefile;
-#line 486 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#define user1 mccOcto_small2_user1
+#define user2 mccOcto_small2_user2
+#define user3 mccOcto_small2_user3
+#define DEFS mccOcto_small2_DEFS
+#define Vars mccOcto_small2_Vars
+#define detector mccOcto_small2_detector
+#define offdata mccOcto_small2_offdata
+{   /* Declarations of Octo_small2=Monitor_nD() SETTING parameters. */
+MCNUM xwidth = mccOcto_small2_xwidth;
+MCNUM yheight = mccOcto_small2_yheight;
+MCNUM zdepth = mccOcto_small2_zdepth;
+MCNUM xmin = mccOcto_small2_xmin;
+MCNUM xmax = mccOcto_small2_xmax;
+MCNUM ymin = mccOcto_small2_ymin;
+MCNUM ymax = mccOcto_small2_ymax;
+MCNUM zmin = mccOcto_small2_zmin;
+MCNUM zmax = mccOcto_small2_zmax;
+MCNUM bins = mccOcto_small2_bins;
+MCNUM min = mccOcto_small2_min;
+MCNUM max = mccOcto_small2_max;
+MCNUM restore_neutron = mccOcto_small2_restore_neutron;
+MCNUM radius = mccOcto_small2_radius;
+char* options = mccOcto_small2_options;
+char* filename = mccOcto_small2_filename;
+char* geometry = mccOcto_small2_geometry;
+char* username1 = mccOcto_small2_username1;
+char* username2 = mccOcto_small2_username2;
+char* username3 = mccOcto_small2_username3;
+int nowritefile = mccOcto_small2_nowritefile;
+#line 486 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   /* free pointers */
   if (!nowritefile) {
@@ -43166,7 +43166,7 @@ int nowritefile = mccOcto_small222_nowritefile;
   }
 }
 #line 43082 "./octa_ell_n.c"
-}   /* End of Octo_small222=Monitor_nD() SETTING parameter declarations. */
+}   /* End of Octo_small2=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
 #undef Vars
@@ -43178,8 +43178,8 @@ int nowritefile = mccOcto_small222_nowritefile;
 #undef mccompcurtype
 #undef mccompcurindex
 
-    if (!mcNCounter[87]) fprintf(stderr, "Warning: No neutron could reach Component[87] Octo_small222\n");
-    if (mcAbsorbProp[87]) fprintf(stderr, "Warning: %g events were removed in Component[87] Octo_small222=Monitor_nD()\n"
+    if (!mcNCounter[87]) fprintf(stderr, "Warning: No neutron could reach Component[87] Octo_small2\n");
+    if (mcAbsorbProp[87]) fprintf(stderr, "Warning: %g events were removed in Component[87] Octo_small2=Monitor_nD()\n"
 "         (negative time, miss next components, rounding errors, Nan, Inf).\n", mcAbsorbProp[87]);
   mcsiminfo_close(); 
 } /* end finally */
@@ -43211,7 +43211,7 @@ char* profile = mccOrigin_profile;
 MCNUM percent = mccOrigin_percent;
 MCNUM flag_save = mccOrigin_flag_save;
 MCNUM minutes = mccOrigin_minutes;
-#line 147 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
+#line 147 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../misc/Progress_bar.comp"
 {
   
 }
@@ -43279,7 +43279,7 @@ MCNUM T3 = mccH3_T3;
 MCNUM I3 = mccH3_I3;
 MCNUM zdepth = mccH3_zdepth;
 int target_index = mccH3_target_index;
-#line 578 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
+#line 578 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../sources/Source_gen.comp"
 {
   double xmin;
   double xmax;
@@ -43357,7 +43357,7 @@ int target_index = mccH3_target_index;
 #define mccompcurname  Guide_start_arm
 #define mccompcurtype  Arm
 #define mccompcurindex 3
-#line 40 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Arm.comp"
+#line 40 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Arm.comp"
 {
   /* A bit ugly; hard-coded dimensions. */
   
@@ -43413,7 +43413,7 @@ MCNUM nelements = mccGuide_bunker_straight_nelements;
 MCNUM nu = mccGuide_bunker_straight_nu;
 MCNUM phase = mccGuide_bunker_straight_phase;
 char* reflect = mccGuide_bunker_straight_reflect;
-#line 571 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
+#line 571 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_gravity.comp"
 {
 
   if (l > 0 && nelements > 0) {
@@ -43490,7 +43490,7 @@ char* reflect = mccGuide_bunker_straight_reflect;
 #define mccompcurname  arm_geks
 #define mccompcurtype  Arm
 #define mccompcurindex 5
-#line 40 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Arm.comp"
+#line 40 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Arm.comp"
 {
   /* A bit ugly; hard-coded dimensions. */
   
@@ -43524,7 +43524,7 @@ MCNUM Qc = mccgeks_Qc;
 MCNUM alpha = mccgeks_alpha;
 MCNUM m = mccgeks_m;
 MCNUM W = mccgeks_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43569,7 +43569,7 @@ MCNUM Qc = mccgeks_7_Qc;
 MCNUM alpha = mccgeks_7_alpha;
 MCNUM m = mccgeks_7_m;
 MCNUM W = mccgeks_7_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43614,7 +43614,7 @@ MCNUM Qc = mccgeks_8_Qc;
 MCNUM alpha = mccgeks_8_alpha;
 MCNUM m = mccgeks_8_m;
 MCNUM W = mccgeks_8_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43659,7 +43659,7 @@ MCNUM Qc = mccgeks_9_Qc;
 MCNUM alpha = mccgeks_9_alpha;
 MCNUM m = mccgeks_9_m;
 MCNUM W = mccgeks_9_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43704,7 +43704,7 @@ MCNUM Qc = mccgeks_10_Qc;
 MCNUM alpha = mccgeks_10_alpha;
 MCNUM m = mccgeks_10_m;
 MCNUM W = mccgeks_10_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43749,7 +43749,7 @@ MCNUM Qc = mccgeks_11_Qc;
 MCNUM alpha = mccgeks_11_alpha;
 MCNUM m = mccgeks_11_m;
 MCNUM W = mccgeks_11_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43794,7 +43794,7 @@ MCNUM Qc = mccgeks_12_Qc;
 MCNUM alpha = mccgeks_12_alpha;
 MCNUM m = mccgeks_12_m;
 MCNUM W = mccgeks_12_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43839,7 +43839,7 @@ MCNUM Qc = mccgeks_13_Qc;
 MCNUM alpha = mccgeks_13_alpha;
 MCNUM m = mccgeks_13_m;
 MCNUM W = mccgeks_13_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43884,7 +43884,7 @@ MCNUM Qc = mccgeks_14_Qc;
 MCNUM alpha = mccgeks_14_alpha;
 MCNUM m = mccgeks_14_m;
 MCNUM W = mccgeks_14_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43929,7 +43929,7 @@ MCNUM Qc = mccgeks_15_Qc;
 MCNUM alpha = mccgeks_15_alpha;
 MCNUM m = mccgeks_15_m;
 MCNUM W = mccgeks_15_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -43974,7 +43974,7 @@ MCNUM Qc = mccgeks_16_Qc;
 MCNUM alpha = mccgeks_16_alpha;
 MCNUM m = mccgeks_16_m;
 MCNUM W = mccgeks_16_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44019,7 +44019,7 @@ MCNUM Qc = mccgeks_17_Qc;
 MCNUM alpha = mccgeks_17_alpha;
 MCNUM m = mccgeks_17_m;
 MCNUM W = mccgeks_17_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44064,7 +44064,7 @@ MCNUM Qc = mccgeks_18_Qc;
 MCNUM alpha = mccgeks_18_alpha;
 MCNUM m = mccgeks_18_m;
 MCNUM W = mccgeks_18_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44109,7 +44109,7 @@ MCNUM Qc = mccgeks_19_Qc;
 MCNUM alpha = mccgeks_19_alpha;
 MCNUM m = mccgeks_19_m;
 MCNUM W = mccgeks_19_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44154,7 +44154,7 @@ MCNUM Qc = mccgeks_20_Qc;
 MCNUM alpha = mccgeks_20_alpha;
 MCNUM m = mccgeks_20_m;
 MCNUM W = mccgeks_20_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44199,7 +44199,7 @@ MCNUM Qc = mccgeks_21_Qc;
 MCNUM alpha = mccgeks_21_alpha;
 MCNUM m = mccgeks_21_m;
 MCNUM W = mccgeks_21_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44244,7 +44244,7 @@ MCNUM Qc = mccgeks_22_Qc;
 MCNUM alpha = mccgeks_22_alpha;
 MCNUM m = mccgeks_22_m;
 MCNUM W = mccgeks_22_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44289,7 +44289,7 @@ MCNUM Qc = mccgeks_23_Qc;
 MCNUM alpha = mccgeks_23_alpha;
 MCNUM m = mccgeks_23_m;
 MCNUM W = mccgeks_23_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44334,7 +44334,7 @@ MCNUM Qc = mccgeks_24_Qc;
 MCNUM alpha = mccgeks_24_alpha;
 MCNUM m = mccgeks_24_m;
 MCNUM W = mccgeks_24_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44379,7 +44379,7 @@ MCNUM Qc = mccgeks_25_Qc;
 MCNUM alpha = mccgeks_25_alpha;
 MCNUM m = mccgeks_25_m;
 MCNUM W = mccgeks_25_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44424,7 +44424,7 @@ MCNUM Qc = mccgeks_26_Qc;
 MCNUM alpha = mccgeks_26_alpha;
 MCNUM m = mccgeks_26_m;
 MCNUM W = mccgeks_26_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44469,7 +44469,7 @@ MCNUM Qc = mccgeks_27_Qc;
 MCNUM alpha = mccgeks_27_alpha;
 MCNUM m = mccgeks_27_m;
 MCNUM W = mccgeks_27_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44514,7 +44514,7 @@ MCNUM Qc = mccgeks_28_Qc;
 MCNUM alpha = mccgeks_28_alpha;
 MCNUM m = mccgeks_28_m;
 MCNUM W = mccgeks_28_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44559,7 +44559,7 @@ MCNUM Qc = mccgeks_29_Qc;
 MCNUM alpha = mccgeks_29_alpha;
 MCNUM m = mccgeks_29_m;
 MCNUM W = mccgeks_29_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44604,7 +44604,7 @@ MCNUM Qc = mccgeks_30_Qc;
 MCNUM alpha = mccgeks_30_alpha;
 MCNUM m = mccgeks_30_m;
 MCNUM W = mccgeks_30_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44649,7 +44649,7 @@ MCNUM Qc = mccgeks_31_Qc;
 MCNUM alpha = mccgeks_31_alpha;
 MCNUM m = mccgeks_31_m;
 MCNUM W = mccgeks_31_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44694,7 +44694,7 @@ MCNUM Qc = mccgeks_32_Qc;
 MCNUM alpha = mccgeks_32_alpha;
 MCNUM m = mccgeks_32_m;
 MCNUM W = mccgeks_32_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44739,7 +44739,7 @@ MCNUM Qc = mccgeks_33_Qc;
 MCNUM alpha = mccgeks_33_alpha;
 MCNUM m = mccgeks_33_m;
 MCNUM W = mccgeks_33_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44784,7 +44784,7 @@ MCNUM Qc = mccgeks_34_Qc;
 MCNUM alpha = mccgeks_34_alpha;
 MCNUM m = mccgeks_34_m;
 MCNUM W = mccgeks_34_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44829,7 +44829,7 @@ MCNUM Qc = mccgeks_35_Qc;
 MCNUM alpha = mccgeks_35_alpha;
 MCNUM m = mccgeks_35_m;
 MCNUM W = mccgeks_35_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44874,7 +44874,7 @@ MCNUM Qc = mccgeks_36_Qc;
 MCNUM alpha = mccgeks_36_alpha;
 MCNUM m = mccgeks_36_m;
 MCNUM W = mccgeks_36_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44919,7 +44919,7 @@ MCNUM Qc = mccgeks_37_Qc;
 MCNUM alpha = mccgeks_37_alpha;
 MCNUM m = mccgeks_37_m;
 MCNUM W = mccgeks_37_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -44964,7 +44964,7 @@ MCNUM Qc = mccgeks_38_Qc;
 MCNUM alpha = mccgeks_38_alpha;
 MCNUM m = mccgeks_38_m;
 MCNUM W = mccgeks_38_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45009,7 +45009,7 @@ MCNUM Qc = mccgeks_39_Qc;
 MCNUM alpha = mccgeks_39_alpha;
 MCNUM m = mccgeks_39_m;
 MCNUM W = mccgeks_39_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45054,7 +45054,7 @@ MCNUM Qc = mccgeks_40_Qc;
 MCNUM alpha = mccgeks_40_alpha;
 MCNUM m = mccgeks_40_m;
 MCNUM W = mccgeks_40_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45099,7 +45099,7 @@ MCNUM Qc = mccgeks_41_Qc;
 MCNUM alpha = mccgeks_41_alpha;
 MCNUM m = mccgeks_41_m;
 MCNUM W = mccgeks_41_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45144,7 +45144,7 @@ MCNUM Qc = mccgeks_42_Qc;
 MCNUM alpha = mccgeks_42_alpha;
 MCNUM m = mccgeks_42_m;
 MCNUM W = mccgeks_42_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45189,7 +45189,7 @@ MCNUM Qc = mccgeks_43_Qc;
 MCNUM alpha = mccgeks_43_alpha;
 MCNUM m = mccgeks_43_m;
 MCNUM W = mccgeks_43_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45234,7 +45234,7 @@ MCNUM Qc = mccgeks_44_Qc;
 MCNUM alpha = mccgeks_44_alpha;
 MCNUM m = mccgeks_44_m;
 MCNUM W = mccgeks_44_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45279,7 +45279,7 @@ MCNUM Qc = mccgeks_45_Qc;
 MCNUM alpha = mccgeks_45_alpha;
 MCNUM m = mccgeks_45_m;
 MCNUM W = mccgeks_45_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45324,7 +45324,7 @@ MCNUM Qc = mccgeks_46_Qc;
 MCNUM alpha = mccgeks_46_alpha;
 MCNUM m = mccgeks_46_m;
 MCNUM W = mccgeks_46_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45369,7 +45369,7 @@ MCNUM Qc = mccgeks_47_Qc;
 MCNUM alpha = mccgeks_47_alpha;
 MCNUM m = mccgeks_47_m;
 MCNUM W = mccgeks_47_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45414,7 +45414,7 @@ MCNUM Qc = mccgeks_48_Qc;
 MCNUM alpha = mccgeks_48_alpha;
 MCNUM m = mccgeks_48_m;
 MCNUM W = mccgeks_48_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45459,7 +45459,7 @@ MCNUM Qc = mccgeks_49_Qc;
 MCNUM alpha = mccgeks_49_alpha;
 MCNUM m = mccgeks_49_m;
 MCNUM W = mccgeks_49_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45504,7 +45504,7 @@ MCNUM Qc = mccgeks_50_Qc;
 MCNUM alpha = mccgeks_50_alpha;
 MCNUM m = mccgeks_50_m;
 MCNUM W = mccgeks_50_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45549,7 +45549,7 @@ MCNUM Qc = mccgeks_51_Qc;
 MCNUM alpha = mccgeks_51_alpha;
 MCNUM m = mccgeks_51_m;
 MCNUM W = mccgeks_51_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45594,7 +45594,7 @@ MCNUM Qc = mccgeks_52_Qc;
 MCNUM alpha = mccgeks_52_alpha;
 MCNUM m = mccgeks_52_m;
 MCNUM W = mccgeks_52_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45639,7 +45639,7 @@ MCNUM Qc = mccgeks_53_Qc;
 MCNUM alpha = mccgeks_53_alpha;
 MCNUM m = mccgeks_53_m;
 MCNUM W = mccgeks_53_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45684,7 +45684,7 @@ MCNUM Qc = mccgeks_54_Qc;
 MCNUM alpha = mccgeks_54_alpha;
 MCNUM m = mccgeks_54_m;
 MCNUM W = mccgeks_54_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45729,7 +45729,7 @@ MCNUM Qc = mccgeks_55_Qc;
 MCNUM alpha = mccgeks_55_alpha;
 MCNUM m = mccgeks_55_m;
 MCNUM W = mccgeks_55_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45774,7 +45774,7 @@ MCNUM Qc = mccgeks_56_Qc;
 MCNUM alpha = mccgeks_56_alpha;
 MCNUM m = mccgeks_56_m;
 MCNUM W = mccgeks_56_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45819,7 +45819,7 @@ MCNUM Qc = mccgeks_57_Qc;
 MCNUM alpha = mccgeks_57_alpha;
 MCNUM m = mccgeks_57_m;
 MCNUM W = mccgeks_57_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45864,7 +45864,7 @@ MCNUM Qc = mccgeks_58_Qc;
 MCNUM alpha = mccgeks_58_alpha;
 MCNUM m = mccgeks_58_m;
 MCNUM W = mccgeks_58_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45909,7 +45909,7 @@ MCNUM Qc = mccgeks_59_Qc;
 MCNUM alpha = mccgeks_59_alpha;
 MCNUM m = mccgeks_59_m;
 MCNUM W = mccgeks_59_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45954,7 +45954,7 @@ MCNUM Qc = mccgeks_60_Qc;
 MCNUM alpha = mccgeks_60_alpha;
 MCNUM m = mccgeks_60_m;
 MCNUM W = mccgeks_60_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -45999,7 +45999,7 @@ MCNUM Qc = mccgeks_61_Qc;
 MCNUM alpha = mccgeks_61_alpha;
 MCNUM m = mccgeks_61_m;
 MCNUM W = mccgeks_61_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46044,7 +46044,7 @@ MCNUM Qc = mccgeks_62_Qc;
 MCNUM alpha = mccgeks_62_alpha;
 MCNUM m = mccgeks_62_m;
 MCNUM W = mccgeks_62_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46089,7 +46089,7 @@ MCNUM Qc = mccgeks_63_Qc;
 MCNUM alpha = mccgeks_63_alpha;
 MCNUM m = mccgeks_63_m;
 MCNUM W = mccgeks_63_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46134,7 +46134,7 @@ MCNUM Qc = mccgeks_64_Qc;
 MCNUM alpha = mccgeks_64_alpha;
 MCNUM m = mccgeks_64_m;
 MCNUM W = mccgeks_64_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46179,7 +46179,7 @@ MCNUM Qc = mccgeks_65_Qc;
 MCNUM alpha = mccgeks_65_alpha;
 MCNUM m = mccgeks_65_m;
 MCNUM W = mccgeks_65_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46224,7 +46224,7 @@ MCNUM Qc = mccgeks_66_Qc;
 MCNUM alpha = mccgeks_66_alpha;
 MCNUM m = mccgeks_66_m;
 MCNUM W = mccgeks_66_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46269,7 +46269,7 @@ MCNUM Qc = mccgeks_67_Qc;
 MCNUM alpha = mccgeks_67_alpha;
 MCNUM m = mccgeks_67_m;
 MCNUM W = mccgeks_67_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46314,7 +46314,7 @@ MCNUM Qc = mccgeks_68_Qc;
 MCNUM alpha = mccgeks_68_alpha;
 MCNUM m = mccgeks_68_m;
 MCNUM W = mccgeks_68_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46359,7 +46359,7 @@ MCNUM Qc = mccgeks_69_Qc;
 MCNUM alpha = mccgeks_69_alpha;
 MCNUM m = mccgeks_69_m;
 MCNUM W = mccgeks_69_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46404,7 +46404,7 @@ MCNUM Qc = mccgeks_70_Qc;
 MCNUM alpha = mccgeks_70_alpha;
 MCNUM m = mccgeks_70_m;
 MCNUM W = mccgeks_70_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46449,7 +46449,7 @@ MCNUM Qc = mccgeks_71_Qc;
 MCNUM alpha = mccgeks_71_alpha;
 MCNUM m = mccgeks_71_m;
 MCNUM W = mccgeks_71_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46494,7 +46494,7 @@ MCNUM Qc = mccgeks_72_Qc;
 MCNUM alpha = mccgeks_72_alpha;
 MCNUM m = mccgeks_72_m;
 MCNUM W = mccgeks_72_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46539,7 +46539,7 @@ MCNUM Qc = mccgeks_73_Qc;
 MCNUM alpha = mccgeks_73_alpha;
 MCNUM m = mccgeks_73_m;
 MCNUM W = mccgeks_73_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46584,7 +46584,7 @@ MCNUM Qc = mccgeks_74_Qc;
 MCNUM alpha = mccgeks_74_alpha;
 MCNUM m = mccgeks_74_m;
 MCNUM W = mccgeks_74_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46629,7 +46629,7 @@ MCNUM Qc = mccgeks_75_Qc;
 MCNUM alpha = mccgeks_75_alpha;
 MCNUM m = mccgeks_75_m;
 MCNUM W = mccgeks_75_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46674,7 +46674,7 @@ MCNUM Qc = mccgeks_76_Qc;
 MCNUM alpha = mccgeks_76_alpha;
 MCNUM m = mccgeks_76_m;
 MCNUM W = mccgeks_76_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46719,7 +46719,7 @@ MCNUM Qc = mccgeks_77_Qc;
 MCNUM alpha = mccgeks_77_alpha;
 MCNUM m = mccgeks_77_m;
 MCNUM W = mccgeks_77_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46764,7 +46764,7 @@ MCNUM Qc = mccgeks_78_Qc;
 MCNUM alpha = mccgeks_78_alpha;
 MCNUM m = mccgeks_78_m;
 MCNUM W = mccgeks_78_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46809,7 +46809,7 @@ MCNUM Qc = mccgeks_79_Qc;
 MCNUM alpha = mccgeks_79_alpha;
 MCNUM m = mccgeks_79_m;
 MCNUM W = mccgeks_79_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46854,7 +46854,7 @@ MCNUM Qc = mccgeks_80_Qc;
 MCNUM alpha = mccgeks_80_alpha;
 MCNUM m = mccgeks_80_m;
 MCNUM W = mccgeks_80_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46899,7 +46899,7 @@ MCNUM Qc = mccgeks_81_Qc;
 MCNUM alpha = mccgeks_81_alpha;
 MCNUM m = mccgeks_81_m;
 MCNUM W = mccgeks_81_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46944,7 +46944,7 @@ MCNUM Qc = mccgeks_82_Qc;
 MCNUM alpha = mccgeks_82_alpha;
 MCNUM m = mccgeks_82_m;
 MCNUM W = mccgeks_82_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -46989,7 +46989,7 @@ MCNUM Qc = mccgeks_83_Qc;
 MCNUM alpha = mccgeks_83_alpha;
 MCNUM m = mccgeks_83_m;
 MCNUM W = mccgeks_83_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -47034,7 +47034,7 @@ MCNUM Qc = mccgeks_84_Qc;
 MCNUM alpha = mccgeks_84_alpha;
 MCNUM m = mccgeks_84_m;
 MCNUM W = mccgeks_84_W;
-#line 186 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
+#line 186 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../optics/Guide_anyshape.comp"
 {
   /* display the object */
   off_display(offdata);
@@ -47093,7 +47093,7 @@ char* username1 = mccOcto_large_username1;
 char* username2 = mccOcto_large_username2;
 char* username3 = mccOcto_large_username3;
 int nowritefile = mccOcto_large_nowritefile;
-#line 494 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 494 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   if (geometry && strlen(geometry) && strcmp(geometry,"0") && strcmp(geometry, "NULL"))
   {
@@ -47150,7 +47150,7 @@ char* username1 = mccOcto_small_username1;
 char* username2 = mccOcto_small_username2;
 char* username3 = mccOcto_small_username3;
 int nowritefile = mccOcto_small_nowritefile;
-#line 494 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#line 494 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   if (geometry && strlen(geometry) && strcmp(geometry,"0") && strcmp(geometry, "NULL"))
   {
@@ -47172,42 +47172,42 @@ int nowritefile = mccOcto_small_nowritefile;
 #undef mccompcurtype
 #undef mccompcurindex
 
-  /* MCDISPLAY code for component 'Octo_small222'. */
-  SIG_MESSAGE("Octo_small222 (McDisplay)");
-  printf("MCDISPLAY: component %s\n", "Octo_small222");
-#define mccompcurname  Octo_small222
+  /* MCDISPLAY code for component 'Octo_small2'. */
+  SIG_MESSAGE("Octo_small2 (McDisplay)");
+  printf("MCDISPLAY: component %s\n", "Octo_small2");
+#define mccompcurname  Octo_small2
 #define mccompcurtype  Monitor_nD
 #define mccompcurindex 87
-#define user1 mccOcto_small222_user1
-#define user2 mccOcto_small222_user2
-#define user3 mccOcto_small222_user3
-#define DEFS mccOcto_small222_DEFS
-#define Vars mccOcto_small222_Vars
-#define detector mccOcto_small222_detector
-#define offdata mccOcto_small222_offdata
-{   /* Declarations of Octo_small222=Monitor_nD() SETTING parameters. */
-MCNUM xwidth = mccOcto_small222_xwidth;
-MCNUM yheight = mccOcto_small222_yheight;
-MCNUM zdepth = mccOcto_small222_zdepth;
-MCNUM xmin = mccOcto_small222_xmin;
-MCNUM xmax = mccOcto_small222_xmax;
-MCNUM ymin = mccOcto_small222_ymin;
-MCNUM ymax = mccOcto_small222_ymax;
-MCNUM zmin = mccOcto_small222_zmin;
-MCNUM zmax = mccOcto_small222_zmax;
-MCNUM bins = mccOcto_small222_bins;
-MCNUM min = mccOcto_small222_min;
-MCNUM max = mccOcto_small222_max;
-MCNUM restore_neutron = mccOcto_small222_restore_neutron;
-MCNUM radius = mccOcto_small222_radius;
-char* options = mccOcto_small222_options;
-char* filename = mccOcto_small222_filename;
-char* geometry = mccOcto_small222_geometry;
-char* username1 = mccOcto_small222_username1;
-char* username2 = mccOcto_small222_username2;
-char* username3 = mccOcto_small222_username3;
-int nowritefile = mccOcto_small222_nowritefile;
-#line 494 "/usr/share/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
+#define user1 mccOcto_small2_user1
+#define user2 mccOcto_small2_user2
+#define user3 mccOcto_small2_user3
+#define DEFS mccOcto_small2_DEFS
+#define Vars mccOcto_small2_Vars
+#define detector mccOcto_small2_detector
+#define offdata mccOcto_small2_offdata
+{   /* Declarations of Octo_small2=Monitor_nD() SETTING parameters. */
+MCNUM xwidth = mccOcto_small2_xwidth;
+MCNUM yheight = mccOcto_small2_yheight;
+MCNUM zdepth = mccOcto_small2_zdepth;
+MCNUM xmin = mccOcto_small2_xmin;
+MCNUM xmax = mccOcto_small2_xmax;
+MCNUM ymin = mccOcto_small2_ymin;
+MCNUM ymax = mccOcto_small2_ymax;
+MCNUM zmin = mccOcto_small2_zmin;
+MCNUM zmax = mccOcto_small2_zmax;
+MCNUM bins = mccOcto_small2_bins;
+MCNUM min = mccOcto_small2_min;
+MCNUM max = mccOcto_small2_max;
+MCNUM restore_neutron = mccOcto_small2_restore_neutron;
+MCNUM radius = mccOcto_small2_radius;
+char* options = mccOcto_small2_options;
+char* filename = mccOcto_small2_filename;
+char* geometry = mccOcto_small2_geometry;
+char* username1 = mccOcto_small2_username1;
+char* username2 = mccOcto_small2_username2;
+char* username3 = mccOcto_small2_username3;
+int nowritefile = mccOcto_small2_nowritefile;
+#line 494 "/private/var/folders/jy/_mbdcg6x69j8nzs4pjwyg2z00000gn/T/AppTranslocation/554CC0CD-CA1A-4D6D-BE4E-95AA077C5421/d/McStas-2.5.app/Contents/Resources/mcstas/2.5/tools/Python/mcrun/../mccodelib/../../../monitors/Monitor_nD.comp"
 {
   if (geometry && strlen(geometry) && strcmp(geometry,"0") && strcmp(geometry, "NULL"))
   {
@@ -47217,7 +47217,7 @@ int nowritefile = mccOcto_small222_nowritefile;
   }
 }
 #line 47132 "./octa_ell_n.c"
-}   /* End of Octo_small222=Monitor_nD() SETTING parameter declarations. */
+}   /* End of Octo_small2=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
 #undef Vars

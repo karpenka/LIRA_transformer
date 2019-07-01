@@ -17,7 +17,7 @@ L0=L;
 m=6;
 ww = w1*2;
 hh = w2*2;
-lambda = 5;
+lambda = 2;
 
 %fixed parameters
 
@@ -26,10 +26,9 @@ jo1 = 1; jo2 = 1;
 z=0;
 %parameters to scan
 x0=30; %x0 = -L:L
-l0=12; %l0 = 0:L/2
-%l0< L*(w1-sqrt(w1*w2))/(w1-w2)
-for x0 = -L:40:L
-    for l0 = 1:3:4
+l0=12; %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
+for x0 = -12:1:-7
+    for l0 = 1:1:12
 
         %scan step l
 
@@ -110,7 +109,7 @@ for x0 = -L:40:L
             z=0;
             continue
         end
-        model = mccode('octa_ell_n.instr',['ncount=' num2str(ncount),'mpi=' 1]);
+        model = mccode('octa_ell_n.instr',['ncount=' num2str(ncount)]);
         parameters.L0 = L0;
         parameters.guide_m = m;
         parameters.w = ww;
