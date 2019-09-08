@@ -27,7 +27,7 @@ z=0;
 %parameters to scan
 x0=30; %x0 = -L:L
 l0=12; %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
-for x0 = -12:1:-7
+for x0 = 20:1:40
 
         %scan step l
 
@@ -126,8 +126,8 @@ for x0 = -12:1:-7
     jo1=1;
 end
 figure;
-surf(sum1);
+plot(sum1);
 figure;
-surf(sum2);
+plot(sum2);
 figure;
-surf(sum3);
+plot(sum3);
