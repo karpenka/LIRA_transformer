@@ -1,7 +1,7 @@
 
 clear all;
-%path = '/home/nerde/JOB/Projects/PIK/LIRA/LIRA_transformer';
-path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer';
+path = '/home/nerde/JOB/github/LIRA_transformer';
+% path = '/Users/peterkonik/JOB/git_repos/LIRA_transformer';
 n = 79;
 octagon_elliptic_n(n)
 
@@ -95,21 +95,21 @@ l0=12; %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
             end
         
         end
-
-        model = mccode('octa_ell_n.instr',['ncount=' num2str(ncount)]);
-        parameters.L0 = L0;
-        parameters.guide_m = m;
-        parameters.w = ww;
-        parameters.h = hh;
-        parameters.lambda = lambda;
-        results = iData(model,parameters);
-        sum1 = results.UserData.monitors(1).Data.values(1);
-        sum2 = results.UserData.monitors(1).Data.values(2);
-        sum3 = results.UserData.monitors(1).Data.values(3);
-
-figure;
-plot(sum1);
-figure;
-plot(sum2);
-figure;
-plot(sum3);
+% 
+%         model = mccode('octa_ell_n.instr',['ncount=' num2str(ncount)]);
+%         parameters.L0 = L0;
+%         parameters.guide_m = m;
+%         parameters.w = ww;
+%         parameters.h = hh;
+%         parameters.lambda = lambda;
+%         results = iData(model,parameters);
+%         sum1 = results.UserData.monitors(1).Data.values(1);
+%         sum2 = results.UserData.monitors(1).Data.values(2);
+%         sum3 = results.UserData.monitors(1).Data.values(3);
+% 
+% figure;
+% plot(sum1);
+% figure;
+% plot(sum2);
+% figure;
+% plot(sum3);
