@@ -10,6 +10,7 @@ w2=0.075;
 h1=w2;
 h2=w1;
 L=40;
+lin = 0.01;
 
 ncount = 1e6;
 L0=L;
@@ -21,7 +22,10 @@ lambda = 2;
 %fixed parameters
 
 l=0;
+jo1 = 1; jo2 = 1;
+z=0;
 %parameters to scan
+x0=30; %x0 = -L:L
 l0=12; %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
 
 
@@ -86,11 +90,11 @@ l0=12; %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
                 mesh_transf_comsol(path);
                 stl_to_off_oct_fp_output_file('oct_comsol.stl',num2str(j),path);
             catch
-                sum1 = -1;
-                sum2 = -1;
-                sum3 = -1;
-             
-           
+                sum1(jo1,jo2) = -1;
+                sum2(jo1,jo2) = -1;
+                sum3(jo1,jo2) = -1;
+                jo1 = jo1+1;
+                l = 0;
                 break
             end
         
@@ -103,9 +107,15 @@ l0=12; %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
         parameters.h = hh;
         parameters.lambda = lambda;
         results = iData(model,parameters);
-        sum1 = results.UserData.monitors(1).Data.values(1);
-        sum2 = results.UserData.monitors(1).Data.values(2);
-        sum3 = results.UserData.monitors(1).Data.values(3);
+        sum1(jo1,jo2) = results.UserData.monitors(1).Data.values(1);
+        sum2(jo1,jo2) = results.UserData.monitors(1).Data.values(2);
+        sum3(jo1,jo2) = results.UserData.monitors(1).Data.values(3);
+        jo1 = jo1+1;
+        l = 0;
+        z=0;
+ 
+    jo2 = jo2+1;
+    jo1=1;
 
 figure;
 plot(sum1);
