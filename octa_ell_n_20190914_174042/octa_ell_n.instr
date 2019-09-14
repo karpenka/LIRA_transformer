@@ -1,0 +1,582 @@
+ 
+DEFINE INSTRUMENT H3(L0 = 15, L1 = 10, lambda = 5, guide_m=6, w=0.03, h=0.15, LL = 0)
+ 
+DECLARE
+%{
+//temp
+double cold_regime=1;
+double source_lambda_max, source_lambda_min;
+ 
+//[Cold source parameters
+double source_height = 0.2, source_width = 0.12;
+double source_I1 = 5.38e12, source_I2= 2.50e12, source_I3 = 9.51e12;
+double source_T1 = 204.6, source_T2 = 73.9, source_T3 = 23.9;
+ 
+//Thermal regime parameters
+double source_thermal_T1 = 312.2;
+double source_thermal_I1 = 2.25e13;
+ 
+//No contaiber parameters
+double source_no_T1 = 306.4;
+double source_no_I1 = 7.05e12; 
+ 
+//Distance to neutron guides
+double guide_start_dist = 1.82;
+ 
+%}
+ 
+INITIALIZE
+%{
+//thermal regime of CNS
+if (cold_regime==0){
+source_T1 = source_thermal_T1;
+source_I1 = source_thermal_I1;
+source_I2 = 0;
+source_I3 = 0;};
+ 
+//no container presented
+if (cold_regime==-1){
+source_T1 = source_no_T1;
+source_I1 = source_no_I1;
+source_I2 = 0;
+source_I3 = 0;};
+ 
+source_lambda_min = lambda-0.1;
+source_lambda_max = lambda+0.1;
+%}
+ 
+TRACE
+ 
+COMPONENT Origin = Progress_bar()
+AT (0,0,0) ABSOLUTE
+ 
+//PIK CNS
+ 
+COMPONENT H3 = Source_gen(
+dist = guide_start_dist, focus_xw = w,
+focus_yh = h, I1 = source_I1, yheight = source_height,
+xwidth = source_width, T1 = source_T1, Lmin = source_lambda_min,
+Lmax = source_lambda_max, T2 = source_T2, I2 = source_I2, T3 = source_T3,
+I3 = source_I3)
+AT (0, 0, 0) RELATIVE Origin
+ 
+//Head collimator
+ 
+COMPONENT Guide_start_arm = Arm(
+)
+AT (0, 0, guide_start_dist) RELATIVE Origin
+ 
+ 
+//Curved in-bunker part
+ 
+COMPONENT Guide_bunker_straight = Guide_gravity(
+w1 = w, h1 = h, l = 25, mleft = 1, mright = 1,
+mtop = 3, mbottom = 3, G = -9.81)
+AT (0, 0, 0) RELATIVE PREVIOUS
+/*
+COMPONENT Straight_2AA = Monitor_nD(
+xwidth = w+0.02, yheight = h+0.05, bins = 100, options = "dx limits=[-0.2 0.2] dy limits=[-0.6 0.6]")
+AT (0, 0, 50.01) RELATIVE PREVIOUS
+ 
+COMPONENT Straight_5AA = Monitor_nD(
+xwidth = w+0.02, yheight = h+0.05, bins = 100, options = "dx limits=[-0.5 0.5] dy limits=[-1.5 1.5]")
+AT (0, 0,50.01) RELATIVE Guide_bunker_straight
+ 
+COMPONENT Straight_10AA = Monitor_nD(
+xwidth = w+0.02, yheight = h+0.05, bins = 100, options = "dx limits=[-1 1] dy limits=[-3 3]")
+AT (0, 0, 0.01) RELATIVE PREVIOUS
+*/
+ 
+COMPONENT arm_geks = Arm(
+)
+AT (0, 0, 25.02) RELATIVE Guide_bunker_straight
+ 
+COMPONENT geks = Guide_anyshape(
+geometry = "1.off",
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, 0.01) RELATIVE PREVIOUS
+ 
+ 
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "2.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "3.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "4.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "5.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "6.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "7.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "8.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "9.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "10.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "11.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "12.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "13.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "14.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "15.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "16.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "17.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "18.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "19.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "20.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "21.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "22.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "23.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "24.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "25.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "26.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "27.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "28.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "29.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "30.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "31.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "32.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "33.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "34.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "35.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "36.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "37.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "38.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "39.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "40.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "41.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "42.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "43.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "44.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "45.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "46.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "47.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "48.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "49.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "50.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "51.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "52.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "53.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "54.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "55.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "56.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "57.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "58.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "59.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "60.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "61.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "62.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "63.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "64.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "65.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "66.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "67.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "68.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "69.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "70.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "71.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "72.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "73.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "74.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "75.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "76.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "77.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "78.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT COPY(geks) = Guide_anyshape(
+geometry = "79.off", 
+center = 0, R0 = 0.99, Qc = 0.0219, alpha = 3.1, m = guide_m,
+W = 0.003)
+AT (0, 0, LL) RELATIVE PREVIOUS
+ 
+COMPONENT Octo_large = Monitor_nD(
+xwidth = 1, yheight = 1, bins = 150, options = "dy limits = [-4 4]")
+AT (0, 0, 41) RELATIVE arm_geks
+COMPONENT Octo_small = Monitor_nD(
+xwidth = 1, yheight = 1, bins = 100, options = "dy limits = [-0.15 0.15]")
+AT (0, 0, 0.01) RELATIVE PREVIOUS
+COMPONENT Octo_small2 = Monitor_nD(
+xwidth = 1, yheight = 1, bins = 100, options = "dy limits = [0 0.3]")
+AT (0, 0, 0.01) RELATIVE PREVIOUS
+FINALLY
+%{
+%}
+END
