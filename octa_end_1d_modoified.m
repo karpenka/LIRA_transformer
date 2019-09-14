@@ -82,18 +82,9 @@ l0=12; %l0< L*(w1-sqrt(w1*w2))/(w1-w2)
             faces = [triangulateFaces(x2(:,2:5))]+1;
 
             stlwrite('oct.stl',faces,vert)
-            try
-                mesh_transf_comsol(path);
-                stl_to_off_oct_fp_output_file('oct_comsol.stl',num2str(j),path);
-            catch
-                sum1 = -1;
-                sum2 = -1;
-                sum3 = -1;
-             
-           
-                break
-            end
-        
+            
+            mesh_transf_comsol(path);
+            stl_to_off_oct_fp_output_file('oct_comsol.stl',num2str(j),path);
         end
 % 
 %         model = mccode('octa_ell_n.instr',['ncount=' num2str(ncount)]);
