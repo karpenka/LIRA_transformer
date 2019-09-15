@@ -2,7 +2,7 @@
  * Format:     ANSI C source code
  * Creator:    McStas <http://www.mcstas.org>
  * Instrument: octa_ell_n.instr (H3)
- * Date:       Sat Sep 14 17:33:07 2019
+ * Date:       Sat Sep 14 18:04:53 2019
  * File:       ./octa_ell_n.c
  * Compile:    cc -o H3.out ./octa_ell_n.c 
  * CFLAGS=
@@ -15365,8 +15365,8 @@ source_I1 = source_no_I1;
 source_I2 = 0;
 source_I3 = 0;};
  
-source_lambda_min = lambda-0.1;
-source_lambda_max = lambda+0.1;
+source_lambda_min = 0.1;
+source_lambda_max = 20;
 }
 #line 15371 "./octa_ell_n.c"
 #undef LL
