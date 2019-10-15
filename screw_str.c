@@ -2,7 +2,7 @@
  * Format:     ANSI C source code
  * Creator:    McStas <http://www.mcstas.org>
  * Instrument: screw_str.instr (H3)
- * Date:       Sun Jun 16 17:33:18 2019
+ * Date:       Mon Oct  7 17:02:07 2019
  * File:       ./screw_str.c
  * Compile:    cc -o H3.out ./screw_str.c 
  * CFLAGS=
@@ -10910,10 +10910,15 @@ if (cold_regime==-1){
 	source_I2 = 0;
 	source_I3 = 0;};
 
-source_lambda_min = lambda-0.1;
-source_lambda_max = lambda+0.1;
+//source_lambda_min = lambda-0.1;
+//source_lambda_max = lambda+0.1;
+
+source_lambda_min = 0.1;
+source_lambda_max = 20;
+
+
 }
-#line 10916 "./screw_str.c"
+#line 10921 "./screw_str.c"
 #undef lambda
 #undef h
 #undef w
@@ -10944,23 +10949,23 @@ source_lambda_max = lambda+0.1;
   mccOrigin_flag_save = 0;
 #line 39 "screw_str.instr"
   mccOrigin_minutes = 0;
-#line 10947 "./screw_str.c"
+#line 10952 "./screw_str.c"
 
   SIG_MESSAGE("Origin (Init:Place/Rotate)");
   rot_set_rotation(mcrotaOrigin,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 10954 "./screw_str.c"
+#line 10959 "./screw_str.c"
   rot_copy(mcrotrOrigin, mcrotaOrigin);
   mcposaOrigin = coords_set(
-#line 79 "screw_str.instr"
+#line 84 "screw_str.instr"
     0,
-#line 79 "screw_str.instr"
+#line 84 "screw_str.instr"
     0,
-#line 79 "screw_str.instr"
+#line 84 "screw_str.instr"
     0);
-#line 10963 "./screw_str.c"
+#line 10968 "./screw_str.c"
   mctc1 = coords_neg(mcposaOrigin);
   mcposrOrigin = rot_apply(mcrotaOrigin, mctc1);
   mcDEBUG_COMPONENT("Origin", mcposaOrigin, mcrotaOrigin)
@@ -10979,11 +10984,11 @@ source_lambda_max = lambda+0.1;
   if("NULL") strncpy(mccH3_ydiv_file, "NULL" ? "NULL" : "", 16384); else mccH3_ydiv_file[0]='\0';
 #line 130 "screw_str.instr"
   mccH3_radius = 0.0;
-#line 84 "screw_str.instr"
+#line 89 "screw_str.instr"
   mccH3_dist = guide_start_dist;
-#line 84 "screw_str.instr"
+#line 89 "screw_str.instr"
   mccH3_focus_xw = mcipw;
-#line 85 "screw_str.instr"
+#line 90 "screw_str.instr"
   mccH3_focus_yh = mciph;
 #line 130 "screw_str.instr"
   mccH3_focus_aw = 0;
@@ -10997,59 +11002,59 @@ source_lambda_max = lambda+0.1;
   mccH3_lambda0 = 0;
 #line 131 "screw_str.instr"
   mccH3_dlambda = 0;
-#line 85 "screw_str.instr"
+#line 90 "screw_str.instr"
   mccH3_I1 = source_I1;
-#line 85 "screw_str.instr"
+#line 90 "screw_str.instr"
   mccH3_yheight = source_height;
-#line 86 "screw_str.instr"
+#line 91 "screw_str.instr"
   mccH3_xwidth = source_width;
 #line 132 "screw_str.instr"
   mccH3_verbose = 0;
-#line 86 "screw_str.instr"
+#line 91 "screw_str.instr"
   mccH3_T1 = source_T1;
 #line 133 "screw_str.instr"
   mccH3_flux_file_perAA = 0;
 #line 133 "screw_str.instr"
   mccH3_flux_file_log = 0;
-#line 86 "screw_str.instr"
+#line 91 "screw_str.instr"
   mccH3_Lmin = source_lambda_min;
-#line 87 "screw_str.instr"
+#line 92 "screw_str.instr"
   mccH3_Lmax = source_lambda_max;
 #line 134 "screw_str.instr"
   mccH3_Emin = 0;
 #line 134 "screw_str.instr"
   mccH3_Emax = 0;
-#line 87 "screw_str.instr"
+#line 92 "screw_str.instr"
   mccH3_T2 = source_T2;
-#line 87 "screw_str.instr"
+#line 92 "screw_str.instr"
   mccH3_I2 = source_I2;
-#line 87 "screw_str.instr"
+#line 92 "screw_str.instr"
   mccH3_T3 = source_T3;
-#line 88 "screw_str.instr"
+#line 93 "screw_str.instr"
   mccH3_I3 = source_I3;
 #line 134 "screw_str.instr"
   mccH3_zdepth = 0;
 #line 134 "screw_str.instr"
   mccH3_target_index = + 1;
-#line 11034 "./screw_str.c"
+#line 11039 "./screw_str.c"
 
   SIG_MESSAGE("H3 (Init:Place/Rotate)");
   rot_set_rotation(mctr1,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11041 "./screw_str.c"
+#line 11046 "./screw_str.c"
   rot_mul(mctr1, mcrotaOrigin, mcrotaH3);
   rot_transpose(mcrotaOrigin, mctr1);
   rot_mul(mcrotaH3, mctr1, mcrotrH3);
   mctc1 = coords_set(
-#line 89 "screw_str.instr"
+#line 94 "screw_str.instr"
     0,
-#line 89 "screw_str.instr"
+#line 94 "screw_str.instr"
     0,
-#line 89 "screw_str.instr"
+#line 94 "screw_str.instr"
     0);
-#line 11052 "./screw_str.c"
+#line 11057 "./screw_str.c"
   rot_transpose(mcrotaOrigin, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposaH3 = coords_add(mcposaOrigin, mctc2);
@@ -11069,18 +11074,18 @@ source_lambda_max = lambda+0.1;
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11072 "./screw_str.c"
+#line 11077 "./screw_str.c"
   rot_mul(mctr1, mcrotaOrigin, mcrotaGuide_start_arm);
   rot_transpose(mcrotaH3, mctr1);
   rot_mul(mcrotaGuide_start_arm, mctr1, mcrotrGuide_start_arm);
   mctc1 = coords_set(
-#line 95 "screw_str.instr"
+#line 100 "screw_str.instr"
     0,
-#line 95 "screw_str.instr"
+#line 100 "screw_str.instr"
     0,
-#line 95 "screw_str.instr"
+#line 100 "screw_str.instr"
     guide_start_dist);
-#line 11083 "./screw_str.c"
+#line 11088 "./screw_str.c"
   rot_transpose(mcrotaOrigin, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposaGuide_start_arm = coords_add(mcposaOrigin, mctc2);
@@ -11094,15 +11099,15 @@ source_lambda_max = lambda+0.1;
     /* Component Guide_bunker_straight. */
   /* Setting parameters for component Guide_bunker_straight. */
   SIG_MESSAGE("Guide_bunker_straight (Init:SetPar)");
-#line 101 "screw_str.instr"
+#line 106 "screw_str.instr"
   mccGuide_bunker_straight_w1 = mcipw;
-#line 101 "screw_str.instr"
+#line 106 "screw_str.instr"
   mccGuide_bunker_straight_h1 = mciph;
 #line 113 "screw_str.instr"
   mccGuide_bunker_straight_w2 = 0;
 #line 113 "screw_str.instr"
   mccGuide_bunker_straight_h2 = 0;
-#line 101 "screw_str.instr"
+#line 106 "screw_str.instr"
   mccGuide_bunker_straight_l = 25;
 #line 114 "screw_str.instr"
   mccGuide_bunker_straight_R0 = 0.995;
@@ -11118,17 +11123,17 @@ source_lambda_max = lambda+0.1;
   mccGuide_bunker_straight_nslit = 1;
 #line 114 "screw_str.instr"
   mccGuide_bunker_straight_d = 0.0005;
-#line 101 "screw_str.instr"
+#line 106 "screw_str.instr"
   mccGuide_bunker_straight_mleft = 1;
-#line 101 "screw_str.instr"
+#line 106 "screw_str.instr"
   mccGuide_bunker_straight_mright = 1;
-#line 102 "screw_str.instr"
+#line 107 "screw_str.instr"
   mccGuide_bunker_straight_mtop = 3;
-#line 102 "screw_str.instr"
+#line 107 "screw_str.instr"
   mccGuide_bunker_straight_mbottom = 3;
 #line 115 "screw_str.instr"
   mccGuide_bunker_straight_nhslit = 1;
-#line 102 "screw_str.instr"
+#line 107 "screw_str.instr"
   mccGuide_bunker_straight_G = -9.81;
 #line 116 "screw_str.instr"
   mccGuide_bunker_straight_aleft = -1;
@@ -11162,25 +11167,25 @@ source_lambda_max = lambda+0.1;
   mccGuide_bunker_straight_phase = 0;
 #line 119 "screw_str.instr"
   if("NULL") strncpy(mccGuide_bunker_straight_reflect, "NULL" ? "NULL" : "", 16384); else mccGuide_bunker_straight_reflect[0]='\0';
-#line 11165 "./screw_str.c"
+#line 11170 "./screw_str.c"
 
   SIG_MESSAGE("Guide_bunker_straight (Init:Place/Rotate)");
   rot_set_rotation(mctr1,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11172 "./screw_str.c"
+#line 11177 "./screw_str.c"
   rot_mul(mctr1, mcrotaGuide_start_arm, mcrotaGuide_bunker_straight);
   rot_transpose(mcrotaGuide_start_arm, mctr1);
   rot_mul(mcrotaGuide_bunker_straight, mctr1, mcrotrGuide_bunker_straight);
   mctc1 = coords_set(
-#line 103 "screw_str.instr"
+#line 108 "screw_str.instr"
     0,
-#line 103 "screw_str.instr"
+#line 108 "screw_str.instr"
     0,
-#line 103 "screw_str.instr"
+#line 108 "screw_str.instr"
     0);
-#line 11183 "./screw_str.c"
+#line 11188 "./screw_str.c"
   rot_transpose(mcrotaGuide_start_arm, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposaGuide_bunker_straight = coords_add(mcposaGuide_start_arm, mctc2);
@@ -11200,18 +11205,18 @@ source_lambda_max = lambda+0.1;
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11203 "./screw_str.c"
+#line 11208 "./screw_str.c"
   rot_mul(mctr1, mcrotaGuide_bunker_straight, mcrotaarm_geks);
   rot_transpose(mcrotaGuide_bunker_straight, mctr1);
   rot_mul(mcrotaarm_geks, mctr1, mcrotrarm_geks);
   mctc1 = coords_set(
-#line 117 "screw_str.instr"
+#line 122 "screw_str.instr"
     0,
-#line 117 "screw_str.instr"
+#line 122 "screw_str.instr"
     0,
-#line 117 "screw_str.instr"
+#line 122 "screw_str.instr"
     25.02);
-#line 11214 "./screw_str.c"
+#line 11219 "./screw_str.c"
   rot_transpose(mcrotaGuide_bunker_straight, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposaarm_geks = coords_add(mcposaGuide_bunker_straight, mctc2);
@@ -11231,39 +11236,39 @@ source_lambda_max = lambda+0.1;
   mccgeks_yheight = 0;
 #line 79 "screw_str.instr"
   mccgeks_zdepth = 0;
-#line 134 "screw_str.instr"
+#line 139 "screw_str.instr"
   mccgeks_center = 0;
 #line 79 "screw_str.instr"
   mccgeks_transmit = 0;
-#line 134 "screw_str.instr"
+#line 139 "screw_str.instr"
   mccgeks_R0 = 0.99;
-#line 134 "screw_str.instr"
+#line 139 "screw_str.instr"
   mccgeks_Qc = 0.0219;
-#line 134 "screw_str.instr"
+#line 139 "screw_str.instr"
   mccgeks_alpha = 3.1;
-#line 134 "screw_str.instr"
+#line 139 "screw_str.instr"
   mccgeks_m = mcipguide_m;
-#line 135 "screw_str.instr"
+#line 140 "screw_str.instr"
   mccgeks_W = 0.003;
-#line 11248 "./screw_str.c"
+#line 11253 "./screw_str.c"
 
   SIG_MESSAGE("geks (Init:Place/Rotate)");
   rot_set_rotation(mctr1,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11255 "./screw_str.c"
+#line 11260 "./screw_str.c"
   rot_mul(mctr1, mcrotaarm_geks, mcrotageks);
   rot_transpose(mcrotaarm_geks, mctr1);
   rot_mul(mcrotageks, mctr1, mcrotrgeks);
   mctc1 = coords_set(
-#line 138 "screw_str.instr"
+#line 143 "screw_str.instr"
     0,
-#line 138 "screw_str.instr"
+#line 143 "screw_str.instr"
     0,
-#line 138 "screw_str.instr"
+#line 143 "screw_str.instr"
     0);
-#line 11266 "./screw_str.c"
+#line 11271 "./screw_str.c"
   rot_transpose(mcrotaarm_geks, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposageks = coords_add(mcposaarm_geks, mctc2);
@@ -11277,9 +11282,9 @@ source_lambda_max = lambda+0.1;
     /* Component Octo_large. */
   /* Setting parameters for component Octo_large. */
   SIG_MESSAGE("Octo_large (Init:SetPar)");
-#line 141 "screw_str.instr"
+#line 146 "screw_str.instr"
   mccOcto_large_xwidth = mcipw;
-#line 141 "screw_str.instr"
+#line 146 "screw_str.instr"
   mccOcto_large_yheight = mciph;
 #line 201 "screw_str.instr"
   mccOcto_large_zdepth = 0;
@@ -11295,7 +11300,7 @@ source_lambda_max = lambda+0.1;
   mccOcto_large_zmin = 0;
 #line 202 "screw_str.instr"
   mccOcto_large_zmax = 0;
-#line 141 "screw_str.instr"
+#line 146 "screw_str.instr"
   mccOcto_large_bins = 100;
 #line 203 "screw_str.instr"
   mccOcto_large_min = -1e40;
@@ -11305,7 +11310,7 @@ source_lambda_max = lambda+0.1;
   mccOcto_large_restore_neutron = 0;
 #line 203 "screw_str.instr"
   mccOcto_large_radius = 0;
-#line 141 "screw_str.instr"
+#line 146 "screw_str.instr"
   if("dx limits=[-2 2]") strncpy(mccOcto_large_options, "dx limits=[-2 2]" ? "dx limits=[-2 2]" : "", 16384); else mccOcto_large_options[0]='\0';
 #line 204 "screw_str.instr"
   if("NULL") strncpy(mccOcto_large_filename, "NULL" ? "NULL" : "", 16384); else mccOcto_large_filename[0]='\0';
@@ -11319,25 +11324,25 @@ source_lambda_max = lambda+0.1;
   if("NULL") strncpy(mccOcto_large_username3, "NULL" ? "NULL" : "", 16384); else mccOcto_large_username3[0]='\0';
 #line 206 "screw_str.instr"
   mccOcto_large_nowritefile = 0;
-#line 11322 "./screw_str.c"
+#line 11327 "./screw_str.c"
 
   SIG_MESSAGE("Octo_large (Init:Place/Rotate)");
   rot_set_rotation(mctr1,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11329 "./screw_str.c"
+#line 11334 "./screw_str.c"
   rot_mul(mctr1, mcrotaarm_geks, mcrotaOcto_large);
   rot_transpose(mcrotageks, mctr1);
   rot_mul(mcrotaOcto_large, mctr1, mcrotrOcto_large);
   mctc1 = coords_set(
-#line 142 "screw_str.instr"
+#line 147 "screw_str.instr"
     0,
-#line 142 "screw_str.instr"
+#line 147 "screw_str.instr"
     0,
-#line 142 "screw_str.instr"
+#line 147 "screw_str.instr"
     mcipL + 0.02);
-#line 11340 "./screw_str.c"
+#line 11345 "./screw_str.c"
   rot_transpose(mcrotaarm_geks, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposaOcto_large = coords_add(mcposaarm_geks, mctc2);
@@ -11351,9 +11356,9 @@ source_lambda_max = lambda+0.1;
     /* Component Octo_medium. */
   /* Setting parameters for component Octo_medium. */
   SIG_MESSAGE("Octo_medium (Init:SetPar)");
-#line 145 "screw_str.instr"
+#line 150 "screw_str.instr"
   mccOcto_medium_xwidth = mcipw;
-#line 145 "screw_str.instr"
+#line 150 "screw_str.instr"
   mccOcto_medium_yheight = mciph;
 #line 201 "screw_str.instr"
   mccOcto_medium_zdepth = 0;
@@ -11369,7 +11374,7 @@ source_lambda_max = lambda+0.1;
   mccOcto_medium_zmin = 0;
 #line 202 "screw_str.instr"
   mccOcto_medium_zmax = 0;
-#line 145 "screw_str.instr"
+#line 150 "screw_str.instr"
   mccOcto_medium_bins = 100;
 #line 203 "screw_str.instr"
   mccOcto_medium_min = -1e40;
@@ -11379,7 +11384,7 @@ source_lambda_max = lambda+0.1;
   mccOcto_medium_restore_neutron = 0;
 #line 203 "screw_str.instr"
   mccOcto_medium_radius = 0;
-#line 145 "screw_str.instr"
+#line 150 "screw_str.instr"
   if("dx limits = [-0.5 0.5] ") strncpy(mccOcto_medium_options, "dx limits = [-0.5 0.5] " ? "dx limits = [-0.5 0.5] " : "", 16384); else mccOcto_medium_options[0]='\0';
 #line 204 "screw_str.instr"
   if("NULL") strncpy(mccOcto_medium_filename, "NULL" ? "NULL" : "", 16384); else mccOcto_medium_filename[0]='\0';
@@ -11393,25 +11398,25 @@ source_lambda_max = lambda+0.1;
   if("NULL") strncpy(mccOcto_medium_username3, "NULL" ? "NULL" : "", 16384); else mccOcto_medium_username3[0]='\0';
 #line 206 "screw_str.instr"
   mccOcto_medium_nowritefile = 0;
-#line 11396 "./screw_str.c"
+#line 11401 "./screw_str.c"
 
   SIG_MESSAGE("Octo_medium (Init:Place/Rotate)");
   rot_set_rotation(mctr1,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11403 "./screw_str.c"
+#line 11408 "./screw_str.c"
   rot_mul(mctr1, mcrotaOcto_large, mcrotaOcto_medium);
   rot_transpose(mcrotaOcto_large, mctr1);
   rot_mul(mcrotaOcto_medium, mctr1, mcrotrOcto_medium);
   mctc1 = coords_set(
-#line 146 "screw_str.instr"
+#line 151 "screw_str.instr"
     0,
-#line 146 "screw_str.instr"
+#line 151 "screw_str.instr"
     0,
-#line 146 "screw_str.instr"
+#line 151 "screw_str.instr"
     0.0001);
-#line 11414 "./screw_str.c"
+#line 11419 "./screw_str.c"
   rot_transpose(mcrotaOcto_large, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposaOcto_medium = coords_add(mcposaOcto_large, mctc2);
@@ -11425,9 +11430,9 @@ source_lambda_max = lambda+0.1;
     /* Component Octo_small. */
   /* Setting parameters for component Octo_small. */
   SIG_MESSAGE("Octo_small (Init:SetPar)");
-#line 149 "screw_str.instr"
+#line 154 "screw_str.instr"
   mccOcto_small_xwidth = mcipw;
-#line 149 "screw_str.instr"
+#line 154 "screw_str.instr"
   mccOcto_small_yheight = mciph;
 #line 201 "screw_str.instr"
   mccOcto_small_zdepth = 0;
@@ -11443,7 +11448,7 @@ source_lambda_max = lambda+0.1;
   mccOcto_small_zmin = 0;
 #line 202 "screw_str.instr"
   mccOcto_small_zmax = 0;
-#line 149 "screw_str.instr"
+#line 154 "screw_str.instr"
   mccOcto_small_bins = 100;
 #line 203 "screw_str.instr"
   mccOcto_small_min = -1e40;
@@ -11453,7 +11458,7 @@ source_lambda_max = lambda+0.1;
   mccOcto_small_restore_neutron = 0;
 #line 203 "screw_str.instr"
   mccOcto_small_radius = 0;
-#line 149 "screw_str.instr"
+#line 154 "screw_str.instr"
   if("dx limits = [-0.1 0.1] ") strncpy(mccOcto_small_options, "dx limits = [-0.1 0.1] " ? "dx limits = [-0.1 0.1] " : "", 16384); else mccOcto_small_options[0]='\0';
 #line 204 "screw_str.instr"
   if("NULL") strncpy(mccOcto_small_filename, "NULL" ? "NULL" : "", 16384); else mccOcto_small_filename[0]='\0';
@@ -11467,25 +11472,25 @@ source_lambda_max = lambda+0.1;
   if("NULL") strncpy(mccOcto_small_username3, "NULL" ? "NULL" : "", 16384); else mccOcto_small_username3[0]='\0';
 #line 206 "screw_str.instr"
   mccOcto_small_nowritefile = 0;
-#line 11470 "./screw_str.c"
+#line 11475 "./screw_str.c"
 
   SIG_MESSAGE("Octo_small (Init:Place/Rotate)");
   rot_set_rotation(mctr1,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD,
     (0.0)*DEG2RAD);
-#line 11477 "./screw_str.c"
+#line 11482 "./screw_str.c"
   rot_mul(mctr1, mcrotaOcto_medium, mcrotaOcto_small);
   rot_transpose(mcrotaOcto_medium, mctr1);
   rot_mul(mcrotaOcto_small, mctr1, mcrotrOcto_small);
   mctc1 = coords_set(
-#line 150 "screw_str.instr"
+#line 155 "screw_str.instr"
     0,
-#line 150 "screw_str.instr"
+#line 155 "screw_str.instr"
     0,
-#line 150 "screw_str.instr"
+#line 155 "screw_str.instr"
     0.0001);
-#line 11488 "./screw_str.c"
+#line 11493 "./screw_str.c"
   rot_transpose(mcrotaOcto_medium, mctr1);
   mctc2 = rot_apply(mctr1, mctc1);
   mcposaOcto_small = coords_add(mcposaOcto_medium, mctc2);
@@ -11522,7 +11527,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
     percent=1e5*100.0/mcget_ncount();
   }
 }
-#line 11525 "./screw_str.c"
+#line 11530 "./screw_str.c"
 #undef minutes
 #undef flag_save
 #undef percent
@@ -11859,7 +11864,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
       printf("Source_gen: component %s unactivated", NAME_CURRENT_COMP);
   );
 }
-#line 11862 "./screw_str.c"
+#line 11867 "./screw_str.c"
 #undef target_index
 #undef zdepth
 #undef I3
@@ -12007,7 +12012,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
   } else printf("Guide_gravity: %s: unactivated (l=0 or nelements=0)\n", NAME_CURRENT_COMP);
 
 }
-#line 12010 "./screw_str.c"
+#line 12015 "./screw_str.c"
 #undef reflect
 #undef phase
 #undef nu
@@ -12083,7 +12088,7 @@ fprintf(stdout, "[%s] Initialize\n", mcinstrument_name);
       Table_Rebin(&pTable);         /* rebin as evenly, increasing array */
   }
 }
-#line 12086 "./screw_str.c"
+#line 12091 "./screw_str.c"
 #undef W
 #undef m
 #undef alpha
@@ -12214,7 +12219,7 @@ MPI_MASTER(
 );
 #endif
 }
-#line 12217 "./screw_str.c"
+#line 12222 "./screw_str.c"
 #undef nowritefile
 #undef username3
 #undef username2
@@ -12359,7 +12364,7 @@ MPI_MASTER(
 );
 #endif
 }
-#line 12362 "./screw_str.c"
+#line 12367 "./screw_str.c"
 #undef nowritefile
 #undef username3
 #undef username2
@@ -12504,7 +12509,7 @@ MPI_MASTER(
 );
 #endif
 }
-#line 12507 "./screw_str.c"
+#line 12512 "./screw_str.c"
 #undef nowritefile
 #undef username3
 #undef username2
@@ -12690,7 +12695,7 @@ MCNUM minutes = mccOrigin_minutes;
     if (flag_save) mcsave(NULL);
   }
 }
-#line 12693 "./screw_str.c"
+#line 12698 "./screw_str.c"
 }   /* End of Origin=Progress_bar() SETTING parameter declarations. */
 #undef CurrentTime
 #undef EndTime
@@ -12938,7 +12943,7 @@ int target_index = mccH3_target_index;
     SCATTER;
   }
 }
-#line 12941 "./screw_str.c"
+#line 12946 "./screw_str.c"
 }   /* End of H3=Source_gen() SETTING parameter declarations. */
 #undef pTable_dymax
 #undef pTable_dymin
@@ -13369,7 +13374,7 @@ char* reflect = mccGuide_bunker_straight_reflect;
 
   } /* if l */
 }
-#line 13372 "./screw_str.c"
+#line 13377 "./screw_str.c"
 }   /* End of Guide_bunker_straight=Guide_gravity() SETTING parameter declarations. */
 #undef pTable
 #undef GVars
@@ -13665,7 +13670,7 @@ MCNUM W = mccgeks_W;
   /* end of main loop */
 
 }
-#line 13668 "./screw_str.c"
+#line 13673 "./screw_str.c"
 }   /* End of geks=Guide_anyshape() SETTING parameter declarations. */
 #undef offdata
 #undef pTable
@@ -13972,7 +13977,7 @@ int nowritefile = mccOcto_large_nowritefile;
     RESTORE_NEUTRON(INDEX_CURRENT_COMP, x, y, z, vx, vy, vz, t, sx, sy, sz, p);
   }
 }
-#line 13975 "./screw_str.c"
+#line 13980 "./screw_str.c"
 }   /* End of Octo_large=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -14282,7 +14287,7 @@ int nowritefile = mccOcto_medium_nowritefile;
     RESTORE_NEUTRON(INDEX_CURRENT_COMP, x, y, z, vx, vy, vz, t, sx, sy, sz, p);
   }
 }
-#line 14285 "./screw_str.c"
+#line 14290 "./screw_str.c"
 }   /* End of Octo_medium=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -14592,7 +14597,7 @@ int nowritefile = mccOcto_small_nowritefile;
     RESTORE_NEUTRON(INDEX_CURRENT_COMP, x, y, z, vx, vy, vz, t, sx, sy, sz, p);
   }
 }
-#line 14595 "./screw_str.c"
+#line 14600 "./screw_str.c"
 }   /* End of Octo_small=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -14708,7 +14713,7 @@ MCNUM minutes = mccOrigin_minutes;
 
   }
 }
-#line 14711 "./screw_str.c"
+#line 14716 "./screw_str.c"
 }   /* End of Origin=Progress_bar() SETTING parameter declarations. */
 #undef CurrentTime
 #undef EndTime
@@ -14757,7 +14762,7 @@ int nowritefile = mccOcto_large_nowritefile;
   /* save results, but do not free pointers */
   detector = Monitor_nD_Save(&DEFS, &Vars);
 }
-#line 14760 "./screw_str.c"
+#line 14765 "./screw_str.c"
 }   /* End of Octo_large=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -14809,7 +14814,7 @@ int nowritefile = mccOcto_medium_nowritefile;
   /* save results, but do not free pointers */
   detector = Monitor_nD_Save(&DEFS, &Vars);
 }
-#line 14812 "./screw_str.c"
+#line 14817 "./screw_str.c"
 }   /* End of Octo_medium=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -14861,7 +14866,7 @@ int nowritefile = mccOcto_small_nowritefile;
   /* save results, but do not free pointers */
   detector = Monitor_nD_Save(&DEFS, &Vars);
 }
-#line 14864 "./screw_str.c"
+#line 14869 "./screw_str.c"
 }   /* End of Octo_small=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -14908,7 +14913,7 @@ MCNUM minutes = mccOrigin_minutes;
     fprintf(stdout, "%g [min] ", difftime(NowTime,StartTime)/60.0);
   fprintf(stdout, "\n");
 }
-#line 14911 "./screw_str.c"
+#line 14916 "./screw_str.c"
 }   /* End of Origin=Progress_bar() SETTING parameter declarations. */
 #undef CurrentTime
 #undef EndTime
@@ -14980,7 +14985,7 @@ int target_index = mccH3_target_index;
   Table_Free(&pTable_x);
   Table_Free(&pTable_y);
 }
-#line 14982 "./screw_str.c"
+#line 14987 "./screw_str.c"
 }   /* End of H3=Source_gen() SETTING parameter declarations. */
 #undef pTable_dymax
 #undef pTable_dymin
@@ -15058,7 +15063,7 @@ if (GVars.warnings > 100) {
   fprintf(stderr,"%s: warning: This message has been repeated %g times\n", GVars.compcurname, GVars.warnings);
 }
 }
-#line 15058 "./screw_str.c"
+#line 15063 "./screw_str.c"
 }   /* End of Guide_bunker_straight=Guide_gravity() SETTING parameter declarations. */
 #undef pTable
 #undef GVars
@@ -15116,7 +15121,7 @@ int nowritefile = mccOcto_large_nowritefile;
     Monitor_nD_Finally(&DEFS, &Vars);
   }
 }
-#line 15113 "./screw_str.c"
+#line 15118 "./screw_str.c"
 }   /* End of Octo_large=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -15173,7 +15178,7 @@ int nowritefile = mccOcto_medium_nowritefile;
     Monitor_nD_Finally(&DEFS, &Vars);
   }
 }
-#line 15169 "./screw_str.c"
+#line 15174 "./screw_str.c"
 }   /* End of Octo_medium=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -15230,7 +15235,7 @@ int nowritefile = mccOcto_small_nowritefile;
     Monitor_nD_Finally(&DEFS, &Vars);
   }
 }
-#line 15225 "./screw_str.c"
+#line 15230 "./screw_str.c"
 }   /* End of Octo_small=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -15280,7 +15285,7 @@ MCNUM minutes = mccOrigin_minutes;
 {
   
 }
-#line 15274 "./screw_str.c"
+#line 15279 "./screw_str.c"
 }   /* End of Origin=Progress_bar() SETTING parameter declarations. */
 #undef CurrentTime
 #undef EndTime
@@ -15393,7 +15398,7 @@ int target_index = mccH3_target_index;
     dashed_line(0,0,0, -focus_xw/2, focus_yh/2,dist, 4);
   }
 }
-#line 15387 "./screw_str.c"
+#line 15392 "./screw_str.c"
 }   /* End of H3=Source_gen() SETTING parameter declarations. */
 #undef pTable_dymax
 #undef pTable_dymin
@@ -15430,7 +15435,7 @@ int target_index = mccH3_target_index;
   line(0,0,0,0,0.2,0);
   line(0,0,0,0,0,0.2);
 }
-#line 15424 "./screw_str.c"
+#line 15429 "./screw_str.c"
 #undef mccompcurname
 #undef mccompcurtype
 #undef mccompcurindex
@@ -15541,7 +15546,7 @@ char* reflect = mccGuide_bunker_straight_reflect;
   }
 
 }
-#line 15535 "./screw_str.c"
+#line 15540 "./screw_str.c"
 }   /* End of Guide_bunker_straight=Guide_gravity() SETTING parameter declarations. */
 #undef pTable
 #undef GVars
@@ -15563,7 +15568,7 @@ char* reflect = mccGuide_bunker_straight_reflect;
   line(0,0,0,0,0.2,0);
   line(0,0,0,0,0,0.2);
 }
-#line 15557 "./screw_str.c"
+#line 15562 "./screw_str.c"
 #undef mccompcurname
 #undef mccompcurtype
 #undef mccompcurindex
@@ -15603,7 +15608,7 @@ MCNUM W = mccgeks_W;
             (-offdata.zmin+offdata.zmax));
   */
 }
-#line 15597 "./screw_str.c"
+#line 15602 "./screw_str.c"
 }   /* End of geks=Guide_anyshape() SETTING parameter declarations. */
 #undef offdata
 #undef pTable
@@ -15657,7 +15662,7 @@ int nowritefile = mccOcto_large_nowritefile;
     Monitor_nD_McDisplay(&DEFS, &Vars);
   }
 }
-#line 15651 "./screw_str.c"
+#line 15656 "./screw_str.c"
 }   /* End of Octo_large=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -15714,7 +15719,7 @@ int nowritefile = mccOcto_medium_nowritefile;
     Monitor_nD_McDisplay(&DEFS, &Vars);
   }
 }
-#line 15708 "./screw_str.c"
+#line 15713 "./screw_str.c"
 }   /* End of Octo_medium=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector
@@ -15771,7 +15776,7 @@ int nowritefile = mccOcto_small_nowritefile;
     Monitor_nD_McDisplay(&DEFS, &Vars);
   }
 }
-#line 15765 "./screw_str.c"
+#line 15770 "./screw_str.c"
 }   /* End of Octo_small=Monitor_nD() SETTING parameter declarations. */
 #undef offdata
 #undef detector

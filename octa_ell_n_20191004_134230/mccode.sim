@@ -1,0 +1,92 @@
+McStas simulation description file for H3.
+Date:    Fri Oct  4 13:43:02 2019
+Program: McStas 2.5 - Dec. 12, 2018
+
+begin instrument: H3
+  File: /home/nerde/JOB/github/LIRA_transformer/octa_ell_n_20191004_134230/mccode
+  Source: octa_ell_n.instr
+  Parameters:  L0(double) L1(double) lambda(double) guide_m(double) w(double) h(double) LL(double)
+  Trace_enabled: yes
+  Default_main: yes
+  Embedded_runtime: yes
+end instrument
+
+begin simulation: /home/nerde/JOB/github/LIRA_transformer/octa_ell_n_20191004_134230
+  Format: McCode with text headers
+  URL: http://www.mccode.org
+  Creator: McStas 2.5 - Dec. 12, 2018
+  Instrument: octa_ell_n.instr
+  Ncount: 1000000
+  Trace: no
+  Gravitation: no
+  Seed: 1570188350
+  Directory: /home/nerde/JOB/github/LIRA_transformer/octa_ell_n_20191004_134230
+  Nodes: 4
+  Param: L0=0
+  Param: L1=0
+  Param: lambda=2
+  Param: guide_m=6
+  Param: w=0.03
+  Param: h=0.15
+  Param: LL=0
+end simulation
+
+begin data
+  Date: Fri Oct  4 13:43:51 2019 (1570185831)
+  type: array_1d(150)
+  Source: H3 (octa_ell_n.instr)
+  component: Octo_large
+  position: 0 0 67.84
+  title: Vert. Divergence [deg] monitor
+  Ncount: 1000000
+  filename: Octo_large_1570185782.vd
+  statistics: X0=-0.00268219; dX=0.900282;
+  signal: Min=2.03533e+07; Max=1.08448e+10; Mean=1.73064e+09;
+  values: 2.59596e+11 1.40165e+09 585531
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Fri Oct  4 13:43:51 2019 (1570185831)
+  type: array_1d(100)
+  Source: H3 (octa_ell_n.instr)
+  component: Octo_small
+  position: 0 0 67.85
+  title: Vert. Divergence [deg] monitor
+  Ncount: 1000000
+  filename: Octo_small_1570185782.vd
+  statistics: X0=-0.001486; dX=0.0878009;
+  signal: Min=2.00849e+08; Max=7.52761e+08; Mean=4.92198e+08;
+  values: 4.92198e+10 7.12106e+08 42355
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -0.15 0.15
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Fri Oct  4 13:43:51 2019 (1570185831)
+  type: array_1d(100)
+  Source: H3 (octa_ell_n.instr)
+  component: Octo_small2
+  position: 0 0 67.86
+  title: Vert. Divergence [deg] monitor
+  Ncount: 1000000
+  filename: Octo_small2_1570185782.vd
+  statistics: X0=0.14021; dX=0.0820056;
+  signal: Min=1.66256e+08; Max=7.16565e+08; Mean=4.4098e+08;
+  values: 4.4098e+10 6.73164e+08 40124
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: 0 0.3
+  variables: vd I I_err N
+end data

@@ -41,8 +41,8 @@ source_I1 = source_no_I1;
 source_I2 = 0;
 source_I3 = 0;};
  
-source_lambda_min = 0.1;
-source_lambda_max = 20;
+source_lambda_min = lambda-0.1;
+source_lambda_max = lambda+0.1;
 %}
  
 TRACE
