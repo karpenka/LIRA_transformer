@@ -1,0 +1,73 @@
+McStas simulation description file for H3.
+Date:    Tue Oct 22 18:55:39 2019
+Program: McStas 2.5 - Dec. 12, 2018
+
+begin instrument: H3
+  File: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_25m_first_20191022_185504/mccode
+  Source: octa_full_model_25m_first.instr
+  Parameters:  guide_m(double) w(double) h(double) LL(double) source_lambda_min(double) source_lambda_max(double)
+  Trace_enabled: yes
+  Default_main: yes
+  Embedded_runtime: yes
+end instrument
+
+begin simulation: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_25m_first_20191022_185504
+  Format: McCode with text headers
+  URL: http://www.mccode.org
+  Creator: McStas 2.5 - Dec. 12, 2018
+  Instrument: octa_full_model_25m_first.instr
+  Ncount: 10000000
+  Trace: no
+  Gravitation: no
+  Seed: 1571768056
+  Directory: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_25m_first_20191022_185504
+  Nodes: 4
+  Param: guide_m=6
+  Param: w=0.03
+  Param: h=0.15
+  Param: LL=0
+  Param: source_lambda_min=1.95
+  Param: source_lambda_max=2.05
+end simulation
+
+begin data
+  Date: Tue Oct 22 18:56:04 2019 (1571759764)
+  type: array_1d(150)
+  Source: H3 (octa_full_model_25m_first.instr)
+  component: Octo_large
+  position: 0 0 66.88
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_1571759739.vd
+  statistics: X0=0.0040933; dX=0.420807;
+  signal: Min=0; Max=3.03579e+07; Mean=2.82892e+06;
+  values: 4.24339e+08 2.68548e+06 92687
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 18:56:04 2019 (1571759764)
+  type: array_2d(100, 100)
+  Source: H3 (octa_full_model_25m_first.instr)
+  component: Octo_l43arg5e
+  position: 0 0 66.881
+  title:  Intensity Position Position Monitor (Square) per bin
+  Ncount: 10000000
+  filename: Octo_l43arg5e_1571759739.x_y
+  statistics: X0=-9.51618e-05; dX=0.0417762; Y0=4.14786e-05; dY=0.00867473;
+  signal: Min=0; Max=1.85554e+06; Mean=124897;
+  values: 1.24897e+09 4.6099e+06 276363
+  xvar: x 
+  yvar: y 
+  xlabel: x [m]
+  ylabel: y [m]
+  zvar: I
+  zlabel: Signal per bin
+  xylimits: -0.1 0.1 -0.1 0.1
+  variables: I I_err N
+end data

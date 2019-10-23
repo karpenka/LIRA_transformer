@@ -1,0 +1,114 @@
+DEFINE INSTRUMENT H3(L=10, guide_m=6,lambda = 5)
+
+DECLARE
+%{
+//temp
+double w=0.03,h=0.15;
+double L_st = 0.01;
+
+double cold_regime=1;
+double source_lambda_max, source_lambda_min;
+
+//[Cold source parameters
+double source_height = 0.2, source_width = 0.12;
+double source_I1 = 5.38e12, source_I2= 2.50e12, source_I3 = 9.51e12;
+double source_T1 = 204.6, source_T2 = 73.9; source_T3 = 23.9;
+
+//Thermal regime parameters
+double source_thermal_T1 = 312.2;
+double source_thermal_I1 = 2.25e13;
+
+//No contaiber parameters
+double source_no_T1 = 306.4;
+double source_no_I1 = 7.05e12; 
+
+//Distance to neutron guides
+double guide_start_dist = 1.82;
+
+%}
+
+INITIALIZE
+%{
+//thermal regime of CNS
+if (cold_regime==0){
+	source_T1 = source_thermal_T1;
+	source_I1 = source_thermal_I1;
+	source_I2 = 0;
+	source_I3 = 0;};
+
+//no container presented
+if (cold_regime==-1){
+	source_T1 = source_no_T1;
+	source_I1 = source_no_I1;
+	source_I2 = 0;
+	source_I3 = 0;};
+
+source_lambda_min = lambda-0.1;
+source_lambda_max = lambda+0.1;
+%}
+
+TRACE
+
+COMPONENT Origin = Progress_bar()
+  AT (0,0,0) ABSOLUTE
+
+//PIK CNS
+
+COMPONENT H3 = Source_gen(
+    dist = guide_start_dist, focus_xw = w,
+    focus_yh = h, I1 = source_I1, yheight = source_height,
+    xwidth = source_width, T1 = source_T1, Lmin = source_lambda_min,
+    Lmax = source_lambda_max, T2 = source_T2, I2 = source_I2, T3 = source_T3,
+    I3 = source_I3)
+  AT (0, 0, 0) RELATIVE Origin
+
+//Head collimator
+
+COMPONENT Guide_start_arm = Arm(
+    )
+  AT (0, 0, guide_start_dist) RELATIVE Origin
+
+
+//Curved in-bunker part
+
+COMPONENT Guide_bunker_straight = Guide_gravity(
+    w1 = w, h1 = h, l = 25, mleft = 1, mright = 1,
+    mtop = 3, mbottom = 3, G = -9.81)
+  AT (0, 0, 0) RELATIVE PREVIOUS
+
+
+COMPONENT arm_geks = Arm(
+    )
+  AT (0, 0, 25.02) RELATIVE Guide_bunker_straight
+
+COMPONENT screw = Guide_anyshape(
+    geometry = "D:/JOB/github/Octagon-guide/simulation/data/length/extra_fine/1.off",
+    center = 0, R0 = 0.99, Qc = 0.0219, alpha = 2.3, m = guide_m,
+    W = 0.003)
+  AT (-w/2, -h/2, 0) RELATIVE PREVIOUS
+ ROTATED (-90,0,0) RELATIVE PREVIOUS
+
+/**************** monitors ***************/
+
+  COMPONENT Octo_large = Monitor_nD(
+    xwidth = h, yheight = w, bins = 100, options = "dy limits = [-3 3] ")
+  AT (0, 0, L+0.02) RELATIVE arm_geks
+
+/**********/
+
+FINALLY
+%{
+%}
+
+END
+
+
+
+
+
+
+
+
+
+
+

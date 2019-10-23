@@ -1,0 +1,298 @@
+McStas simulation description file for H3.
+Date:    Tue Oct 22 14:24:44 2019
+Program: McStas 2.5 - Dec. 12, 2018
+
+begin instrument: H3
+  File: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_20191022_142332/mccode
+  Source: octa_full_model.instr
+  Parameters:  L0(double) L1(double) lambda(double) guide_m(double) w(double) h(double) LL(double) length_guide_after_octa(double) n_guide_after_octa(double)
+  Trace_enabled: yes
+  Default_main: yes
+  Embedded_runtime: yes
+end instrument
+
+begin simulation: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_20191022_142332
+  Format: McCode with text headers
+  URL: http://www.mccode.org
+  Creator: McStas 2.5 - Dec. 12, 2018
+  Instrument: octa_full_model.instr
+  Ncount: 10000000
+  Trace: no
+  Gravitation: no
+  Seed: 1571746478
+  Directory: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_20191022_142332
+  Nodes: 4
+  Param: L0=15
+  Param: L1=10
+  Param: lambda=5
+  Param: guide_m=6
+  Param: w=0.03
+  Param: h=0.15
+  Param: LL=0
+  Param: length_guide_after_octa=1
+  Param: n_guide_after_octa=1
+end simulation
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(100)
+  Source: H3 (octa_full_model.instr)
+  component: Monlam
+  position: -0.135681 0 30.3195
+  title: Wavelength [Angs] monitor
+  Ncount: 10000000
+  filename: H3-4B_LIRA.lam
+  statistics: X0=5.24829; dX=2.04499;
+  signal: Min=0; Max=1.09849e+10; Mean=2.78078e+09;
+  values: 2.78078e+11 5.58778e+08 807697
+  xvar: L
+  yvar: (I,I_err)
+  xlabel: Wavelength [Angs]
+  ylabel: Intensity [n/s/bin]
+  xlimits: 0 20
+  variables: L I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_large
+  position: -0.604059 0 70.7268
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_1571743484.vd
+  statistics: X0=0.0006883; dX=0.699477;
+  signal: Min=2.78449e+06; Max=6.61962e+09; Mean=1.03115e+09;
+  values: 1.54672e+11 4.09751e+08 506358
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(100)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_sma6546ll
+  position: -0.604071 0 70.7278
+  title: Wavelength [Angs] monitor
+  Ncount: 10000000
+  filename: Octo_sma6546ll_1571743484.L
+  statistics: X0=5.07507; dX=2.05376;
+  signal: Min=0; Max=6.1728e+09; Mean=1.54709e+09;
+  values: 1.54709e+11 4.09749e+08 529329
+  xvar: L
+  yvar: (I,I_err)
+  xlabel: Wavelength [Angs]
+  ylabel: Intensity [n/s/bin]
+  xlimits: 0 20
+  variables: L I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(100)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_small
+  position: -0.604083 0 70.7288
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_small_1571743484.vd
+  statistics: X0=0.000389311; dX=0.0841451;
+  signal: Min=2.28883e+08; Max=4.23277e+08; Mean=3.13776e+08;
+  values: 3.13776e+10 1.99688e+08 64964
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -0.15 0.15
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_larg23e
+  position: -0.604094 0 70.7298
+  title: Hor. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_larg23e_1571743484.hd
+  statistics: X0=0.0172473; dX=0.388516;
+  signal: Min=1758.46; Max=8.3652e+09; Mean=1.03137e+09;
+  values: 1.54706e+11 4.09748e+08 527998
+  xvar: hd
+  yvar: (I,I_err)
+  xlabel: Hor. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: hd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_2d(150, 150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_l43arge
+  position: -0.604106 0 70.7308
+  title:  Intensity Divergence Divergence Monitor (Square) per bin
+  Ncount: 10000000
+  filename: Octo_l43arge_1571743484.hd_vd
+  statistics: X0=0.0172484; dX=0.388553; Y0=0.000696639; dY=0.699481;
+  signal: Min=0; Max=3.51972e+08; Mean=6.87409e+06;
+  values: 1.54667e+11 4.09747e+08 505020
+  xvar: Ho
+  yvar: Ve
+  xlabel: Hor. Divergence [deg]
+  ylabel: Vert. Divergence [deg]
+  zvar: I
+  zlabel: Signal per bin
+  xylimits: -4 4 -4 4
+  variables: I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_2d(150, 150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_l43arg5e
+  position: -0.604117 0 70.7318
+  title:  Intensity Position Position Monitor (Square) per bin
+  Ncount: 10000000
+  filename: Octo_l43arg5e_1571743484.x_y
+  statistics: X0=0.000187563; dX=0.0431681; Y0=8.01066e-05; dY=0.0105144;
+  signal: Min=0; Max=7.80486e+07; Mean=4.33378e+06;
+  values: 9.75101e+10 3.02952e+08 453939
+  xvar: x 
+  yvar: y 
+  xlabel: x [m]
+  ylabel: y [m]
+  zvar: I
+  zlabel: Signal per bin
+  xylimits: -0.1 0.1 -0.1 0.1
+  variables: I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_large_143
+  position: -0.604071 -0.0125 70.7278
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_143_1571743484.vd
+  statistics: X0=0; dX=0;
+  signal: Min=0; Max=0; Mean=0;
+  values: 0 0 0
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_large_144
+  position: -0.604083 -0.0075 70.7288
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_144_1571743484.vd
+  statistics: X0=0; dX=0;
+  signal: Min=0; Max=0; Mean=0;
+  values: 0 0 0
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_large_145
+  position: -0.604094 -0.0025 70.7298
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_145_1571743484.vd
+  statistics: X0=0; dX=0;
+  signal: Min=0; Max=0; Mean=0;
+  values: 0 0 0
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_large_146
+  position: -0.604106 0.0025 70.7308
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_146_1571743484.vd
+  statistics: X0=0; dX=0;
+  signal: Min=0; Max=0; Mean=0;
+  values: 0 0 0
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_large_147
+  position: -0.604117 0.0075 70.7318
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_147_1571743484.vd
+  statistics: X0=0.353549; dX=0.57521;
+  signal: Min=0; Max=1.09664e+09; Mean=1.07378e+08;
+  values: 1.61067e+10 1.26309e+08 59446
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:25:45 2019 (1571743545)
+  type: array_1d(150)
+  Source: H3 (octa_full_model.instr)
+  component: Octo_large_148
+  position: -0.604129 0.0125 70.7328
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_148_1571743484.vd
+  statistics: X0=0.876402; dX=0.563676;
+  signal: Min=0; Max=5.02771e+08; Mean=4.55784e+07;
+  values: 6.83675e+09 7.51901e+07 35540
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data

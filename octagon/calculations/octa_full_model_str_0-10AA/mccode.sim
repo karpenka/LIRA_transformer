@@ -1,0 +1,198 @@
+McStas simulation description file for H3.
+Date:    Tue Oct 22 14:44:48 2019
+Program: McStas 2.5 - Dec. 12, 2018
+
+begin instrument: H3
+  File: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_str_20191022_144411/mccode
+  Source: octa_full_model_str.instr
+  Parameters:  L0(double) L1(double) lambda(double) guide_m(double) w(double) h(double) LL(double) length_guide_after_octa(double) n_guide_after_octa(double)
+  Trace_enabled: yes
+  Default_main: yes
+  Embedded_runtime: yes
+end instrument
+
+begin simulation: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_str_20191022_144411
+  Format: McCode with text headers
+  URL: http://www.mccode.org
+  Creator: McStas 2.5 - Dec. 12, 2018
+  Instrument: octa_full_model_str.instr
+  Ncount: 10000000
+  Trace: no
+  Gravitation: no
+  Seed: 1571748161
+  Directory: /home/nerde/JOB/github/LIRA_transformer/octa_full_model_str_20191022_144411
+  Nodes: 4
+  Param: L0=15
+  Param: L1=10
+  Param: lambda=5
+  Param: guide_m=6
+  Param: w=0.03
+  Param: h=0.15
+  Param: LL=0
+  Param: length_guide_after_octa=1
+  Param: n_guide_after_octa=1
+end simulation
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_1d(100)
+  Source: H3 (octa_full_model_str.instr)
+  component: Monlam
+  position: -0.135681 0 30.3195
+  title: Wavelength [Angs] monitor
+  Ncount: 10000000
+  filename: H3-4B_LIRA.lam
+  statistics: X0=5.24479; dX=2.04478;
+  signal: Min=0; Max=1.09253e+10; Mean=2.79002e+09;
+  values: 2.79002e+11 5.59975e+08 810096
+  xvar: L
+  yvar: (I,I_err)
+  xlabel: Wavelength [Angs]
+  ylabel: Intensity [n/s/bin]
+  xlimits: 0 20
+  variables: L I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_1d(100)
+  Source: H3 (octa_full_model_str.instr)
+  component: Octo_large
+  position: -0.599655 0 70.3468
+  title: Hor. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large_1571744688.hd
+  statistics: X0=0.000400424; dX=0.312549;
+  signal: Min=0; Max=2.11402e+10; Mean=2.29073e+09;
+  values: 2.29073e+11 4.82838e+08 807051
+  xvar: hd
+  yvar: (I,I_err)
+  xlabel: Hor. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: hd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_1d(100)
+  Source: H3 (octa_full_model_str.instr)
+  component: Octo_medium
+  position: -0.599656 0 70.3469
+  title: Hor. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_medium_1571744688.hd
+  statistics: X0=0.0037113; dX=0.2497;
+  signal: Min=6.29986e+08; Max=2.80573e+09; Mean=2.05047e+09;
+  values: 2.05047e+11 4.72918e+08 441208
+  xvar: hd
+  yvar: (I,I_err)
+  xlabel: Hor. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -0.5 0.5
+  variables: hd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_1d(100)
+  Source: H3 (octa_full_model_str.instr)
+  component: Octo_small
+  position: -0.599657 0 70.347
+  title: Hor. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_small_1571744688.hd
+  statistics: X0=0.000359026; dX=0.0573451;
+  signal: Min=4.41479e+08; Max=6.13795e+08; Mean=5.2474e+08;
+  values: 5.2474e+10 2.56e+08 92542
+  xvar: hd
+  yvar: (I,I_err)
+  xlabel: Hor. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -0.1 0.1
+  variables: hd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_1d(150)
+  Source: H3 (octa_full_model_str.instr)
+  component: Octo_large2
+  position: -0.599669 0 70.348
+  title: Vert. Divergence [deg] monitor
+  Ncount: 10000000
+  filename: Octo_large2_1571744688.vd
+  statistics: X0=0.00160557; dX=0.628261;
+  signal: Min=0; Max=7.87201e+09; Mean=1.52715e+09;
+  values: 2.29073e+11 4.82838e+08 807051
+  xvar: vd
+  yvar: (I,I_err)
+  xlabel: Vert. Divergence [deg]
+  ylabel: Intensity [n/s/bin]
+  xlimits: -4 4
+  variables: vd I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_1d(100)
+  Source: H3 (octa_full_model_str.instr)
+  component: Octo_sma6546ll
+  position: -0.59968 0 70.349
+  title: Wavelength [Angs] monitor
+  Ncount: 10000000
+  filename: Octo_sma6546ll_1571744688.L
+  statistics: X0=5.20046; dX=2.04926;
+  signal: Min=0; Max=8.97213e+09; Mean=2.29073e+09;
+  values: 2.29073e+11 4.82838e+08 807051
+  xvar: L
+  yvar: (I,I_err)
+  xlabel: Wavelength [Angs]
+  ylabel: Intensity [n/s/bin]
+  xlimits: 0 20
+  variables: L I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_2d(150, 150)
+  Source: H3 (octa_full_model_str.instr)
+  component: Octo_l43arge
+  position: -0.599692 0 70.35
+  title:  Intensity Divergence Divergence Monitor (Square) per bin
+  Ncount: 10000000
+  filename: Octo_l43arge_1571744688.hd_vd
+  statistics: X0=-2.66991e-05; dX=0.312101; Y0=0.00160557; dY=0.628261;
+  signal: Min=0; Max=5.55339e+08; Mean=1.0181e+07;
+  values: 2.29073e+11 4.82838e+08 807051
+  xvar: Ho
+  yvar: Ve
+  xlabel: Hor. Divergence [deg]
+  ylabel: Vert. Divergence [deg]
+  zvar: I
+  zlabel: Signal per bin
+  xylimits: -4 4 -4 4
+  variables: I I_err N
+end data
+
+begin data
+  Date: Tue Oct 22 14:44:54 2019 (1571744694)
+  type: array_2d(150, 150)
+  Source: H3 (octa_full_model_str.instr)
+  component: Octo_l43arg5e
+  position: -0.599704 0 70.351
+  title:  Intensity Position Position Monitor (Square) per bin
+  Ncount: 10000000
+  filename: Octo_l43arg5e_1571744688.x_y
+  statistics: X0=6.97791e-06; dX=0.00868614; Y0=-5.04066e-05; dY=0.0433174;
+  signal: Min=0; Max=1.25148e+08; Mean=1.01681e+07;
+  values: 2.28782e+11 4.82472e+08 806538
+  xvar: x 
+  yvar: y 
+  xlabel: x [m]
+  ylabel: y [m]
+  zvar: I
+  zlabel: Signal per bin
+  xylimits: -0.1 0.1 -0.1 0.1
+  variables: I I_err N
+end data
